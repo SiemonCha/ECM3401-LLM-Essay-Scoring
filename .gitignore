@@ -1,0 +1,40 @@
+# .gitignore
+# Data files
+data/raw/*
+data/processed/*
+data/results/*
+*.csv
+*.tsv
+
+# Model files
+models/
+*.bin
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.egg-info/
+
+# Environment
+venv/
+env/
+.env
+
+# API keys
+.env
+secrets.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs (keep structure, ignore contents)
+outputs/figures/*.png
+outputs/figures/*.pdf
+outputs/tables/*.csv
+
+# Keep folder structure
+!.gitkeep
