@@ -1,7 +1,7 @@
 # scripts/02_create_phase1_sample.py
 """
-Create Phase 1 sample (100 essays, 20 per CEFR level)
-Run: python -m scripts.02_create_phase1_sample
+Create Phase 1 sample (135 essays, 27 per CEFR level)
+Run: python ./scripts/02_create_phase1_sample
 """
 
 import pandas as pd

@@ -1,0 +1,7 @@
+Determine the CEFR proficiency level of the following essay. Choose one: A2, B1, B2, C1, or C2.
+
+{essay_text}
+
+Answer with ONLY the level code (e.g., "A2"). No explanation needed.
+
+Level:

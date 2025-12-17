@@ -1,11 +1,11 @@
 """
-config.py - Configuration for ECM3401 Individual Project (LINUX VERSION)
+config.py - Configuration for ECM3401 Individual Project (MacBook M2 Pro)
 
 Project: Measuring Semantic Robustness in LLM-Based Essay Scoring
 Author: Sansiri Charoenpong (Siemon)
 Supervisor: Dr. Rodrigo Souza Wilkens
-Last updated: December 14, 2025
-Hardware: Linux + AMD Radeon RX 7900 XT + Intel i5-12600K + 64GB RAM
+Last updated: December 15, 2025
+Hardware: MacBook M2 Pro + 16GB RAM
 """
 
 import os
@@ -20,11 +20,9 @@ PROJECT_ROOT = Path(__file__).parent.absolute()
 load_dotenv(PROJECT_ROOT / '.env')
 
 # =============================================================================
-# PROJECT PATHS (LINUX)
+# PROJECT PATHS (MACOS)
 # =============================================================================
-# UPDATE THIS to match your Linux dataset location
-DATASET_ROOT = Path.home() / "datasets" / "write-and-improve-corpus-2024-v2"
-# Or use absolute path: Path('/home/your-username/datasets/write-and-improve-corpus-2024-v2')
+DATASET_ROOT = Path('/Users/siemoncha/Desktop/Exeter/Y3/Individual Project/write-and-improve-corpus-2024-v2')
 
 # Data directories
 DATA_DIR = PROJECT_ROOT / "data"
@@ -51,29 +49,25 @@ for d in [DATA_DIR, PROCESSED_DIR, RESULTS_DIR, OUTPUTS_DIR, FIGURES_DIR, TABLES
 if not CORPUS_FILE.exists():
     print(f"❌ ERROR: Corpus file not found at {CORPUS_FILE}")
     print(f"Expected location: {DATASET_ROOT}")
-    print(f"Please copy dataset to this location or update DATASET_ROOT in config.py")
 else:
     print(f"✓ Dataset found: {DATASET_ROOT}")
 
 # =============================================================================
-# GPU DETECTION (AUTO-DETECT CUDA/ROCm FOR AMD)
+# GPU DETECTION (Apple Silicon MPS)
 # =============================================================================
-if torch.cuda.is_available():
-    DEVICE = "cuda"
-    GPU_NAME = torch.cuda.get_device_name(0)
-    GPU_MEMORY_GB = torch.cuda.get_device_properties(0).total_memory / 1e9
-    print(f"✓ GPU detected: {GPU_NAME}")
-    print(f"✓ VRAM: {GPU_MEMORY_GB:.1f} GB")
+if torch.backends.mps.is_available():
+    DEVICE = "mps"
+    print(f"✓ Apple Silicon GPU (MPS) detected")
 else:
     DEVICE = "cpu"
-    print("⚠️ WARNING: No GPU detected! Llama will run on CPU (very slow)")
+    print("⚠️ WARNING: MPS not available, using CPU")
 
 # =============================================================================
 # EXPERIMENT SETTINGS
 # =============================================================================
 RANDOM_SEED = 42
-PHASE1_SAMPLE_SIZE = 100
-ESSAYS_PER_LEVEL = 20
+PHASE1_SAMPLE_SIZE = 135
+ESSAYS_PER_LEVEL = 27
 CEFR_LEVELS = ['A2', 'B1', 'B2', 'C1', 'C2']
 
 # CEFR level mapping (combine + levels with base levels)
@@ -103,23 +97,22 @@ if not OPENAI_API_KEY:
     print("⚠️ WARNING: OPENAI_API_KEY not set!")
     print("Add to .env file: OPENAI_API_KEY=sk-proj-...")
 else:
-    print(f"✓ API key loaded from .env")
+    print(f"✓ OpenAI API key loaded")
 
 # Cost tracking (GPT-4o-mini pricing)
 GPT_COST_PER_1M_INPUT = 0.150 / 1_000_000
 GPT_COST_PER_1M_OUTPUT = 0.600 / 1_000_000
 
 # =============================================================================
-# MODEL CONFIGURATION - OPEN SOURCE (Llama on AMD 7900 XT)
+# MODEL CONFIGURATION - OPEN SOURCE (Phi-3-Mini on M2 Pro)
 # =============================================================================
-LLAMA_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"  # or Llama-3.1-8B-Instruct
-LLAMA_DEVICE = DEVICE  # Auto-detected: "cuda" for AMD GPU via ROCm
+LLAMA_MODEL = "microsoft/Phi-3-mini-4k-instruct"  # 3.8B params, fast on M2 Pro!
+LLAMA_DEVICE = DEVICE  # Auto-detected: "mps" for Apple Silicon
 LLAMA_TEMPERATURE = 0.0  # Deterministic
 LLAMA_MAX_TOKENS = 50
 
-# GPU settings for AMD 7900 XT (24GB VRAM)
+# M2 Pro settings
 LLAMA_TORCH_DTYPE = torch.float16  # Use float16 for speed
-LLAMA_USE_4BIT = True  # Enable 4-bit quantization (optional, saves VRAM)
 
 # HuggingFace configuration
 HF_TOKEN = os.getenv('HUGGINGFACE_TOKEN')
@@ -130,11 +123,7 @@ LLAMA_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 # PROMPTING STRATEGIES
 # =============================================================================
 N_PARAPHRASES = 3
-PROMPTING_STRATEGIES = ['minimal', 'rubric_guided', 'chain_of_thought', 'few_shot']
-
-# Few-shot methods
-FEW_SHOT_METHODS = ['random', 'semantic', 'centroid', 'mmr']
-FEW_SHOT_N_EXAMPLES = 3
+PROMPTING_STRATEGIES = ['minimal', 'rubric', 'cot']
 
 # =============================================================================
 # STATISTICAL SETTINGS
@@ -144,3 +133,5 @@ ROBUSTNESS_THRESHOLD_GOOD = 3.0
 ROBUSTNESS_THRESHOLD_MODERATE = 5.0
 
 print("✓ Config loaded successfully")
+print(f"✓ Model: {LLAMA_MODEL}")
+print(f"✓ Device: {DEVICE}")

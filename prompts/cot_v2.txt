@@ -1,0 +1,8 @@
+Determine the CEFR proficiency level by evaluating lexical diversity, syntactic accuracy, cohesion, and linguistic competence.
+
+Text:
+{essay_text}
+
+Format: State the level first (A2/B1/B2/C1/C2), then you may explain.
+
+Proficiency level:

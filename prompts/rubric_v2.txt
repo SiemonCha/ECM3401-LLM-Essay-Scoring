@@ -1,0 +1,18 @@
+Assess the CEFR proficiency level of this essay according to these descriptors:
+
+A2 (Elementary): Produces simple linked text about familiar topics. Employs basic words and simple sentences with many errors.
+
+B1 (Intermediate): Produces straightforward linked text about known subjects. Demonstrates reasonably correct language use with some mistakes that don't block comprehension.
+
+B2 (Upper-Intermediate): Produces clear, detailed writing on diverse topics. Exhibits good command of grammar with occasional mistakes. Utilizes varied vocabulary and complex sentence patterns.
+
+C1 (Advanced): Produces clear, well-organized writing on complex topics. Maintains consistent grammatical accuracy with infrequent errors. Employs advanced vocabulary and diverse sentence structures.
+
+C2 (Proficient): Produces clear, naturally flowing writing in suitable style. Exhibits complete mastery of complex grammar and broad vocabulary.
+
+Text to evaluate:
+{essay_text}
+
+Answer with ONLY the level code (e.g., "C1"). No reasoning needed.
+
+According to these descriptors, the level is:

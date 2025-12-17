@@ -1,7 +1,6 @@
 # scripts/03_test_gpt.py
 """
 Test GPT-4o-mini API with one essay
-Works on both Linux and macOS
 Run: python ./scripts/03_test_gpt.py
 """
 
@@ -16,7 +15,7 @@ def main():
     
     # Check API key is set
     if not OPENAI_API_KEY:
-        print("\n❌ API key not set!")
+        print("\n❌ API key not set")
         print("Add to .env file: OPENAI_API_KEY=sk-proj-...")
         return
     
@@ -67,8 +66,8 @@ CEFR Level:"""
         print(f"  Cost: ${cost:.6f}")
         
         # Estimate for full experiment
-        total_cost = cost * 2400
-        print(f"\nEstimated cost for 2,400 predictions: ${total_cost:.2f}")
+        total_cost = cost * 2430  # 135 essays × 3 strategies × 6 paraphrases
+        print(f"\nEstimated cost for 2,430 predictions: ${total_cost:.2f}")
         
         print("\n" + "="*70)
         print("✓ GPT-4o-mini WORKS!")

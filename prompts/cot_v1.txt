@@ -1,0 +1,8 @@
+Classify this essay's CEFR level by considering vocabulary, grammar, coherence, and control.
+
+Essay:
+{essay_text}
+
+Format: First state the level (A2/B1/B2/C1/C2), then optionally explain.
+
+Level:

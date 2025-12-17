@@ -1,0 +1,8 @@
+Rate this essay by considering word choice, sentence construction, flow, and overall proficiency.
+
+Essay to assess:
+{essay_text}
+
+Format: Give the rating first (A2/B1/B2/C1/C2), then reasoning if needed.
+
+CEFR rating:

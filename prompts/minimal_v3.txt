@@ -1,0 +1,7 @@
+What is the CEFR rating for this essay? Select from: A2, B1, B2, C1, C2.
+
+{essay_text}
+
+Provide ONLY the rating (e.g., "C1"). No justification required.
+
+CEFR Rating:

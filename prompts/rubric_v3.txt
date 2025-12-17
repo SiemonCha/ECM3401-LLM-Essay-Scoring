@@ -1,0 +1,18 @@
+Rate this essay using the CEFR framework below:
+
+A2 (Elementary): Writes basic connected text on familiar subjects. Uses simple vocabulary and sentence constructions with numerous errors.
+
+B1 (Intermediate): Writes straightforward connected text on known topics. Shows moderately accurate language with errors that don't prevent understanding.
+
+B2 (Upper-Intermediate): Writes clear, detailed content on various subjects. Displays strong grammatical control with some errors. Applies diverse vocabulary and complex constructions.
+
+C1 (Advanced): Writes clear, well-structured content on complex subjects. Shows reliable grammatical control with minimal errors. Uses refined vocabulary and varied sentence forms.
+
+C2 (Proficient): Writes clear, flowing text in appropriate register. Demonstrates full command of complex grammar and extensive lexical range.
+
+Essay text:
+{essay_text}
+
+Provide ONLY the level (e.g., "A2"). No analysis required.
+
+The CEFR level is:
