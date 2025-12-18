@@ -1,0 +1,12 @@
+{
+  "strategy_anova": {
+    "f_statistic": 43.42702625660049,
+    "p_value": 1.0136932429983218e-17,
+    "significant": true
+  },
+  "model_ttest": {
+    "t_statistic": -19.149253478151866,
+    "p_value": 8.582040540543277e-51,
+    "significant": true
+  }
+}
