@@ -1,0 +1,13 @@
+Classify this essay's CEFR level using these criteria:
+
+A2: Simple sentences, basic vocabulary, frequent errors
+B1: Some complex structures, everyday vocabulary, some errors (Note: Often overlaps with A2 and B2)
+B2: Generally accurate, varied structures, good vocabulary (Note: Often overlaps with B1 and C1)
+C1: Sophisticated structures, wide vocabulary, rare errors (Note: Often overlaps with B2 and C2)
+C2: Near-native fluency, precise language, virtually error-free
+
+Note: Adjacent levels often overlap. Choose the level that best fits overall, knowing perfect classification is difficult.
+
+Essay: {essay_text}
+
+CEFR Level:

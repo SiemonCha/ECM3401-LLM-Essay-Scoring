@@ -1,0 +1,14 @@
+Classify this essay's CEFR level through careful reasoning.
+
+Essay: {essay_text}
+
+Analyze: vocabulary, grammar, coherence, and fluency.
+
+Important constraints:
+- Very short essays (<50 words) are typically A2-B1, rarely C1-C2
+- Very long essays (>250 words) are typically B2-C2, rarely A2
+- Adjacent levels (e.g., B1 and B2) are acceptable; distant levels (e.g., A2 and C1) are unlikely
+
+After analysis, what is the CEFR level?
+
+CEFR Level:

@@ -1,0 +1,5 @@
+Classify this essay's CEFR level. Consider essay length as a proficiency indicator.
+
+Essay: {essay_text}
+
+CEFR Level:

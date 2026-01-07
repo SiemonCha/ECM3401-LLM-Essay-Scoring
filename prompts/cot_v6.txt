@@ -1,0 +1,13 @@
+Classify this essay's CEFR level using ordinal reasoning.
+
+Essay: {essay_text}
+
+CEFR levels are ordered: A2 < B1 < B2 < C1 < C2
+
+Analyze the essay and determine its level. Remember:
+- Being off by 1 level (e.g., predicting B1 when true level is B2) is acceptable
+- Being off by 2+ levels (e.g., predicting A2 when true level is B2) is a serious error
+
+Consider: Is this essay closer to beginner (A2) or proficient (C2)? Then refine to exact level.
+
+CEFR Level:

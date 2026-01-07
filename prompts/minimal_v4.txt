@@ -1,0 +1,5 @@
+Classify the CEFR level of this essay as A2, B1, B2, C1, or C2.
+
+{essay_text}
+
+CEFR Level:

@@ -1,9 +1,9 @@
-# scripts/12_generate_report.py
+# scripts/12_generate_phase1_report.py
 """
 Comprehensive Summary Report Generator for ECM3401 Project
 Creates a detailed markdown report of all findings
 
-Run: python scripts/12_generate_report.py
+Run: python scripts/12_generate_phase1_report.py
 """
 
 import pandas as pd

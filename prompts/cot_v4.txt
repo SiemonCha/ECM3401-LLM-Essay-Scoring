@@ -1,0 +1,11 @@
+Classify this essay's CEFR level through structured analysis.
+
+Essay: {essay_text}
+
+Follow these exact steps:
+Step 1: Count sentences (1-3 = likely A2/B1; 4-8 = likely B2/C1; 9+ = likely C1/C2)
+Step 2: Identify complex structures (subordination, passive voice, participles)
+Step 3: Assess vocabulary sophistication (basic/everyday/academic/specialized)
+Step 4: Determine CEFR level based on Steps 1-3
+
+CEFR Level:

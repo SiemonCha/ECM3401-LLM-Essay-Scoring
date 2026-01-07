@@ -1,0 +1,15 @@
+Classify this essay's CEFR level using these criteria:
+
+A2: Simple sentences, basic vocabulary, frequent errors (50-100 words typical)
+B1: Some complex structures, everyday vocabulary, some errors (100-150 words typical)
+B2: Generally accurate, varied structures, good vocabulary (150-250 words typical)
+C1: Sophisticated structures, wide vocabulary, rare errors (250+ words typical)
+C2: Near-native fluency, precise language, virtually error-free (250+ words typical)
+
+Example A2: "I like play football. My friend is good."
+Example B2: "Although football requires skill, I enjoy playing it because it promotes teamwork."
+Example C2: "The intricacies of the sport notwithstanding, I find it intellectually stimulating."
+
+Essay: {essay_text}
+
+CEFR Level:

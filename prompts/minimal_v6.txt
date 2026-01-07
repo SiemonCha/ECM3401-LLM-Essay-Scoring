@@ -1,0 +1,6 @@
+Classify this essay's CEFR level: A2, B1, B2, C1, or C2.
+Note: These levels are ordered from beginner (A2) to proficient (C2). Avoid large jumps.
+
+Essay: {essay_text}
+
+CEFR Level:
