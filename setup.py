@@ -1,157 +1,247 @@
-# setup.py
-# ECM3401: Measuring Semantic Robustness in LLM-Based Essay Scoring
-# Installation: pip install -e .  (development mode)
+#!/usr/bin/env python3
+"""
+SCRIPT 1: ONE-TIME SETUP
+Downloads model, creates sample, validates everything
 
-from setuptools import setup, find_packages
+Run: python setup.py
+Time: 10-30 minutes (mostly downloading model)
+"""
+
+import sys
 from pathlib import Path
 
-# Read the README file for long description
-readme_file = Path(__file__).parent / "README.md"
-long_description = readme_file.read_text() if readme_file.exists() else ""
+# Fix imports
+PROJECT_ROOT = Path(__file__).parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
-setup(
-    # =========================================================================
-    # Package Metadata
-    # =========================================================================
-    name="llm_essay_scoring",
-    version="1.0.0",
-    author="Sansiri Charoenpong",
-    author_email="sc1076@exeter.ac.uk",
-    description="Measuring Semantic Robustness in LLM-Based Essay Scoring (ECM3401 Individual Project)",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/ECM3401-LLM-Essay-Scoring",  # Update if you have a repo
-    
-    # =========================================================================
-    # Package Structure
-    # =========================================================================
-    # Include the config.py module (loose file in project root)
-    py_modules=['config'],
-    
-    # Find all package directories (if any)
-    packages=find_packages(),
-    
-    # Include non-Python files specified in MANIFEST.in
-    include_package_data=True,
-    
-    # =========================================================================
-    # Python Version Requirements
-    # =========================================================================
-    python_requires='>=3.10',
-    
-    # =========================================================================
-    # Core Dependencies
-    # Minimal set required for the package to run
-    # Full dependencies in requirements.txt
-    # =========================================================================
-    install_requires=[
-        'pandas>=2.0.3',
-        'numpy>=1.24.4',
-        'scipy>=1.11.4',
-        'scikit-learn>=1.3.2',
-        'torch>=2.1.2',
-        'openai>=2.11.0',
-        'transformers>=4.44.2',
-        'accelerate>=0.34.2',
-        'sentence-transformers>=2.7.0',
-        'faiss-cpu>=1.8.0',
-        'tiktoken>=0.7.0',
-        'nltk>=3.8.1',
-        'textstat>=0.7.3',
-        'matplotlib>=3.8.4',
-        'seaborn>=0.13.2',
-        'tqdm>=4.66.5',
-        'python-dotenv>=1.0.1',
-        'pyyaml>=6.0.2',
-        'requests>=2.32.3',
-        'pydantic>=2.9.2',
-    ],
-    
-    # =========================================================================
-    # Optional Dependencies
-    # Install with: pip install -e ".[dev]" or pip install -e ".[jupyter]"
-    # =========================================================================
-    extras_require={
-        'dev': [
-            'pytest>=7.4.0',
-            'black>=23.7.0',
-            'flake8>=6.1.0',
-            'mypy>=1.5.0',
-        ],
-        'jupyter': [
-            'jupyter>=1.0.0',
-            'jupyterlab>=4.0.13',
-            'ipykernel>=6.29.5',
-        ],
-    },
-    
-    # =========================================================================
-    # Package Classification
-    # =========================================================================
-    classifiers=[
-        'Development Status :: 4 - Beta',
-        'Intended Audience :: Science/Research',
-        'Topic :: Scientific/Engineering :: Artificial Intelligence',
-        'Topic :: Text Processing :: Linguistic',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.11',
-        'Operating System :: MacOS :: MacOS X',
-        'License :: OSI Approved :: MIT License',
-    ],
-    
-    # =========================================================================
-    # Keywords for Discovery
-    # =========================================================================
-    keywords='llm essay scoring cefr robustness nlp education assessment',
-    
-    # =========================================================================
-    # Project URLs
-    # =========================================================================
-    project_urls={
-        'Documentation': 'https://github.com/yourusername/ECM3401-LLM-Essay-Scoring/blob/main/README.md',
-        'Source': 'https://github.com/yourusername/ECM3401-LLM-Essay-Scoring',
-        'Supervisor': 'https://www.exeter.ac.uk/staff/profile/index.php?web_id=Rodrigo_Wilkens',
-    },
-)
+import pandas as pd
+import numpy as np
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
 
-# ============================================================================
-# INSTALLATION NOTES
-# ============================================================================
-# Development Installation (recommended):
-#   pip install -e .
-#   This installs the package in "editable" mode, so changes to code are
-#   immediately reflected without reinstalling.
-#
-# Regular Installation:
-#   pip install .
-#   This installs the package normally.
-#
-# With Optional Dependencies:
-#   pip install -e ".[dev]"      # Development tools
-#   pip install -e ".[jupyter]"  # Jupyter support
-#   pip install -e ".[dev,jupyter]"  # Both
-#
-# Verification:
-#   python -c "import config; print('Package installed successfully!')"
-#   python -c "from config import CORPUS_FILE; print(f'Corpus: {CORPUS_FILE}')"
-#
-# What This Does:
-#   1. Makes 'config' importable from anywhere in the project
-#   2. Installs all dependencies listed in install_requires
-#   3. Sets up the project as a Python package
-#   4. Allows you to run scripts using: python scripts/script_name.py
-#      OR using module syntax: python -m scripts.script_name
-#
-# When to Use:
-#   - Run this once after cloning the project
-#   - Re-run if you modify setup.py or add new dependencies
-#   - Use "pip install -e ." for active development
-#   - Use "pip install ." for final installation
-#
-# Benefits of Using setup.py:
-#   ✓ Clean imports: "from config import DATASET_ROOT" works everywhere
-#   ✓ Package management: pip tracks installed packages
-#   ✓ Dependency resolution: automatically installs required packages
-#   ✓ Editable mode: changes reflected immediately
-#   ✓ Distribution: can share package with others easily
+from simple_config import *
+
+# =============================================================================
+# STEP 1: VALIDATE ENVIRONMENT
+# =============================================================================
+
+def step1_validate():
+    """Check everything is ready"""
+    print("\n" + "="*70)
+    print("STEP 1: VALIDATING ENVIRONMENT")
+    print("="*70)
+    
+    issues = validate()
+    
+    if issues:
+        print("\n❌ Issues found:")
+        for issue in issues:
+            print(f"  - {issue}")
+        print("\nPlease fix these issues and run again.")
+        sys.exit(1)
+    
+    print("\n✓ Environment validated")
+    
+    # Check PyTorch MPS
+    if torch.backends.mps.is_available():
+        print("✓ MPS (Apple Silicon GPU) available")
+    else:
+        print("⚠️  MPS not available, will use CPU (slower)")
+    
+    return True
+
+# =============================================================================
+# STEP 2: CREATE SAMPLE
+# =============================================================================
+
+def step2_create_sample():
+    """Create stratified sample of 100 essays"""
+    print("\n" + "="*70)
+    print("STEP 2: CREATING SAMPLE")
+    print("="*70)
+    
+    if SAMPLE_FILE.exists():
+        print(f"\n✓ Sample already exists: {SAMPLE_FILE}")
+        df = pd.read_csv(SAMPLE_FILE)
+        print(f"  {len(df)} essays")
+        return True
+    
+    print(f"\nLoading dataset from: {DATASET_FILE}")
+    
+    # Load full dataset
+    df = pd.read_csv(DATASET_FILE, sep='\t')
+    print(f"✓ Loaded {len(df):,} essays")
+    
+    # Filter usable essays
+    usable = df[
+        (df['is_final_version'] == True) &
+        (df['humannotator_cefr_level'].notna()) &
+        (df['split'].isin(['train', 'dev']))
+    ].copy()
+    
+    print(f"✓ Usable essays: {len(usable):,}")
+    
+    # Map CEFR levels
+    usable['cefr_mapped'] = usable['humannotator_cefr_level'].apply(map_cefr)
+    
+    # Add metadata
+    usable['word_count'] = usable['text'].str.split().str.len()
+    usable['length_category'] = usable['word_count'].apply(categorize_length)
+    
+    # Stratified sample
+    np.random.seed(RANDOM_SEED)
+    
+    samples = []
+    for level in CEFR_LEVELS:
+        level_essays = usable[usable['cefr_mapped'] == level]
+        if len(level_essays) < ESSAYS_PER_LEVEL:
+            print(f"⚠️  Only {len(level_essays)} {level} essays available (need {ESSAYS_PER_LEVEL})")
+            sample = level_essays
+        else:
+            sample = level_essays.sample(n=ESSAYS_PER_LEVEL, random_state=RANDOM_SEED)
+        samples.append(sample)
+        print(f"  Sampled {len(sample)} {level} essays")
+    
+    sample_df = pd.concat(samples, ignore_index=True)
+    
+    # Save
+    sample_df.to_csv(SAMPLE_FILE, index=False)
+    print(f"\n✓ Saved sample: {SAMPLE_FILE}")
+    print(f"  Total: {len(sample_df)} essays")
+    
+    return True
+
+# =============================================================================
+# STEP 3: DOWNLOAD MODEL
+# =============================================================================
+
+def step3_download_model():
+    """Download Phi-3-Mini model"""
+    print("\n" + "="*70)
+    print("STEP 3: DOWNLOADING PHI-3-MINI MODEL")
+    print("="*70)
+    
+    # Check if already downloaded (transformers creates nested dirs)
+    if MODEL_CACHE.exists() and any(MODEL_CACHE.rglob("*.safetensors")):
+        print("\n✓ Model already downloaded")
+        return True
+    
+    print(f"\nDownloading {PHI3_MODEL}...")
+    print("This will take 10-30 minutes (~8GB)")
+    print("This is ONE-TIME only!\n")
+    
+    try:
+        # Download tokenizer (HF_TOKEN is optional for public models)
+        print("Downloading tokenizer...")
+        tokenizer = AutoTokenizer.from_pretrained(
+            PHI3_MODEL,
+            cache_dir=MODEL_CACHE,
+            token=HF_TOKEN if HF_TOKEN else None,
+            trust_remote_code=True
+        )
+        print("✓ Tokenizer downloaded")
+        
+        # Download model
+        print("\nDownloading model (~8GB)...")
+        model = AutoModelForCausalLM.from_pretrained(
+            PHI3_MODEL,
+            cache_dir=MODEL_CACHE,
+            token=HF_TOKEN if HF_TOKEN else None,
+            torch_dtype=torch.float16,
+            trust_remote_code=True,
+            low_cpu_mem_usage=True
+        )
+        print("✓ Model downloaded")
+        
+        print(f"\n✓ Cached at: {MODEL_CACHE}")
+        return True
+        
+    except Exception as e:
+        print(f"\n❌ Error downloading model: {e}")
+        print("\nTroubleshooting:")
+        print("  1. Check internet connection")
+        print("  2. Check disk space (~10GB needed)")
+        print("  3. Try again (downloads resume automatically)")
+        return False
+
+# =============================================================================
+# STEP 4: VERIFY PROMPTS
+# =============================================================================
+
+def step4_verify_prompts():
+    """Check that Phase 1 prompts exist"""
+    print("\n" + "="*70)
+    print("STEP 4: VERIFYING PROMPTS")
+    print("="*70)
+    
+    missing = []
+    for prompt_name in PHASE1_PROMPTS:
+        prompt_file = PROMPTS_DIR / f"{prompt_name}.txt"
+        if prompt_file.exists():
+            print(f"✓ {prompt_name}.txt")
+        else:
+            print(f"❌ {prompt_name}.txt - MISSING")
+            missing.append(prompt_name)
+    
+    if missing:
+        print(f"\n⚠️  Missing {len(missing)} prompts!")
+        print(f"  You need to create these files in: {PROMPTS_DIR}/")
+        print(f"  Each prompt should contain '{{essay_text}}' placeholder")
+        return False
+    
+    print(f"\n✓ All {len(PHASE1_PROMPTS)} Phase 1 prompts found")
+    return True
+
+# =============================================================================
+# MAIN
+# =============================================================================
+
+def main():
+    """Run complete setup"""
+    print("="*70)
+    print("ECM3401 PROJECT - ONE-TIME SETUP")
+    print("="*70)
+    
+    print("\nThis will:")
+    print("  1. Validate environment")
+    print("  2. Create sample (100 essays)")
+    print("  3. Download Phi-3-Mini model (~8GB, 10-30 min)")
+    print("  4. Verify prompts exist")
+    
+    input("\nPress Enter to continue (Ctrl+C to cancel)...")
+    
+    # Run all steps
+    steps = [
+        ("Validate", step1_validate),
+        ("Create Sample", step2_create_sample),
+        ("Download Model", step3_download_model),
+        ("Verify Prompts", step4_verify_prompts)
+    ]
+    
+    for i, (name, func) in enumerate(steps, 1):
+        try:
+            success = func()
+            if not success:
+                print(f"\n❌ Setup failed at step {i}: {name}")
+                sys.exit(1)
+        except KeyboardInterrupt:
+            print(f"\n\n⚠️  Setup interrupted at step {i}")
+            sys.exit(1)
+        except Exception as e:
+            print(f"\n❌ Error in step {i} ({name}): {e}")
+            import traceback
+            traceback.print_exc()
+            sys.exit(1)
+    
+    # Success!
+    print("\n" + "="*70)
+    print("✓ SETUP COMPLETE!")
+    print("="*70)
+    
+    print("\nYou're ready to run experiments!")
+    print("\nNext steps:")
+    print("  python run_experiment.py --phase 1")
+    print("\nThis will take 3-5 hours (unattended)")
+
+if __name__ == "__main__":
+    main()
