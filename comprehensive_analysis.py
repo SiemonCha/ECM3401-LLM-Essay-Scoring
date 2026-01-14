@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-COMPREHENSIVE PHASE 1 ANALYSIS
-Runs all essential analyses to understand baseline results
+COMPREHENSIVE ANALYSIS (Phase 1 or Phase 2)
+Runs all essential analyses to understand results
 
 What it does:
 1. Variant Comparison (v1 vs v2 vs v3 accuracy)
@@ -11,7 +11,10 @@ What it does:
 5. CEFR Level Difficulty (context for accuracy)
 6. Cost Analysis (answers RQ5)
 
-Usage: python comprehensive_analysis.py
+Usage: 
+  python comprehensive_analysis.py --phase 1
+  python comprehensive_analysis.py --phase 2
+
 Time: 3-4 minutes
 """
 
@@ -35,8 +38,28 @@ from simple_config import *
 sns.set_style("whitegrid")
 plt.rcParams['figure.dpi'] = 300
 
+# =============================================================================
+# PARSE PHASE ARGUMENT
+# =============================================================================
+
+def parse_phase():
+    """Get phase from command line"""
+    if len(sys.argv) < 3 or sys.argv[1] != '--phase':
+        print("Usage: python comprehensive_analysis.py --phase [1|2]")
+        sys.exit(1)
+    
+    phase = int(sys.argv[2])
+    if phase not in [1, 2]:
+        print("Error: Phase must be 1 or 2")
+        sys.exit(1)
+    
+    return phase
+
+# Get phase
+PHASE = parse_phase()
+
 print("="*70)
-print("COMPREHENSIVE PHASE 1 ANALYSIS")
+print(f"COMPREHENSIVE PHASE {PHASE} ANALYSIS")
 print("="*70)
 print("\nThis script runs 6 essential analyses:")
 print("  1. Variant Comparison (RQ1 evidence)")
@@ -54,8 +77,12 @@ print("="*70)
 
 print("\n[1/7] Loading data...")
 
-results = pd.read_csv(PHASE1_RESULTS)
-metrics = pd.read_csv(PHASE1_METRICS)
+# Phase-aware file paths
+results_file = PHASE1_RESULTS if PHASE == 1 else PHASE2_RESULTS
+metrics_file = PHASE1_METRICS if PHASE == 1 else PHASE2_METRICS
+
+results = pd.read_csv(results_file)
+metrics = pd.read_csv(metrics_file)
 sample = pd.read_csv(SAMPLE_FILE)
 
 print(f"✓ Loaded {len(results):,} predictions")
@@ -125,8 +152,8 @@ for strategy in ['minimal', 'rubric', 'cot']:
             print(f"   {strategy.capitalize()}: VARIABLE (range = {max_diff:.1f}%)")
 
 # Save
-variant_df.to_csv(TABLES_DIR / "analysis_variant_comparison.csv", index=False)
-print("✓ Saved: analysis_variant_comparison.csv")
+variant_df.to_csv(TABLES_DIR / f"phase{PHASE}_analysis_variant_comparison.csv", index=False)
+print(f"✓ Saved: phase{PHASE}_analysis_variant_comparison.csv")
 
 # =============================================================================
 # ANALYSIS 2: CONFUSION MATRIX
@@ -174,9 +201,9 @@ for true_level in CEFR_LEVELS:
 
 # Save
 for model, cm_df in confusion_results.items():
-    cm_df.to_csv(TABLES_DIR / f"analysis_confusion_matrix_{model.replace('-', '_')}.csv")
+    cm_df.to_csv(TABLES_DIR / f"phase{PHASE}_analysis_confusion_matrix_{model.replace('-', '_')}.csv")
 
-print("✓ Saved: analysis_confusion_matrix_*.csv")
+print(f"✓ Saved: phase{PHASE}_analysis_confusion_matrix_*.csv")
 
 # Plot
 fig, axes = plt.subplots(1, 2, figsize=(16, 6))
@@ -190,11 +217,11 @@ for idx, (model, cm_df) in enumerate(confusion_results.items()):
     axes[idx].set_ylabel('True Level')
     axes[idx].set_title(f'{model}')
 
-plt.suptitle('Confusion Matrices - Where Do Errors Occur?', fontsize=14, fontweight='bold')
+plt.suptitle(f'Phase {PHASE}: Confusion Matrices - Where Do Errors Occur?', fontsize=14, fontweight='bold')
 plt.tight_layout()
-plt.savefig(FIGURES_DIR / "analysis_confusion_matrix.png")
+plt.savefig(FIGURES_DIR / f"phase{PHASE}_analysis_confusion_matrix.png")
 plt.close()
-print("✓ Saved: analysis_confusion_matrix.png")
+print(f"✓ Saved: phase{PHASE}_analysis_confusion_matrix.png")
 
 # =============================================================================
 # ANALYSIS 3: ERROR SEVERITY
@@ -254,8 +281,8 @@ for model in results['model'].unique():
     print(f"     Off-by-2+ (severe): {severe:.1f}%")
 
 # Save
-severity_df.to_csv(TABLES_DIR / "analysis_error_severity.csv", index=False)
-print("\n✓ Saved: analysis_error_severity.csv")
+severity_df.to_csv(TABLES_DIR / f"phase{PHASE}_analysis_error_severity.csv", index=False)
+print(f"\n✓ Saved: phase{PHASE}_analysis_error_severity.csv")
 
 # Plot
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -277,16 +304,16 @@ for i, error_type in enumerate(error_types):
 
 ax.set_xlabel('Model')
 ax.set_ylabel('Percentage of Predictions (%)')
-ax.set_title('Error Severity Distribution - Educational Impact')
+ax.set_title(f'Phase {PHASE}: Error Severity Distribution - Educational Impact')
 ax.set_xticks(x + width * 2)
 ax.set_xticklabels(results['model'].unique())
 ax.legend()
 ax.grid(axis='y', alpha=0.3)
 
 plt.tight_layout()
-plt.savefig(FIGURES_DIR / "analysis_error_severity.png")
+plt.savefig(FIGURES_DIR / f"phase{PHASE}_analysis_error_severity.png")
 plt.close()
-print("✓ Saved: analysis_error_severity.png")
+print(f"✓ Saved: phase{PHASE}_analysis_error_severity.png")
 
 # =============================================================================
 # ANALYSIS 4: ESSAY LENGTH EFFECT
@@ -356,8 +383,8 @@ if len(gpt_length) >= 3:
         print(f"   → Length has MINIMAL effect on robustness")
 
 # Save
-length_df.to_csv(TABLES_DIR / "analysis_length_effect.csv", index=False)
-print("\n✓ Saved: analysis_length_effect.csv")
+length_df.to_csv(TABLES_DIR / f"phase{PHASE}_analysis_length_effect.csv", index=False)
+print(f"\n✓ Saved: phase{PHASE}_analysis_length_effect.csv")
 
 # Plot
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
@@ -381,11 +408,11 @@ ax2.set_title('Accuracy by Essay Length')
 ax2.legend()
 ax2.grid(True, alpha=0.3)
 
-plt.suptitle('Essay Length Effect - Potential Confound', fontsize=14, fontweight='bold')
+plt.suptitle(f'Phase {PHASE}: Essay Length Effect - Potential Confound', fontsize=14, fontweight='bold')
 plt.tight_layout()
-plt.savefig(FIGURES_DIR / "analysis_length_effect.png")
+plt.savefig(FIGURES_DIR / f"phase{PHASE}_analysis_length_effect.png")
 plt.close()
-print("✓ Saved: analysis_length_effect.png")
+print(f"✓ Saved: phase{PHASE}_analysis_length_effect.png")
 
 # =============================================================================
 # ANALYSIS 5: CEFR LEVEL DIFFICULTY
@@ -442,8 +469,8 @@ print(f"   Hardest level: {hardest['cefr_level']} ({hardest['accuracy']:.1f}% ac
 print(f"   Range: {easiest['accuracy'] - hardest['accuracy']:.1f} percentage points")
 
 # Save
-difficulty_df.to_csv(TABLES_DIR / "analysis_cefr_difficulty.csv", index=False)
-print("\n✓ Saved: analysis_cefr_difficulty.csv")
+difficulty_df.to_csv(TABLES_DIR / f"phase{PHASE}_analysis_cefr_difficulty.csv", index=False)
+print(f"\n✓ Saved: phase{PHASE}_analysis_cefr_difficulty.csv")
 
 # Plot
 fig, axes = plt.subplots(1, 2, figsize=(14, 6))
@@ -467,11 +494,11 @@ axes[1].set_title('Robustness by CEFR Level')
 axes[1].legend()
 axes[1].grid(True, alpha=0.3)
 
-plt.suptitle('CEFR Level Difficulty - Task Context', fontsize=14, fontweight='bold')
+plt.suptitle(f'Phase {PHASE}: CEFR Level Difficulty - Task Context', fontsize=14, fontweight='bold')
 plt.tight_layout()
-plt.savefig(FIGURES_DIR / "analysis_cefr_difficulty.png")
+plt.savefig(FIGURES_DIR / f"phase{PHASE}_analysis_cefr_difficulty.png")
 plt.close()
-print("✓ Saved: analysis_cefr_difficulty.png")
+print(f"✓ Saved: phase{PHASE}_analysis_cefr_difficulty.png")
 
 # =============================================================================
 # ANALYSIS 6: COST ANALYSIS (RQ5)
@@ -587,8 +614,8 @@ else:
     print(f"\n   ⚠️  Neither model meets strict deployment threshold (SD < 0.3)")
 
 # Save
-cost_df.to_csv(TABLES_DIR / "analysis_cost_effectiveness.csv", index=False)
-print("\n✓ Saved: analysis_cost_effectiveness.csv")
+cost_df.to_csv(TABLES_DIR / f"phase{PHASE}_analysis_cost_effectiveness.csv", index=False)
+print(f"\n✓ Saved: phase{PHASE}_analysis_cost_effectiveness.csv")
 
 # Plot: Cost vs Performance
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
@@ -625,11 +652,11 @@ ax2.set_ylabel('Accuracy (%)')
 ax2.set_title('Cost vs Accuracy Tradeoff')
 ax2.grid(True, alpha=0.3)
 
-plt.suptitle('Cost-Performance Analysis (RQ5)', fontsize=14, fontweight='bold')
+plt.suptitle(f'Phase {PHASE}: Cost-Performance Analysis (RQ5)', fontsize=14, fontweight='bold')
 plt.tight_layout()
-plt.savefig(FIGURES_DIR / "analysis_cost_effectiveness.png")
+plt.savefig(FIGURES_DIR / f"phase{PHASE}_analysis_cost_effectiveness.png")
 plt.close()
-print("✓ Saved: analysis_cost_effectiveness.png")
+print(f"✓ Saved: phase{PHASE}_analysis_cost_effectiveness.png")
 
 # =============================================================================
 # SUMMARY REPORT
@@ -640,7 +667,7 @@ print("GENERATING SUMMARY REPORT")
 print("="*70)
 
 report = []
-report.append("# Comprehensive Phase 1 Analysis Report\n")
+report.append(f"# Comprehensive Phase {PHASE} Analysis Report\n")
 report.append(f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
 report.append("---\n")
 
@@ -759,7 +786,7 @@ report.append("6. **Cost calculated:** Minimal expense for high quality (RQ5) �
 report.append("**Next Steps:** Use these insights to design hypothesis-driven Phase 2 prompts.\n")
 
 # Save report
-report_file = TABLES_DIR / "comprehensive_analysis_report.md"
+report_file = TABLES_DIR / f"phase{PHASE}_comprehensive_analysis_report.md"
 report_file.write_text(''.join(report))
 
 print(f"\n✓ Generated comprehensive report")
@@ -774,20 +801,20 @@ print("="*70)
 
 print("\n📁 Generated Files:")
 print("\n  📊 Tables (7 files):")
-print("     - analysis_variant_comparison.csv")
-print("     - analysis_confusion_matrix_*.csv (2 files)")
-print("     - analysis_error_severity.csv")
-print("     - analysis_length_effect.csv")
-print("     - analysis_cefr_difficulty.csv")
-print("     - analysis_cost_effectiveness.csv")
-print("     - comprehensive_analysis_report.md")
+print(f"     - phase{PHASE}_analysis_variant_comparison.csv")
+print(f"     - phase{PHASE}_analysis_confusion_matrix_*.csv (2 files)")
+print(f"     - phase{PHASE}_analysis_error_severity.csv")
+print(f"     - phase{PHASE}_analysis_length_effect.csv")
+print(f"     - phase{PHASE}_analysis_cefr_difficulty.csv")
+print(f"     - phase{PHASE}_analysis_cost_effectiveness.csv")
+print(f"     - phase{PHASE}_comprehensive_analysis_report.md")
 
 print("\n  📈 Plots (5 files):")
-print("     - analysis_confusion_matrix.png")
-print("     - analysis_error_severity.png")
-print("     - analysis_length_effect.png")
-print("     - analysis_cefr_difficulty.png")
-print("     - analysis_cost_effectiveness.png")
+print(f"     - phase{PHASE}_analysis_confusion_matrix.png")
+print(f"     - phase{PHASE}_analysis_error_severity.png")
+print(f"     - phase{PHASE}_analysis_length_effect.png")
+print(f"     - phase{PHASE}_analysis_cefr_difficulty.png")
+print(f"     - phase{PHASE}_analysis_cost_effectiveness.png")
 
 print("\n" + "="*70)
 print("THESIS IMPACT")
@@ -800,5 +827,5 @@ print("  ✅ Educational context (severity analysis)")
 print("  ✅ Methodological rigor (confound checks)")
 print("  ✅ Practical insights (cost analysis, RQ5)")
 
-print("\n💡 Use the comprehensive_analysis_report.md for your thesis discussion!")
+print("\n💡 Use the phase{PHASE}_comprehensive_analysis_report.md for your thesis discussion!")
 print("="*70)
