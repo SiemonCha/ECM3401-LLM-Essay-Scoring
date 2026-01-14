@@ -1,5 +1,13 @@
-Classify the CEFR level of this essay as A2, B1, B2, C1, or C2.
+Classify the CEFR proficiency level of this essay. Consider linguistic complexity, not essay length.
 
+CRITICAL: Do not default to B1. Look for specific markers:
+- B2 requires: complex subordination AND hypothetical constructions
+- C1 requires: sophisticated argumentation AND register control
+- C2 requires: near-native idiom use AND pragmatic nuance
+
+If features span two adjacent levels, choose the higher level.
+
+Essay:
 {essay_text}
 
-CEFR Level:
+Return only the CEFR level: A2, B1, B2, C1, or C2

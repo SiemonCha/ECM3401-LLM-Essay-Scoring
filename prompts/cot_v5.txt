@@ -1,14 +1,34 @@
-Classify this essay's CEFR level through careful reasoning.
+Evaluate CEFR proficiency using systematic reasoning. KEY PRINCIPLE: Proficiency = linguistic complexity, NOT text length.
 
-Essay: {essay_text}
+ANALYSIS SEQUENCE:
 
-Analyze: vocabulary, grammar, coherence, and fluency.
+Phase 1 - GRAMMATICAL COMPLEXITY (Independent of length):
+- Tense system: limited (A2) vs. full range (B2+)?
+- Clause structure: coordination only or complex embedding?
+- Modal/conditional use: absent, present, or sophisticated?
 
-Important constraints:
-- Very short essays (<50 words) are typically A2-B1, rarely C1-C2
-- Very long essays (>250 words) are typically B2-C2, rarely A2
-- Adjacent levels (e.g., B1 and B2) are acceptable; distant levels (e.g., A2 and C1) are unlikely
+Phase 2 - LEXICAL ANALYSIS (Quality over quantity):
+- Vocabulary: survival, functional, or specialized?
+- Word choice: generic (B1) or precise (C1)?
+- Idiomatic/colloquial language present?
 
-After analysis, what is the CEFR level?
+Phase 3 - DISCOURSE CAPACITY (Structure vs. length):
+- Cohesion method: explicit linkers or implicit flow?
+- Argumentation: simple listing or developed reasoning?
+- Register variation: fixed or flexibly controlled?
 
-CEFR Level:
+Phase 4 - ADVANCED FEATURE CHECK (Prevent under-prediction):
+- B2 indicators: Does text show subordination complexity + hypotheticals + abstract concepts?
+- C1 indicators: Does text show register control + sophisticated reasoning + cohesive discourse?
+- C2 indicators: Does text show idiomatic authenticity + pragmatic subtlety?
+- WARNING: Don't default to B1 if these exist!
+
+Phase 5 - CLASSIFICATION (Feature presence determines level):
+When features suggest adjacent levels, select the more advanced.
+Brevity with complexity = high proficiency.
+Length without complexity = low proficiency.
+
+Essay text:
+{essay_text}
+
+Conclude with ONLY: A2, B1, B2, C1, or C2

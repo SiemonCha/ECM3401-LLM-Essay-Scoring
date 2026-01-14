@@ -1,15 +1,42 @@
-Classify this essay's CEFR level using these criteria:
+Classify this essay using the CEFR framework. Essay length does not indicate proficiency level.
 
-A2: Simple sentences, basic vocabulary, frequent errors (50-100 words typical)
-B1: Some complex structures, everyday vocabulary, some errors (100-150 words typical)
-B2: Generally accurate, varied structures, good vocabulary (150-250 words typical)
-C1: Sophisticated structures, wide vocabulary, rare errors (250+ words typical)
-C2: Near-native fluency, precise language, virtually error-free (250+ words typical)
+RUBRIC - Identify PRESENCE of features, not absence of errors:
 
-Example A2: "I like play football. My friend is good."
-Example B2: "Although football requires skill, I enjoy playing it because it promotes teamwork."
-Example C2: "The intricacies of the sport notwithstanding, I find it intellectually stimulating."
+A2 (Basic User):
+- Simple present/past tense
+- Basic vocabulary (<1000 words)
+- Simple sentence structures
+- Frequent errors that impede communication
 
-Essay: {essay_text}
+B1 (Intermediate):
+- Consistent tense use (past/present/future)
+- Intermediate vocabulary
+- Some subordination (because, when, although)
+- Errors don't block understanding
 
-CEFR Level:
+B2 (Upper-Intermediate):
+- Complex subordination (relative clauses, conditionals)
+- Hypothetical constructions (would/could/might)
+- Abstract concept discussion
+- Advanced vocabulary in context
+- ⚠️ NOT just "fewer errors than B1"
+
+C1 (Advanced):
+- Sophisticated argumentation
+- Register control (formal/informal switching)
+- Precise lexical choice
+- Cohesive discourse markers
+- ⚠️ NOT just "longer B2 essay"
+
+C2 (Proficient):
+- Near-native idiomatic use
+- Pragmatic nuance (implicature, tone)
+- Effortless complex expression
+- ⚠️ NOT just "no errors"
+
+CLASSIFICATION RULE: Assign the HIGHEST level where features are consistently present. Short essays CAN demonstrate C-level proficiency through feature density.
+
+Essay:
+{essay_text}
+
+Return only: A2, B1, B2, C1, or C2

@@ -1,11 +1,42 @@
-Classify this essay's CEFR level using these criteria:
+Evaluate this essay's CEFR level. Note: Length and proficiency are independent variables.
 
-A2: Simple sentences, basic vocabulary, frequent errors
-B1: Some complex structures, everyday vocabulary, some errors
-B2: Generally accurate, varied structures, good vocabulary
-C1: Sophisticated structures, wide vocabulary, rare errors
-C2: Near-native fluency, precise language, virtually error-free
+ASSESSMENT CRITERIA - Look for linguistic markers, not superficial attributes:
 
-Essay: {essay_text}
+A2 (Elementary):
+- Present/past tense only
+- Survival vocabulary
+- Minimal sentence complexity
+- Communication breakdown common
 
-Provide ONLY the CEFR level. If you are uncertain between two adjacent levels, output the lower level.
+B1 (Threshold):
+- Multi-tense control
+- Functional vocabulary range
+- Basic connectors (and, but, because)
+- Generally comprehensible despite errors
+
+B2 (Vantage):
+- Subordinate clause complexity
+- Hypothetical/conditional forms
+- Abstract reasoning capacity
+- Topic-specific vocabulary precision
+- ⚠️ Defined by PRESENCE of complex structures, not error reduction
+
+C1 (Effective Operational):
+- Argumentative sophistication
+- Flexible register adaptation
+- Fine lexical distinctions
+- Implicit discourse organization
+- ⚠️ Complexity evident even in brief texts
+
+C2 (Mastery):
+- Idiomatic authenticity
+- Pragmatic sophistication
+- Spontaneous complex production
+- ⚠️ Native-like quality, not perfection
+
+DECISION PROTOCOL: Classify at the highest level where characteristic features appear reliably. A 150-word essay may demonstrate C1 proficiency if markers are dense.
+
+Essay text:
+{essay_text}
+
+Output format: A2, B1, B2, C1, or C2

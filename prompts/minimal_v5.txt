@@ -1,5 +1,13 @@
-Classify this essay's CEFR level. Consider essay length as a proficiency indicator.
+Determine this essay's CEFR level based on linguistic features, independent of length.
 
-Essay: {essay_text}
+IMPORTANT: Avoid middle-level bias. Identify advanced proficiency markers:
+- B2: Complex clauses with hypotheticals and abstract reasoning
+- C1: Nuanced register shifts and sophisticated discourse structure
+- C2: Native-like control with idiomatic precision and pragmatic subtlety
 
-CEFR Level:
+When uncertain between adjacent levels, prefer the more advanced classification.
+
+Essay text:
+{essay_text}
+
+Output the single CEFR level: A2, B1, B2, C1, or C2

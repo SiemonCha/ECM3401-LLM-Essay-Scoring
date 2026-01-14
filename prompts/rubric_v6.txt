@@ -1,13 +1,42 @@
-Classify this essay's CEFR level using these criteria:
+Determine CEFR proficiency level for this essay. Remember: Word count ≠ proficiency level.
 
-A2: Simple sentences, basic vocabulary, frequent errors
-B1: Some complex structures, everyday vocabulary, some errors (Note: Often overlaps with A2 and B2)
-B2: Generally accurate, varied structures, good vocabulary (Note: Often overlaps with B1 and C1)
-C1: Sophisticated structures, wide vocabulary, rare errors (Note: Often overlaps with B2 and C2)
-C2: Near-native fluency, precise language, virtually error-free
+EVALUATION FRAMEWORK - Feature presence indicates level, not text length:
 
-Note: Adjacent levels often overlap. Choose the level that best fits overall, knowing perfect classification is difficult.
+A2 (Waystage):
+- Simple verb forms only
+- Basic lexical range
+- Juxtaposed simple clauses
+- Meaning often unclear
 
-Essay: {essay_text}
+B1 (Intermediate):
+- Verb tense variety
+- Everyday vocabulary
+- Elementary subordination
+- Message generally clear
 
-CEFR Level:
+B2 (Upper-Intermediate):
+- Complex clause embedding
+- Modal/conditional sophistication
+- Abstract topic handling
+- Specialized vocabulary deployment
+- ⚠️ Complexity PRESENT, not errors ABSENT
+
+C1 (Advanced):
+- Discourse-level sophistication
+- Register-appropriate lexis
+- Nuanced argument development
+- Cohesion through implicit means
+- ⚠️ Quality evident in any length text
+
+C2 (Proficient):
+- Colloquial authenticity
+- Pragmatic interpretation skill
+- Unrestricted linguistic flexibility
+- ⚠️ Near-native intuition, regardless of accuracy
+
+ASSIGNMENT PRINCIPLE: Identify the highest level where defining features occur consistently. Advanced proficiency can be demonstrated concisely through feature density rather than elaboration.
+
+Essay:
+{essay_text}
+
+Respond with: A2, B1, B2, C1, or C2

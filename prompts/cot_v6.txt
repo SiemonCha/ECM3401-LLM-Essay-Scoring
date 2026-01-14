@@ -1,13 +1,34 @@
-Classify this essay's CEFR level using ordinal reasoning.
+Assess CEFR level through methodical analysis. CRITICAL: Length and proficiency are independent dimensions.
 
-Essay: {essay_text}
+EVALUATION STEPS:
 
-CEFR levels are ordered: A2 < B1 < B2 < C1 < C2
+Stage 1 - SYNTACTIC EXAMINATION (Complexity ≠ length):
+- Verb morphology: basic forms or full paradigm including modals?
+- Sentence architecture: simple/compound or complex subordination?
+- Structural sophistication evident regardless of essay length?
 
-Analyze the essay and determine its level. Remember:
-- Being off by 1 level (e.g., predicting B1 when true level is B2) is acceptable
-- Being off by 2+ levels (e.g., predicting A2 when true level is B2) is a serious error
+Stage 2 - LEXICAL EVALUATION (Precision over size):
+- Semantic range: concrete only or including abstract concepts?
+- Lexical precision: approximate or exact meaning?
+- Authentic idiom/collocation use?
 
-Consider: Is this essay closer to beginner (A2) or proficient (C2)? Then refine to exact level.
+Stage 3 - DISCOURSE ASSESSMENT (Quality over quantity):
+- Textual cohesion: conjunctions (B1) or implicit links (C1)?
+- Rhetorical development: enumeration or argumentation?
+- Register management: fixed or situationally appropriate?
 
-CEFR Level:
+Stage 4 - LEVEL-SPECIFIC DIAGNOSTICS (Avoid B1 bias):
+- B2 requirements: Complex subordination + conditionals + abstraction capacity
+- C1 requirements: Register flexibility + argumentative depth + discourse-level control
+- C2 requirements: Native-like idiom + pragmatic awareness
+- ALERT: If present, do NOT assign B1 by default!
+
+Stage 5 - FINAL DETERMINATION (Feature-driven):
+Between adjacent levels with mixed features, assign higher level.
+Concise but complex text indicates advanced proficiency.
+Elaborate but simple text indicates intermediate proficiency.
+
+Essay:
+{essay_text}
+
+Final output ONLY: A2, B1, B2, C1, or C2

@@ -1,11 +1,34 @@
-Classify this essay's CEFR level through structured analysis.
+Classify this essay's CEFR level through structured analysis. IMPORTANT: Essay length is NOT a proficiency indicator.
 
-Essay: {essay_text}
+REASONING PROTOCOL:
 
-Follow these exact steps:
-Step 1: Count sentences (1-3 = likely A2/B1; 4-8 = likely B2/C1; 9+ = likely C1/C2)
-Step 2: Identify complex structures (subordination, passive voice, participles)
-Step 3: Assess vocabulary sophistication (basic/everyday/academic/specialized)
-Step 4: Determine CEFR level based on Steps 1-3
+Step 1 - MORPHOSYNTAX (Don't assume length = complexity):
+- What verb forms appear? (simple vs. complex tenses, modals, conditionals)
+- What sentence structures? (simple, compound, complex subordination)
+- Is complexity present regardless of essay length?
 
-CEFR Level:
+Step 2 - LEXICAL SOPHISTICATION (Not vocabulary size):
+- Academic/abstract terms used?
+- Precise lexical choice vs. generic terms?
+- Idiomatic or colloquial expressions?
+
+Step 3 - DISCOURSE FEATURES (Not just organization):
+- Cohesion: explicit connectors (B1) vs. implicit flow (C1)?
+- Argumentation: listing (B1) vs. developed reasoning (B2+)?
+- Register: consistent formal/informal control?
+
+Step 4 - DIAGNOSTIC MARKERS (Anti-bias check):
+- B2 MUST have: complex subordination + hypotheticals + abstraction
+- C1 MUST have: register control + sophisticated argument + discourse cohesion
+- C2 MUST have: idiomatic fluency + pragmatic nuance
+- Avoid B1 default if these features present!
+
+Step 5 - LEVEL DECISION (Feature-based):
+If uncertain between adjacent levels, choose HIGHER if features present.
+Short essays with dense complex features = advanced proficiency.
+Long essays with simple features = intermediate proficiency.
+
+Essay:
+{essay_text}
+
+After reasoning, output ONLY the final level: A2, B1, B2, C1, or C2

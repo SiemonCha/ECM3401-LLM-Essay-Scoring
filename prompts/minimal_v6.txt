@@ -1,6 +1,13 @@
-Classify this essay's CEFR level: A2, B1, B2, C1, or C2.
-Note: These levels are ordered from beginner (A2) to proficient (C2). Avoid large jumps.
+Assess the CEFR proficiency demonstrated in this essay. Focus on syntactic and lexical sophistication, not text length.
 
-Essay: {essay_text}
+ESSENTIAL: Resist intermediate-level default. Advanced learners show:
+- B2: Subordination complexity, hypothetical constructions, abstract concepts
+- C1: Register awareness, argumentative sophistication, discourse cohesion
+- C2: Idiomatic fluency, pragmatic control, near-native expression
 
-CEFR Level:
+Between adjacent levels, select the higher proficiency when features are present.
+
+Essay:
+{essay_text}
+
+Respond with only: A2, B1, B2, C1, or C2
