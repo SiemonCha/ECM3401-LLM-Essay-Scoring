@@ -4,7 +4,7 @@ COMPREHENSIVE ANALYSIS (Phase 1 or Phase 2)
 Runs all essential analyses to understand results
 
 What it does:
-1. Variant Comparison (v1 vs v2 vs v3 accuracy)
+1. Variant Comparison (Phase 1: v1/v2/v3, Phase 2: v4/v5/v6)
 2. Confusion Matrix (which levels get confused)
 3. Error Severity (off-by-N analysis)
 4. Essay Length Effect (confound check)
@@ -98,9 +98,12 @@ print("-" * 70)
 
 variant_results = []
 
+# Phase-aware variant selection
+variants = ['v1', 'v2', 'v3'] if PHASE == 1 else ['v4', 'v5', 'v6']
+
 for model in results['model'].unique():
     for strategy in results['strategy'].unique():
-        for variant in ['v1', 'v2', 'v3']:
+        for variant in variants:
             subset = results[(results['model'] == model) & 
                            (results['strategy'] == strategy) & 
                            (results['variant'] == variant)]
@@ -130,6 +133,11 @@ for model in results['model'].unique():
 
 variant_df = pd.DataFrame(variant_results)
 
+
+print("variant_df columns:", variant_df.columns.tolist())
+print("variant_df head:\n", variant_df.head())
+
+
 # Print findings
 print("\nVariant Accuracy Comparison (GPT-4o-mini):")
 gpt_variants = variant_df[variant_df['model'] == 'gpt-4o-mini']
@@ -141,10 +149,9 @@ print("\n📊 Key Finding:")
 for strategy in ['minimal', 'rubric', 'cot']:
     strat_data = gpt_variants[gpt_variants['strategy'] == strategy]
     if len(strat_data) >= 3:
-        v1 = strat_data[strat_data['variant'] == 'v1']['accuracy'].values[0]
-        v2 = strat_data[strat_data['variant'] == 'v2']['accuracy'].values[0]
-        v3 = strat_data[strat_data['variant'] == 'v3']['accuracy'].values[0]
-        max_diff = max(v1, v2, v3) - min(v1, v2, v3)
+        accuracies = [strat_data[strat_data['variant'] == v]['accuracy'].values[0] for v in variants]
+        v1, v2, v3 = accuracies[0], accuracies[1], accuracies[2]
+        max_diff = max(accuracies) - min(accuracies)
         
         if max_diff < 3.0:
             print(f"   {strategy.capitalize()}: CONSISTENT (range = {max_diff:.1f}%)")
@@ -679,11 +686,11 @@ gpt_var = variant_df[variant_df['model'] == 'gpt-4o-mini']
 for strategy in ['minimal', 'rubric', 'cot']:
     strat_data = gpt_var[gpt_var['strategy'] == strategy]
     if len(strat_data) >= 3:
-        v1 = strat_data[strat_data['variant'] == 'v1']['accuracy'].values[0]
-        v2 = strat_data[strat_data['variant'] == 'v2']['accuracy'].values[0]
-        v3 = strat_data[strat_data['variant'] == 'v3']['accuracy'].values[0]
-        max_diff = max(v1, v2, v3) - min(v1, v2, v3)
-        report.append(f"- **{strategy.capitalize()}:** v1={v1:.1f}%, v2={v2:.1f}%, v3={v3:.1f}% (range={max_diff:.1f}%)\n")
+        accuracies = [strat_data[strat_data['variant'] == v]['accuracy'].values[0] for v in variants]
+        v1, v2, v3 = accuracies[0], accuracies[1], accuracies[2]
+        max_diff = max(accuracies) - min(accuracies)
+        v_names = '/'.join(variants)
+        report.append(f"- **{strategy.capitalize()}:** {variants[0]}={v1:.1f}%, {variants[1]}={v2:.1f}%, {variants[2]}={v3:.1f}% (range={max_diff:.1f}%)\n")
 
 report.append("\n**Interpretation:** GPT-4o-mini variants are highly consistent (range <3%), demonstrating true semantic robustness.\n")
 report.append("\n---\n")
