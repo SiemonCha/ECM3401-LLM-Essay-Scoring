@@ -8,6 +8,82 @@
 
 ---
 
+## Table of Contents
+
+**[Abstract](#abstract)**
+
+**[1. Introduction](#1-introduction)**
+- [1.1 Context and Motivation](#11-context-and-motivation)
+- [1.2 Research Gap](#12-research-gap)
+- [1.3 Research Questions](#13-research-questions)
+- [1.4 Contributions](#14-contributions)
+
+**[2. Literature Review](#2-literature-review)**
+- [2.1 Automated Essay Scoring: Evolution and Current State](#21-automated-essay-scoring-evolution-and-current-state)
+- [2.2 CEFR Assessment and Linguistic Features](#22-cefr-assessment-and-linguistic-features)
+- [2.3 Prompt Sensitivity in Large Language Models](#23-prompt-sensitivity-in-large-language-models)
+- [2.4 Gap in Current Literature](#24-gap-in-current-literature)
+
+**[3. Methodology](#3-methodology)**
+- [3.1 Experimental Design Overview](#31-experimental-design-overview)
+- [3.2 Dataset: Write & Improve Corpus](#32-dataset-write--improve-corpus)
+- [3.3 Sample Selection: Stratified Random Sampling](#33-sample-selection-stratified-random-sampling)
+- [3.4 Model Selection](#34-model-selection)
+- [3.5 Prompt Engineering: Three Strategies](#35-prompt-engineering-three-strategies)
+- [3.6 Paraphrase Generation: Phase 1](#36-paraphrase-generation-phase-1)
+- [3.7 Hypothesis-Driven Modifications: Phase 2](#37-hypothesis-driven-modifications-phase-2)
+- [3.8 Experimental Procedure](#38-experimental-procedure)
+- [3.9 Evaluation Metrics](#39-evaluation-metrics)
+- [3.10 Statistical Analysis](#310-statistical-analysis)
+- [3.11 Ethical Considerations](#311-ethical-considerations)
+
+**[4. Results](#4-results)** ⭐ *Main Findings*
+- [4.1 Phase 1: Baseline Robustness](#41-phase-1-baseline-robustness)
+  - [4.1.1 Overall Performance](#411-overall-performance)
+  - [4.1.2 Robustness by Strategy (RQ2)](#412-robustness-by-strategy-rq2)
+  - [4.1.3 Critical Discovery: Severe B1 Bias](#413-critical-discovery-severe-b1-bias)
+  - [4.1.4 Length Confound Discovery](#414-length-confound-discovery)
+  - [4.1.5 Variant Comparison (Direct RQ1 Evidence)](#415-variant-comparison-direct-rq1-evidence)
+  - [4.1.6 Error Severity Analysis](#416-error-severity-analysis)
+  - [4.1.7 Cost Analysis (RQ5)](#417-cost-analysis-rq5)
+- [4.2 Phase 2: Hypothesis-Driven Improvements](#42-phase-2-hypothesis-driven-improvements)
+  - [4.2.1 Overall Performance Comparison](#421-overall-performance-comparison)
+  - [4.2.2 Strategy-Level Phase Comparison](#422-strategy-level-phase-comparison)
+  - [4.2.3 B1 Bias Improvement](#423-b1-bias-improvement)
+  - [4.2.4 Critical Failures Analysis](#424-critical-failures-analysis)
+  - [4.2.5 Counterintuitive Finding: Length Sensitivity Worsened](#425-counterintuitive-finding-length-sensitivity-worsened)
+- [4.3 Model Architecture Comparison (RQ4)](#43-model-architecture-comparison-rq4)
+- [4.4 Summary of Key Findings](#44-summary-of-key-findings)
+
+**[5. Discussion](#5-discussion)**
+- [5.1 Semantic Robustness: A New Evaluation Paradigm](#51-semantic-robustness-a-new-evaluation-paradigm)
+- [5.2 The B1 Bias Problem: Architectural or Prompt-Based?](#52-the-b1-bias-problem-architectural-or-prompt-based)
+- [5.3 Prompt Engineering Brittleness](#53-prompt-engineering-brittleness)
+- [5.4 The Counterintuitive Length Effect](#54-the-counterintuitive-length-effect)
+- [5.5 Model Capacity and Instruction Following](#55-model-capacity-and-instruction-following)
+- [5.6 Educational Implications](#56-educational-implications)
+- [5.7 Cost-Performance Tradeoffs](#57-cost-performance-tradeoffs)
+- [5.8 Limitations and Boundary Conditions](#58-limitations-and-boundary-conditions)
+- [5.9 Comparison to Prior Work](#59-comparison-to-prior-work)
+
+**[6. Conclusion](#6-conclusion)**
+- [6.1 Summary of Contributions](#61-summary-of-contributions)
+- [6.2 Answers to Research Questions](#62-answers-to-research-questions)
+- [6.3 Practical Recommendations](#63-practical-recommendations)
+- [6.4 Future Research Directions](#64-future-research-directions)
+- [6.5 Limitations as Opportunities](#65-limitations-as-opportunities)
+- [6.6 Final Reflection](#66-final-reflection)
+
+**[References](#references)**
+
+**[Appendices](#appendices)**
+- [Appendix A: Sample Essay Statistics](#appendix-a-sample-essay-statistics)
+- [Appendix B: Prompt Templates](#appendix-b-prompt-templates)
+- [Appendix C: Detailed Confusion Matrices](#appendix-c-detailed-confusion-matrices)
+- [Appendix D: Cost Calculation Details](#appendix-d-cost-calculation-details)
+
+---
+
 ## Abstract
 
 Automated essay scoring (AES) using large language models (LLMs) has achieved accuracy comparable to human raters, yet no prior study has measured reliability across semantically equivalent prompt variations. This research addresses a critical gap: while 49 existing studies report average accuracy for LLM essay scoring, none measure consistency when prompts are paraphrased. We establish deployment-ready robustness thresholds (SD <0.5) and develop cost-reliability frameworks accounting for human oversight requirements when LLM predictions are inconsistent.
