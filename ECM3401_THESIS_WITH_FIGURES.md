@@ -13,18 +13,21 @@
 **[Abstract](#abstract)**
 
 **[1. Introduction](#1-introduction)**
+
 - [1.1 Context and Motivation](#11-context-and-motivation)
 - [1.2 Research Gap](#12-research-gap)
 - [1.3 Research Questions](#13-research-questions)
 - [1.4 Contributions](#14-contributions)
 
 **[2. Literature Review](#2-literature-review)**
+
 - [2.1 Automated Essay Scoring: Evolution and Current State](#21-automated-essay-scoring-evolution-and-current-state)
 - [2.2 CEFR Assessment and Linguistic Features](#22-cefr-assessment-and-linguistic-features)
 - [2.3 Prompt Sensitivity in Large Language Models](#23-prompt-sensitivity-in-large-language-models)
 - [2.4 Gap in Current Literature](#24-gap-in-current-literature)
 
 **[3. Methodology](#3-methodology)**
+
 - [3.1 Experimental Design Overview](#31-experimental-design-overview)
 - [3.2 Dataset: Write & Improve Corpus](#32-dataset-write--improve-corpus)
 - [3.3 Sample Selection: Stratified Random Sampling](#33-sample-selection-stratified-random-sampling)
@@ -37,7 +40,8 @@
 - [3.10 Statistical Analysis](#310-statistical-analysis)
 - [3.11 Ethical Considerations](#311-ethical-considerations)
 
-**[4. Results](#4-results)** ⭐ *Main Findings*
+**[4. Results](#4-results)**
+
 - [4.1 Phase 1: Baseline Robustness](#41-phase-1-baseline-robustness)
   - [4.1.1 Overall Performance](#411-overall-performance)
   - [4.1.2 Robustness by Strategy (RQ2)](#412-robustness-by-strategy-rq2)
@@ -56,6 +60,7 @@
 - [4.4 Summary of Key Findings](#44-summary-of-key-findings)
 
 **[5. Discussion](#5-discussion)**
+
 - [5.1 Semantic Robustness: A New Evaluation Paradigm](#51-semantic-robustness-a-new-evaluation-paradigm)
 - [5.2 The B1 Bias Problem: Architectural or Prompt-Based?](#52-the-b1-bias-problem-architectural-or-prompt-based)
 - [5.3 Prompt Engineering Brittleness](#53-prompt-engineering-brittleness)
@@ -67,6 +72,7 @@
 - [5.9 Comparison to Prior Work](#59-comparison-to-prior-work)
 
 **[6. Conclusion](#6-conclusion)**
+
 - [6.1 Summary of Contributions](#61-summary-of-contributions)
 - [6.2 Answers to Research Questions](#62-answers-to-research-questions)
 - [6.3 Practical Recommendations](#63-practical-recommendations)
@@ -77,6 +83,7 @@
 **[References](#references)**
 
 **[Appendices](#appendices)**
+
 - [Appendix A: Sample Essay Statistics](#appendix-a-sample-essay-statistics)
 - [Appendix B: Prompt Templates](#appendix-b-prompt-templates)
 - [Appendix C: Detailed Confusion Matrices](#appendix-c-detailed-confusion-matrices)
@@ -121,19 +128,19 @@ This research establishes semantic robustness as a core evaluation metric for LL
 ### 1.3 Research Questions
 
 **RQ1 (Primary):** Are LLM CEFR predictions robust to prompt paraphrasing?  
-*Hypothesis:* SD across variants <0.5 indicates deployment-ready robustness
+_Hypothesis:_ SD across variants <0.5 indicates deployment-ready robustness
 
 **RQ2:** Does prompt complexity affect robustness?  
-*Hypothesis:* Structured prompts (rubric-based, chain-of-thought) show lower variance than minimal prompts
+_Hypothesis:_ Structured prompts (rubric-based, chain-of-thought) show lower variance than minimal prompts
 
 **RQ3:** Can hypothesis-driven prompt modifications improve robustness?  
-*Hypothesis:* Targeted interventions addressing identified biases reduce prediction variance while maintaining accuracy
+_Hypothesis:_ Targeted interventions addressing identified biases reduce prediction variance while maintaining accuracy
 
 **RQ4:** Does model architecture affect robustness?  
-*Hypothesis:* Larger commercial models (GPT-4o-mini) demonstrate greater robustness than smaller open-source models (Phi-3-mini)
+_Hypothesis:_ Larger commercial models (GPT-4o-mini) demonstrate greater robustness than smaller open-source models (Phi-3-mini)
 
 **RQ5:** What is the cost-robustness tradeoff for deployment?  
-*Hypothesis:* Commercial APIs provide acceptable robustness at negligible cost (<$0.001/essay) compared to local model infrastructure
+_Hypothesis:_ Commercial APIs provide acceptable robustness at negligible cost (<$0.001/essay) compared to local model infrastructure
 
 ### 1.4 Contributions
 
@@ -201,11 +208,13 @@ This research fills this gap by establishing semantic robustness as a core evalu
 This research employs a two-phase experimental design to measure semantic robustness and test hypothesis-driven improvements. Phase 1 establishes baseline robustness across true paraphrases (semantically identical prompt variations), while Phase 2 tests targeted interventions addressing systematic errors identified in Phase 1.
 
 **Phase 1: Baseline Robustness Measurement**
+
 - 2 models × 3 prompt strategies × 3 paraphrases = 18 configurations
 - 100 essays × 18 configurations = 1,800 predictions
 - Purpose: Measure variance across semantically equivalent prompts (RQ1, RQ2, RQ4)
 
 **Phase 2: Hypothesis-Driven Intervention**
+
 - Same experimental structure with modified prompts (v4-v6)
 - Purpose: Test whether targeted modifications reduce identified biases (RQ3)
 
@@ -221,6 +230,7 @@ The Write & Improve corpus (Bryant et al., 2023) contains 23,216 learner essays 
 For this study, we used only final versions with human-annotated CEFR levels from train/dev splits (N=4,546 usable essays after filtering). This ensures predictions are compared against stable expert judgments rather than in-progress drafts.
 
 **CEFR Distribution (after combining + levels):**
+
 ```
 A2:    972 essays (21.4%)
 B1:  1,807 essays (39.7%)
@@ -236,17 +246,20 @@ We excluded A1 essays (N=10) due to insufficient sample size for stratification.
 To ensure balanced representation across proficiency levels despite class imbalance, we employed stratified random sampling:
 
 **Sample Size:** N=100 essays (20 per CEFR level)  
-**Rationale:** 
+**Rationale:**
+
 - Sufficient for robustness measurement (3 paraphrases × 100 = 300 predictions per model)
 - Computationally feasible (1,800 total predictions per phase)
 - Balanced across levels (prevents level frequency from dominating metrics)
 
 **Sampling Procedure:**
+
 1. Combined + modifiers with base levels (e.g., B1+ → B1) to increase stratum sizes
 2. Randomly selected 20 essays per level using fixed seed (42) for reproducibility
 3. Verified length distribution: short (50-100 words), medium (100-200), long (200+)
 
 **Length Distribution in Sample:**
+
 ```
 Short  (<100w):  24 essays (24%)
 Medium (100-200): 29 essays (29%)
@@ -258,18 +271,21 @@ This distribution matches corpus-level patterns, ensuring length is not confound
 ### 3.4 Model Selection
 
 **Commercial Model: GPT-4o-mini**
+
 - Size: ~8B parameters (estimated)
 - Provider: OpenAI API
 - Cost: $0.150/1M input tokens, $0.600/1M output tokens
 - Rationale: Current state-of-the-art for cost-effective commercial deployment
 
 **Open-Source Model: Phi-3-mini**
+
 - Size: 3.8B parameters
 - Provider: Microsoft (via Hugging Face)
 - Cost: $0 marginal cost (local inference)
 - Rationale: Represents resource-constrained deployment scenario
 
 **Critical Configuration:**
+
 - **Temperature:** 0.0 (deterministic sampling)
 - **Max tokens:** 50 (sufficient for single CEFR level output)
 - **Rationale:** Temperature=0 ensures variance is purely from prompt paraphrasing, not stochastic sampling
@@ -277,18 +293,21 @@ This distribution matches corpus-level patterns, ensuring length is not confound
 ### 3.5 Prompt Engineering: Three Strategies
 
 **Strategy 1: Minimal (Baseline)**
+
 - Single instruction sentence
 - No structured guidance
 - Example: "Classify this essay's CEFR level: A2, B1, B2, C1, or C2"
 - Purpose: Establish lower bound for robustness
 
 **Strategy 2: Rubric-Based**
+
 - CEFR descriptor summaries for each level
 - Explicit feature lists (grammar, vocabulary, discourse)
 - Example criteria: "B2: Complex subordination, hypotheticals, abstract concepts"
 - Purpose: Test whether structured guidance improves consistency
 
 **Strategy 3: Chain-of-Thought (CoT)**
+
 - Multi-step reasoning protocol
 - Explicit analysis stages (syntax → lexis → discourse → decision)
 - Example: "Step 1: Analyze grammatical complexity... Step 5: Final classification"
@@ -299,6 +318,7 @@ This distribution matches corpus-level patterns, ensuring length is not confound
 Phase 1 variants (v1-v3) are semantically identical paraphrases:
 
 **Example - Minimal Strategy:**
+
 ```
 v1: "Classify this essay's CEFR level"
 v2: "Determine the CEFR proficiency demonstrated in this essay"
@@ -306,12 +326,14 @@ v3: "Assess the CEFR proficiency level shown in this writing"
 ```
 
 **Paraphrase Constraints:**
+
 - Preserve core instruction (classify CEFR level)
 - Vary only lexical choice and syntactic structure
 - No content additions or removals
 - Verified semantic equivalence through back-translation
 
 **Generation Method:**
+
 1. Manual paraphrasing by researcher
 2. Validation: Each variant tested on pilot essays
 3. Confirmed: Different variants produce same human classification
@@ -321,21 +343,25 @@ v3: "Assess the CEFR proficiency level shown in this writing"
 Phase 2 prompts (v4-v6) incorporate targeted interventions based on Phase 1 findings:
 
 **Finding 1: Severe B1 Bias**
+
 - Phase 1 Result: 85% B1 accuracy, 0% C1/C2 accuracy, 90% of B2→B1 misclassification
 - Intervention: Add explicit level discriminators
 - Example: "B2 requires complex subordination AND hypotheticals, not just 'fewer errors than B1'"
 
 **Finding 2: Length Confound**
+
 - Phase 1 Result: r=-0.424 correlation (longer essays → lower accuracy)
 - Intervention: Explicit "length ≠ proficiency" instruction
 - Example: "Advanced proficiency can be demonstrated in short texts through feature density"
 
 **Finding 3: Adjacent-Level Confusion**
+
 - Phase 1 Result: 70% errors within ±1 level
 - Intervention: Ordinal constraint
 - Example: "If uncertain between adjacent levels, prefer the higher classification when features are present"
 
 **Phase 2 Prompt Structure:**
+
 ```
 v4: Core intervention (addresses Finding 1)
 v5: Core + length normalization (addresses Finding 1 + 2)
@@ -347,6 +373,7 @@ This incremental design allows testing individual intervention effects.
 ### 3.8 Experimental Procedure
 
 **Inference Protocol:**
+
 1. Load essay text from sample CSV
 2. Insert essay into prompt template with {essay_text} placeholder
 3. Submit to model API with temperature=0, max_tokens=50
@@ -355,17 +382,20 @@ This incremental design allows testing individual intervention effects.
 6. Save incrementally (every 10 predictions) to prevent data loss
 
 **Batch Configuration:**
+
 - GPT-4o-mini: Sequential API calls (rate limit: 60 requests/minute)
 - Phi-3-mini: Local inference on M2 MacBook Pro (MPS acceleration)
 - Progress tracking: tqdm progress bar with ETA
 
 **Quality Checks:**
+
 - Verify all 100 essays processed for each configuration
 - Confirm no missing predictions
 - Validate CEFR output format (reject if non-standard)
 - Log any API errors or timeout issues
 
 **Computational Cost:**
+
 - Phase 1: ~3-4 hours (GPT API latency + local Phi-3 inference)
 - Phase 2: ~3-4 hours
 - Total: 6-8 hours computational time
@@ -373,9 +403,11 @@ This incremental design allows testing individual intervention effects.
 ### 3.9 Evaluation Metrics
 
 **Primary Metric: Robustness (Standard Deviation)**
+
 ```
 SD = sqrt(Σ(accuracy_variant - mean_accuracy)² / n_variants)
 ```
+
 - Calculated across 3 variants per strategy per model
 - Threshold: SD <0.5 considered deployment-ready
 - Interpretation: Lower SD = more consistent across paraphrases
@@ -383,67 +415,82 @@ SD = sqrt(Σ(accuracy_variant - mean_accuracy)² / n_variants)
 **Secondary Metrics:**
 
 **Accuracy (Exact Match)**
+
 ```
 Accuracy = (correct_predictions / total_predictions) × 100%
 ```
 
 **Adjacent Accuracy**
+
 ```
 Adjacent = (predictions_within_±1_level / total) × 100%
 ```
+
 - Educational context: ±1 level acceptable for adaptive placement
 
 **Confusion Matrix**
+
 - Reveals systematic biases (e.g., B1 over-prediction)
 - Identifies which levels are confused
 
 **Error Severity**
+
 ```
 Error_distance = |true_level_numeric - predicted_level_numeric|
 ```
+
 - Maps CEFR to ordinal scale (A2=1, B1=2, ..., C2=5)
 - Off-by-2+ errors educationally problematic
 
 **Cost Per Essay**
+
 ```
 Cost = (input_tokens × input_price + output_tokens × output_price) / n_essays
 ```
+
 - GPT-4o-mini: $0.150/1M input, $0.600/1M output
 - Phi-3-mini: $0 marginal (infrastructure cost not included)
 
 ### 3.10 Statistical Analysis
 
 **Robustness Comparison:**
+
 - Two-sample t-tests comparing SD across phases
 - Alpha: 0.05 significance level
 - Bonferroni correction for multiple comparisons
 
 **Accuracy Comparison:**
+
 - McNemar's test for paired predictions
 - Appropriate for within-subject design (same essays across phases)
 
 **Confound Analysis:**
+
 - Pearson correlation: essay length vs. accuracy
 - Pearson correlation: essay length vs. robustness (SD)
 - Threshold: |r| >0.3 considered substantial confound
 
 **Phase Comparison:**
+
 - Paired t-tests (Phase 1 vs Phase 2) for each strategy
 - Effect size: Cohen's d for practical significance
 
 ### 3.11 Ethical Considerations
 
 **Data Privacy:**
+
 - Write & Improve corpus is publicly released for research
 - No personally identifiable information present in essays
 - All essays anonymized with numeric IDs
 
 **Bias Mitigation:**
+
 - Stratified sampling ensures level representation
 - Multiple L1 backgrounds included (corpus diversity)
 - No demographic targeting or exclusion
 
 **Reproducibility:**
+
 - Fixed random seed (42) for sampling
 - Temperature=0 for deterministic predictions
 - All prompts and code shared in project repository
@@ -468,7 +515,7 @@ Phase 1 generated 1,800 predictions across 2 models, 3 strategies, and 3 paraphr
 
 ![Phase 1 Model Comparison](figures/phase1_models.png)
 
-*Figure 1: Robustness and accuracy comparison between GPT-4o-mini and Phi-3-mini. Left panel shows robustness (SD) where lower is better. Right panel shows accuracy percentage. GPT-4o-mini demonstrates deployment-ready robustness (SD=0.192 <0.5 threshold) with superior accuracy (33.0% vs 24.4%).*
+_Figure 1: Robustness and accuracy comparison between GPT-4o-mini and Phi-3-mini. Left panel shows robustness (SD) where lower is better. Right panel shows accuracy percentage. GPT-4o-mini demonstrates deployment-ready robustness (SD=0.192 <0.5 threshold) with superior accuracy (33.0% vs 24.4%)._
 
 **Key Finding:** GPT-4o-mini demonstrates deployment-ready robustness (SD=0.192 <0.5 threshold) at negligible cost. The 33% exact accuracy masks significant level-specific variation (detailed in Section 4.1.3).
 
@@ -490,13 +537,13 @@ Table 2 decomposes robustness across prompt strategies:
 
 ![Phase 1 Robustness by Strategy](figures/phase1_robustness.png)
 
-*Figure 2: Mean standard deviation (robustness) across three prompt strategies. Green dashed line indicates 'very robust' threshold (SD <0.5), orange dashed line indicates 'acceptable' threshold (SD <1.0). All three strategies for GPT-4o-mini meet deployment-ready threshold, while CoT for Phi-3-mini exceeds acceptable variance.*
+_Figure 2: Mean standard deviation (robustness) across three prompt strategies. Green dashed line indicates 'very robust' threshold (SD <0.5), orange dashed line indicates 'acceptable' threshold (SD <1.0). All three strategies for GPT-4o-mini meet deployment-ready threshold, while CoT for Phi-3-mini exceeds acceptable variance._
 
 **Figure 3: Phase 1 Accuracy vs Robustness Tradeoff**
 
 ![Phase 1 Accuracy vs Robustness Tradeoff](figures/phase1_tradeoff.png)
 
-*Figure 3: Accuracy-robustness tradeoff for all six configurations (2 models × 3 strategies). Ideal position is upper-left (high accuracy, low SD). GPT-4o-mini strategies cluster in deployment-ready zone while Phi-3-mini variants show high variance, particularly for CoT strategy.*
+_Figure 3: Accuracy-robustness tradeoff for all six configurations (2 models × 3 strategies). Ideal position is upper-left (high accuracy, low SD). GPT-4o-mini strategies cluster in deployment-ready zone while Phi-3-mini variants show high variance, particularly for CoT strategy._
 
 **Answer to RQ2:** Contrary to hypothesis, prompt complexity does NOT consistently improve robustness. CoT shows marginally worse robustness for GPT-4o-mini (SD=0.208 vs 0.185 for minimal) and substantially worse for Phi-3-mini (SD=0.751). However, variant range analysis reveals CoT has tightest consistency for GPT (3.0pp range vs 5.0pp for minimal/rubric).
 
@@ -507,6 +554,7 @@ Table 2 decomposes robustness across prompt strategies:
 Confusion matrix analysis (Figure 1) reveals systematic B1 over-prediction:
 
 **GPT-4o-mini Confusion Matrix (% of row classified as column):**
+
 ```
 True → Predicted:  A2    B1    B2    C1    C2
 A2                 70%   30%    0%    0%    0%
@@ -520,15 +568,17 @@ C2                  0%   11%   81%    8%    0%  ← CRITICAL
 
 ![Phase 1 Confusion Matrices](figures/phase1_analysis_confusion_matrix.png)
 
-*Figure 4: Confusion matrices for GPT-4o-mini (left) and Phi-3-mini (right) showing severe B1 bias. Diagonal represents correct classifications (dark blue). Both models show strong B1 diagonal (85% and 62%) but near-zero C1/C2 classification (light blue), with 90% of B2 essays misclassified as B1 in GPT-4o-mini.*
+_Figure 4: Confusion matrices for GPT-4o-mini (left) and Phi-3-mini (right) showing severe B1 bias. Diagonal represents correct classifications (dark blue). Both models show strong B1 diagonal (85% and 62%) but near-zero C1/C2 classification (light blue), with 90% of B2 essays misclassified as B1 in GPT-4o-mini._
 
 **Key Findings:**
+
 1. **B1 dominance:** 85% accuracy on B1 but model defaults to B1 when uncertain
 2. **B2 collapse:** Only 10% of B2 essays correctly classified, 90% → B1
 3. **C-level failure:** 0% accuracy on C1/C2, systematically under-predicted to B2 or B1
 4. **Accuracy deception:** Overall 33% accuracy is weighted by B1 (39.7% of sample)
 
 **CEFR Level Difficulty Analysis:**
+
 ```
 A2: 70% accuracy  ✓
 B1: 85% accuracy  ✓✓
@@ -541,7 +591,7 @@ C2:  0% accuracy  ✗✗
 
 ![Phase 1 CEFR Level Difficulty](figures/phase1_analysis_cefr_difficulty.png)
 
-*Figure 5: Accuracy and robustness by CEFR level. Left panel shows accuracy dropping from 70% at A2 to 0% at C1/C2 for GPT-4o-mini. Right panel shows robustness (SD) varying by level, with higher levels showing increased variance for Phi-3-mini. Pattern demonstrates systematic bias toward beginner/intermediate classification.*
+_Figure 5: Accuracy and robustness by CEFR level. Left panel shows accuracy dropping from 70% at A2 to 0% at C1/C2 for GPT-4o-mini. Right panel shows robustness (SD) varying by level, with higher levels showing increased variance for Phi-3-mini. Pattern demonstrates systematic bias toward beginner/intermediate classification._
 
 **Interpretation:** The model successfully classifies beginner/intermediate learners but systematically fails on advanced proficiency. This B1 bias limits deployment to introductory language courses only.
 
@@ -557,6 +607,7 @@ Correlation analysis reveals significant length effect:
 | Long (>200w) | 264 | 5.0 | 0.253 |
 
 **Correlation Statistics:**
+
 - Length vs Accuracy: r = -0.424 (p <0.001) - Strong negative
 - Length vs Robustness: r = -0.124 (p = 0.21) - Weak, non-significant
 
@@ -564,7 +615,7 @@ Correlation analysis reveals significant length effect:
 
 ![Phase 1 Length Effect](figures/phase1_analysis_length_effect.png)
 
-*Figure 6: Essay length effect on performance. Left panel shows robustness by length category (Phi-3-mini increases with length, GPT-4o-mini relatively stable). Right panel shows dramatic accuracy drop for longer essays (70% for short → 5% for long), demonstrating strong negative correlation (r=-0.424, p<0.001) suggesting model uses length as proxy for proficiency.*
+_Figure 6: Essay length effect on performance. Left panel shows robustness by length category (Phi-3-mini increases with length, GPT-4o-mini relatively stable). Right panel shows dramatic accuracy drop for longer essays (70% for short → 5% for long), demonstrating strong negative correlation (r=-0.424, p<0.001) suggesting model uses length as proxy for proficiency._
 
 **Key Finding:** Essay length is a significant confound. Longer essays achieve dramatically lower accuracy (70% → 5%), suggesting the model uses length as a proxy for proficiency, systematically under-predicting advanced learners who write longer, more complex texts.
 
@@ -603,7 +654,7 @@ Educational context requires assessing error impact:
 
 ![Phase 1 Error Severity](figures/phase1_analysis_error_severity.png)
 
-*Figure 7: Error severity distribution showing off-by-N classifications. Green (off-by-0) = exact match (33.0%), yellow (off-by-1) = adjacent level (36.6%, educationally acceptable), orange/red = problematic (off-by-2+). Combined exact+adjacent = 69.6% for GPT-4o-mini, demonstrating acceptable educational tolerance despite low exact accuracy. Phi-3-mini shows worse distribution with only 64.6% within tolerance.*
+_Figure 7: Error severity distribution showing off-by-N classifications. Green (off-by-0) = exact match (33.0%), yellow (off-by-1) = adjacent level (36.6%, educationally acceptable), orange/red = problematic (off-by-2+). Combined exact+adjacent = 69.6% for GPT-4o-mini, demonstrating acceptable educational tolerance despite low exact accuracy. Phi-3-mini shows worse distribution with only 64.6% within tolerance._
 
 **Interpretation:** Nearly 70% of predictions fall within acceptable educational tolerance (±1 level). However, 30% off-by-2+ errors can misplace learners substantially, particularly the B2→B1 misclassifications that place advanced learners in intermediate courses.
 
@@ -619,7 +670,7 @@ Educational context requires assessing error impact:
 
 ![Phase 1 Cost-Performance](figures/phase1_analysis_cost_effectiveness.png)
 
-*Figure 8: Cost-performance tradeoff analysis (RQ5). Left panel plots cost vs robustness (GPT-4o-mini at negligible $0.04 total for 900 predictions), right panel plots cost vs accuracy. Green dashed line = excellent robustness threshold (SD <0.3), orange = acceptable (SD <0.5). GPT-4o-mini achieves deployment-ready robustness at ~$0.0004/essay while Phi-3-mini's zero marginal cost cannot justify 2.7× worse robustness (SD=0.513) and 8.6pp accuracy penalty.*
+_Figure 8: Cost-performance tradeoff analysis (RQ5). Left panel plots cost vs robustness (GPT-4o-mini at negligible $0.04 total for 900 predictions), right panel plots cost vs accuracy. Green dashed line = excellent robustness threshold (SD <0.3), orange = acceptable (SD <0.5). GPT-4o-mini achieves deployment-ready robustness at ~$0.0004/essay while Phi-3-mini's zero marginal cost cannot justify 2.7× worse robustness (SD=0.513) and 8.6pp accuracy penalty._
 
 **Answer to RQ5:** GPT-4o-mini offers exceptional cost-performance ratio. At $0.0004/essay, annual cost for 10,000 assessments is $3.68—negligible compared to human rating (~$2-5/essay). Phi-3-mini's zero marginal cost cannot justify 2.7× worse robustness and 8.6pp accuracy penalty.
 
@@ -650,27 +701,30 @@ Educational context requires assessing error impact:
 
 ![Phase Comparison](figures/phase_comparison.png)
 
-*Figure 9: Strategy-specific phase comparison for GPT-4o-mini. Left panel shows robustness changes (CoT improved 76%, minimal improved 24%, rubric degraded 107%). Right panel shows accuracy changes (minimal stable, CoT improved 3pp, rubric collapsed 14pp). Mixed results demonstrate both potential and brittleness of hypothesis-driven prompts—same interventions that improved CoT catastrophically broke rubric strategy.*
+_Figure 9: Strategy-specific phase comparison for GPT-4o-mini. Left panel shows robustness changes (CoT improved 76%, minimal improved 24%, rubric degraded 107%). Right panel shows accuracy changes (minimal stable, CoT improved 3pp, rubric collapsed 14pp). Mixed results demonstrate both potential and brittleness of hypothesis-driven prompts—same interventions that improved CoT catastrophically broke rubric strategy._
 
 **Figure 10: Phase 1 vs Phase 2 Robustness Heatmap**
 
 ![Robustness Heatmap](figures/phase_heatmap.png)
 
-*Figure 10: Heatmap comparing robustness (SD) across strategies and phases. Green = robust (low SD), red = not robust (high SD). Dramatic color shift for CoT (red→green) shows 76% improvement achieving SD=0.117. Conversely, rubric (green→red) shows catastrophic degradation to SD=0.536. Minimal strategy shows modest green improvement. Visual confirms targeted interventions can dramatically improve or destroy robustness.*
+_Figure 10: Heatmap comparing robustness (SD) across strategies and phases. Green = robust (low SD), red = not robust (high SD). Dramatic color shift for CoT (red→green) shows 76% improvement achieving SD=0.117. Conversely, rubric (green→red) shows catastrophic degradation to SD=0.536. Minimal strategy shows modest green improvement. Visual confirms targeted interventions can dramatically improve or destroy robustness._
 
 **Answer to RQ3:** Hypothesis-driven prompts CAN dramatically improve robustness, but with critical caveats:
 
 **Success: CoT Strategy**
+
 - 76% robustness improvement (SD: 0.489→0.117)
 - Maintained accuracy (30.7%→33.7%)
 - Validates targeted anti-B1-bias interventions
 
 **Modest Success: Minimal Strategy**
+
 - 24% robustness improvement
 - Stable accuracy
 - Incremental benefit from length normalization
 
 **Catastrophic Failure: Rubric Strategy**
+
 - 107% robustness degradation (SD doubled)
 - 14.4pp accuracy loss
 - Specific variant (v5) collapsed to 6% accuracy
@@ -679,13 +733,13 @@ Educational context requires assessing error impact:
 
 ![Phase 2 Robustness](figures/phase2_robustness.png)
 
-*Figure 16: Phase 2 robustness by strategy showing dramatic divergence. CoT achieved exceptional robustness (SD=0.117, well below 0.5 green threshold), minimal showed modest improvement (SD=0.236), while rubric catastrophically failed (SD=0.536, exceeding threshold). Comparison to Phase 1 robustness (Figure 2) shows CoT transformed from worst (SD=0.489) to best strategy, validating hypothesis-driven anti-B1-bias interventions when properly designed.*
+_Figure 16: Phase 2 robustness by strategy showing dramatic divergence. CoT achieved exceptional robustness (SD=0.117, well below 0.5 green threshold), minimal showed modest improvement (SD=0.236), while rubric catastrophically failed (SD=0.536, exceeding threshold). Comparison to Phase 1 robustness (Figure 2) shows CoT transformed from worst (SD=0.489) to best strategy, validating hypothesis-driven anti-B1-bias interventions when properly designed._
 
 **Figure 17: Phase 2 Accuracy vs Robustness Tradeoff**
 
 ![Phase 2 Tradeoff](figures/phase2_tradeoff.png)
 
-*Figure 17: Phase 2 accuracy-robustness tradeoff showing final positioning. GPT-4o-mini CoT achieves near-ideal position (upper-left: 33.7% accuracy, SD=0.117), while Phi-3-mini variants cluster in lower-right (poor on both metrics with accuracies below 11%). Minimal strategy maintains mid-range performance. Demonstrates that model capacity constraints prevent smaller models from benefiting from complex hypothesis-driven prompts that improve larger models.*
+_Figure 17: Phase 2 accuracy-robustness tradeoff showing final positioning. GPT-4o-mini CoT achieves near-ideal position (upper-left: 33.7% accuracy, SD=0.117), while Phi-3-mini variants cluster in lower-right (poor on both metrics with accuracies below 11%). Minimal strategy maintains mid-range performance. Demonstrates that model capacity constraints prevent smaller models from benefiting from complex hypothesis-driven prompts that improve larger models._
 
 #### 4.2.3 B1 Bias Improvement
 
@@ -702,9 +756,10 @@ Educational context requires assessing error impact:
 
 ![Phase 2 CEFR Level Difficulty](figures/phase2_analysis_cefr_difficulty.png)
 
-*Figure 12: Phase 2 accuracy and robustness by CEFR level. Left panel shows improved accuracy for A2 (+12pp to 82%) and B2 (+14pp to 24%) but C1/C2 remain at 0% despite hypothesis-driven interventions. Right panel shows robustness patterns with increased variance for higher levels (B2/C1/C2) due to length sensitivity worsening. Comparison to Figure 5 demonstrates partial success at lower levels but persistent architectural ceiling for advanced proficiency.*
+_Figure 12: Phase 2 accuracy and robustness by CEFR level. Left panel shows improved accuracy for A2 (+12pp to 82%) and B2 (+14pp to 24%) but C1/C2 remain at 0% despite hypothesis-driven interventions. Right panel shows robustness patterns with increased variance for higher levels (B2/C1/C2) due to length sensitivity worsening. Comparison to Figure 5 demonstrates partial success at lower levels but persistent architectural ceiling for advanced proficiency._
 
 **Phase 2 Confusion Matrix (GPT-4o-mini):**
+
 ```
 True → Predicted:  A2    B1    B2    C1    C2
 A2                 82%   18%    0%    0%    0%
@@ -718,9 +773,10 @@ C2                  0%    8%   74%   18%    0%
 
 ![Phase 2 Confusion Matrices](figures/phase2_analysis_confusion_matrix.png)
 
-*Figure 11: Phase 2 confusion matrices showing partial B1 bias reduction. Compared to Phase 1, B2→B1 misclassification reduced from 90% to 75% (-15pp improvement), and B2 diagonal improved from 10% to 24% (+14pp). A2 accuracy increased from 70% to 82% (+12pp). However, C1/C2 classification remains unsolved with 0% exact accuracy maintained for both models, indicating architectural limitation beyond prompt engineering.*
+_Figure 11: Phase 2 confusion matrices showing partial B1 bias reduction. Compared to Phase 1, B2→B1 misclassification reduced from 90% to 75% (-15pp improvement), and B2 diagonal improved from 10% to 24% (+14pp). A2 accuracy increased from 70% to 82% (+12pp). However, C1/C2 classification remains unsolved with 0% exact accuracy maintained for both models, indicating architectural limitation beyond prompt engineering._
 
 **Key Findings:**
+
 1. **B1 bias reduced:** B2→B1 misclassification dropped from 90% to 75% (-15pp)
 2. **B2 improved:** Doubled accuracy (10%→24%), though still low
 3. **A2 improved:** Increased 12pp, suggesting better lower-level discrimination
@@ -745,6 +801,7 @@ Diagnostic analysis revealed three root causes:
 **Failure #2: Phi-3-mini v6 Complete Collapse (0% Accuracy)**
 
 All three Phi-3-mini v6 variants collapsed:
+
 ```
 Minimal: v4=18%, v5=14%, v6=0%
 Rubric:  v4=11%, v5=2%,  v6=1%
@@ -752,6 +809,7 @@ CoT:     v4=14%, v5=7%,  v6=0%
 ```
 
 Root causes:
+
 1. **Special character tokenization:** `≠` symbol in "Word count ≠ proficiency" poorly tokenized
 2. **Instruction complexity:** v6 prompts exceeded 3.8B parameter model's capacity
 3. **Emphatic marker overload:** "CRITICAL", "ESSENTIAL", "ALERT" caused over-correction
@@ -762,7 +820,7 @@ Root causes:
 
 ![Phase 2 Model Comparison](figures/phase2_models.png)
 
-*Figure 13: Phase 2 model comparison showing catastrophic Phi-3-mini failure. Robustness (left) shows GPT-4o-mini improved to SD=0.174 while Phi-3-mini worsened to SD=0.419. Accuracy (right) shows Phi-3-mini collapsed to 7.4% (vs 29.3% for GPT-4o-mini), demonstrating model capacity limits for complex hypothesis-driven prompts. Phase 2 amplified architecture gap from 1.4× to 4.0× accuracy ratio.*
+_Figure 13: Phase 2 model comparison showing catastrophic Phi-3-mini failure. Robustness (left) shows GPT-4o-mini improved to SD=0.174 while Phi-3-mini worsened to SD=0.419. Accuracy (right) shows Phi-3-mini collapsed to 7.4% (vs 29.3% for GPT-4o-mini), demonstrating model capacity limits for complex hypothesis-driven prompts. Phase 2 amplified architecture gap from 1.4× to 4.0× accuracy ratio._
 
 #### 4.2.5 Counterintuitive Finding: Length Sensitivity Worsened
 
@@ -774,6 +832,7 @@ Root causes:
 | Long | 0.253 | 1.094 | 5.0% | 6.6% |
 
 **Correlation Change:**
+
 - Phase 1: r = -0.424 (length → accuracy)
 - Phase 2: r = +0.960 (length → robustness!)
 
@@ -781,13 +840,13 @@ Root causes:
 
 ![Phase 2 Length Effect](figures/phase2_analysis_length_effect.png)
 
-*Figure 14: Phase 2 length sensitivity paradox. Despite explicit anti-length-bias instructions, robustness (left panel) increased dramatically with essay length—SD worsened 4× for long essays (0.253→1.094). Accuracy (right panel) remained suppressed for long essays but recovered slightly. Correlation changed from r=-0.424 (Phase 1, length→accuracy) to r=+0.960 (Phase 2, length→robustness), demonstrating counterintuitive effect where instructing "don't use length" paradoxically activated length attention.*
+_Figure 14: Phase 2 length sensitivity paradox. Despite explicit anti-length-bias instructions, robustness (left panel) increased dramatically with essay length—SD worsened 4× for long essays (0.253→1.094). Accuracy (right panel) remained suppressed for long essays but recovered slightly. Correlation changed from r=-0.424 (Phase 1, length→accuracy) to r=+0.960 (Phase 2, length→robustness), demonstrating counterintuitive effect where instructing "don't use length" paradoxically activated length attention._
 
 **Figure 15: Phase 2 Error Severity Distribution**
 
 ![Phase 2 Error Severity](figures/phase2_analysis_error_severity.png)
 
-*Figure 15: Phase 2 error severity showing slightly degraded distribution compared to Phase 1. Off-by-0+1 combined = 64.3% (vs 69.6% Phase 1), with increased off-by-2 errors (19.5% vs 28.3%) from prompt brittleness particularly in rubric v5 failure. GPT-4o-mini maintains better distribution (29.3% exact) than Phi-3-mini (7.4% exact) despite both models showing worse overall performance than Phase 1.*
+_Figure 15: Phase 2 error severity showing slightly degraded distribution compared to Phase 1. Off-by-0+1 combined = 64.3% (vs 69.6% Phase 1), with increased off-by-2 errors (19.5% vs 28.3%) from prompt brittleness particularly in rubric v5 failure. GPT-4o-mini maintains better distribution (29.3% exact) than Phi-3-mini (7.4% exact) despite both models showing worse overall performance than Phase 1._
 
 **Critical Discovery:** Despite explicit anti-length-bias instructions, Phase 2 prompts became HIGHLY sensitive to essay length. Robustness collapsed for long essays (SD: 0.253→1.094, 4× worse).
 
@@ -810,7 +869,7 @@ Root causes:
 
 ![Phase 2 Cost-Performance](figures/phase2_analysis_cost_effectiveness.png)
 
-*Figure 18: Phase 2 cost-performance maintained from Phase 1. Left panel shows cost vs robustness: GPT-4o-mini continues to achieve deployment-ready robustness (SD=0.174 <0.5 green threshold) at negligible cost (~$0.04 for 900 predictions, $0.0004/essay), while Phi-3-mini's zero marginal cost cannot justify 2.4× worse robustness (SD=0.419). Right panel shows cost vs accuracy: GPT-4o-mini maintains 29.3% accuracy versus Phi-3-mini's catastrophic 7.4% collapse. Confirms RQ5: commercial APIs provide superior cost-reliability tradeoff.*
+_Figure 18: Phase 2 cost-performance maintained from Phase 1. Left panel shows cost vs robustness: GPT-4o-mini continues to achieve deployment-ready robustness (SD=0.174 <0.5 green threshold) at negligible cost (~$0.04 for 900 predictions, $0.0004/essay), while Phi-3-mini's zero marginal cost cannot justify 2.4× worse robustness (SD=0.419). Right panel shows cost vs accuracy: GPT-4o-mini maintains 29.3% accuracy versus Phi-3-mini's catastrophic 7.4% collapse. Confirms RQ5: commercial APIs provide superior cost-reliability tradeoff._
 
 **Answer to RQ4:** Yes, model architecture significantly affects robustness. Larger commercial models (GPT-4o-mini) consistently demonstrate 2-3× better robustness and higher accuracy than smaller open-source models (Phi-3-mini).
 
@@ -831,6 +890,7 @@ Root causes:
 5. **RQ5 (Cost):** ✅ YES - GPT-4o-mini provides exceptional cost-performance ($0.0004/essay) making commercial APIs viable for educational deployment
 
 **Critical Discoveries:**
+
 - Severe B1 bias (0% C1/C2 accuracy)
 - Prompt brittleness (single-word changes cause 5× degradation)
 - Counterintuitive effects (anti-length instructions increased length sensitivity)
@@ -868,6 +928,7 @@ The third explanation appears most supported by our data. Phase 2's hypothesis-d
 Phase 2 revealed profound brittleness in prompt engineering, with single-word changes causing catastrophic failures:
 
 **Rubric v5 Collapse:** Three specific modifications reduced accuracy from 30% to 6%:
+
 1. Formal CEFR terminology ("Vantage", "Mastery")
 2. Specific length anchor ("150-word essay")
 3. Ambiguous instruction ("Output format:")
@@ -895,6 +956,7 @@ Instructing the model "don't use length" may increase attention to length featur
 
 **Mechanism 2: Variant-Specific Interpretation**
 The three Phase 2 variants phrased length-normalization differently:
+
 - v4: "Consider linguistic complexity, not essay length"
 - v5: "Length and proficiency are independent variables"
 - v6: "Word count ≠ proficiency level"
@@ -926,21 +988,25 @@ These capacity constraints establish a practical minimum: reliable prompt-engine
 From an educational technology perspective, our findings have mixed implications:
 
 **Deployable for Intermediate Levels:**
+
 - A2/B1 classification achieves 70-85% accuracy
 - Adjacent accuracy (±1 level) reaches 70%, acceptable for adaptive placement
 - Robustness (SD=0.192) ensures consistent user experience
 
 **Not Deployable for Advanced Levels:**
+
 - 0% C1/C2 accuracy makes the system unsuitable for advanced learner placement
 - Risk of systematically under-placing advanced students in intermediate courses
 
 **Recommended Deployment Scope:**
 Current LLM-based CEFR scoring should be limited to:
+
 1. Initial placement for beginner/intermediate programs (A2-B2)
 2. Progress monitoring within known proficiency bands
 3. Screening that flags advanced learners for human assessment
 
 **Not recommended for:**
+
 1. University entrance placement (requires C-level discrimination)
 2. Professional certification (high-stakes C1/C2 decisions)
 3. Unsupervised advanced learner placement
@@ -990,17 +1056,20 @@ Despite these limitations, the core finding—that prompt brittleness poses seri
 Our results both confirm and challenge existing literature:
 
 **Confirmation:**
+
 - Lu et al. (2022): We replicate prompt sensitivity findings (15pp variance in CommonsenseQA) for essay scoring domain
 - Zhao et al. (2021): We confirm systematic output bias (B1 preference analogous to their token bias)
 - Zhou et al. (2023): We validate CoT's accuracy improvement (+3pp) but also document robustness tradeoffs
 
 **Novel Contributions:**
+
 - **First robustness measurement** for LLM-based AES (no prior study quantifies SD across paraphrases)
 - **Deployment threshold** (SD <0.5) provides actionable criterion missing from prior work
 - **Prompt brittleness** demonstrated through failure analysis (rubric v5, Phi-3 v6)
 - **Cost-reliability framework** enabling institutional decision-making
 
 **Challenge to Assumptions:**
+
 - Conventional wisdom: "More detailed prompts improve performance"
 - Our finding: Complex prompts can improve robustness (CoT: +76%) OR cause catastrophic failure (rubric v5: -80%)
 - Implication: Prompt engineering requires empirical validation, not intuition
@@ -1049,6 +1118,7 @@ Economic analysis shows GPT-4o-mini provides exceptional cost-performance ratio 
 **For Educational Technology Deployment:**
 
 **DO:**
+
 - Deploy for beginner/intermediate placement (A2-B2 levels)
 - Use GPT-4o-mini or equivalent 8B+ parameter models
 - Maintain human oversight for advanced learner placement
@@ -1056,6 +1126,7 @@ Economic analysis shows GPT-4o-mini provides exceptional cost-performance ratio 
 - Monitor for systematic biases in operational data
 
 **DON'T:**
+
 - Deploy for high-stakes C-level assessment without human validation
 - Use Phi-3-mini or smaller models for production
 - Assume prompt modifications improve performance without testing
@@ -1065,6 +1136,7 @@ Economic analysis shows GPT-4o-mini provides exceptional cost-performance ratio 
 **For Prompt Engineering:**
 
 **DO:**
+
 - Test multiple paraphrased variants for consistency
 - Use simple terminology matching model training data
 - Keep instructions concise and unambiguous
@@ -1072,6 +1144,7 @@ Economic analysis shows GPT-4o-mini provides exceptional cost-performance ratio 
 - Establish automated testing pipelines
 
 **DON'T:**
+
 - Use formal technical terminology the model may not know
 - Include specific examples that create anchoring biases
 - Add special characters or symbols that may tokenize poorly
@@ -1090,24 +1163,28 @@ Economic analysis shows GPT-4o-mini provides exceptional cost-performance ratio 
 **Immediate Extensions:**
 
 **1. Architectural Investigation of C-Level Failure**
+
 - Test larger models (GPT-4, Claude-3) for C1/C2 classification
 - Compare zero-shot vs few-shot with C-level exemplars
 - Investigate whether fine-tuning solves advanced proficiency distinction
 - Hypothesis: C-level features require explicit training, not emergent from scale
 
 **2. Automated Prompt Optimization**
+
 - Apply DSPy or PromptBreeder for systematic variant generation
 - Develop robustness-aware optimization (minimize SD, not just maximize accuracy)
 - Compare automated vs manual paraphrasing for variant coverage
 - Build prompt testing frameworks that detect brittleness pre-deployment
 
 **3. Cross-Framework Generalization**
+
 - Replicate robustness measurement for IELTS, TOEFL rubrics
 - Test whether brittleness patterns generalize across scoring frameworks
 - Investigate if score-based (0-9) vs level-based (A1-C2) affects robustness
 - Hypothesis: Ordinal scores may be more robust than categorical levels
 
 **4. Multimodal and Multilingual Robustness**
+
 - Measure robustness across languages (Spanish, Chinese, Arabic)
 - Test cross-lingual transfer (prompt in English, essay in L2)
 - Investigate voice-based input variability (speech-to-text noise effects)
@@ -1116,12 +1193,14 @@ Economic analysis shows GPT-4o-mini provides exceptional cost-performance ratio 
 **Methodological Advances:**
 
 **5. Formal Robustness Metrics**
+
 - Develop probabilistic bounds: P(|prediction_v1 - prediction_v2| ≤ ε) >0.95
 - Establish confidence intervals for deployment decisions
 - Create robustness certificates analogous to adversarial robustness (Madry et al., 2018)
 - Enable "this prediction is reliable" vs "escalate to human" classification
 
 **6. Human-AI Hybrid Systems**
+
 - Design escalation policies: when should LLM defer to human rater?
 - Investigate cost-accuracy curves: which essays require human validation?
 - Develop uncertainty quantification: predict when LLM may be wrong
@@ -1130,12 +1209,14 @@ Economic analysis shows GPT-4o-mini provides exceptional cost-performance ratio 
 **Theoretical Questions:**
 
 **7. Why Does Prompt Engineering Work (and Fail)?**
+
 - Investigate attention mechanisms: what do successful prompts activate?
 - Compare feature attribution for robust vs brittle prompt variants
 - Test counterfactual prompts: which tokens most affect predictions?
 - Hypothesis: Robust prompts align with model's pre-training patterns
 
 **8. Limits of Zero-Shot Assessment**
+
 - Characterize tasks where prompt engineering suffices vs requires fine-tuning
 - Identify architectural requirements for C-level proficiency distinction
 - Test whether retrieval-augmented generation (RAG) improves C-level scoring
@@ -1169,43 +1250,43 @@ Ultimately, this research demonstrates that LLM-based essay scoring is ready for
 
 ## References
 
-Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. *Advances in Neural Information Processing Systems, 33*, 1877-1901.
+Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. _Advances in Neural Information Processing Systems, 33_, 1877-1901.
 
-Bryant, C., Huang, T., Cheung, T., Beinborn, L., Buttery, P., & Briscoe, T. (2023). The Write & Improve corpus 2024. *Language Resources and Evaluation Conference*.
+Bryant, C., Huang, T., Cheung, T., Beinborn, L., Buttery, P., & Briscoe, T. (2023). The Write & Improve corpus 2024. _Language Resources and Evaluation Conference_.
 
-Burstein, J., Kukich, K., Wolff, S., Lu, C., & Chodorow, M. (1998). Enriching automated essay scoring using discourse marking. *Proceedings of the Workshop on Discourse Relations and Discourse Marking*.
+Burstein, J., Kukich, K., Wolff, S., Lu, C., & Chodorow, M. (1998). Enriching automated essay scoring using discourse marking. _Proceedings of the Workshop on Discourse Relations and Discourse Marking_.
 
-Council of Europe. (2001). *Common European Framework of Reference for Languages: Learning, teaching, assessment*. Cambridge University Press.
+Council of Europe. (2001). _Common European Framework of Reference for Languages: Learning, teaching, assessment_. Cambridge University Press.
 
-Crossley, S. A., Heintz, A., Choi, J. S., Batchelor, J., Karimi, M., & Malatinszky, A. (2019). A large-scaled corpus for assessing text readability. *Behavior Research Methods, 51*(4), 1652-1665.
+Crossley, S. A., Heintz, A., Choi, J. S., Batchelor, J., Karimi, M., & Malatinszky, A. (2019). A large-scaled corpus for assessing text readability. _Behavior Research Methods, 51_(4), 1652-1665.
 
-Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. *Proceedings of NAACL-HLT 2019*, 4171-4186.
+Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. _Proceedings of NAACL-HLT 2019_, 4171-4186.
 
-Hawkins, J. A., & Buttery, P. (2010). Criterial features in learner corpora: Theory and illustrations. *English Profile Journal, 1*(1), e5.
+Hawkins, J. A., & Buttery, P. (2010). Criterial features in learner corpora: Theory and illustrations. _English Profile Journal, 1_(1), e5.
 
-Lu, Y., Bartolo, M., Moore, A., Riedel, S., & Stenetorp, P. (2022). Fantastically ordered prompts and where to find them: Overcoming few-shot prompt order sensitivity. *Proceedings of ACL 2022*, 8086-8098.
+Lu, Y., Bartolo, M., Moore, A., Riedel, S., & Stenetorp, P. (2022). Fantastically ordered prompts and where to find them: Overcoming few-shot prompt order sensitivity. _Proceedings of ACL 2022_, 8086-8098.
 
-Madry, A., Makelov, A., Schmidt, L., Tsipras, D., & Vladu, A. (2018). Towards deep learning models resistant to adversarial attacks. *International Conference on Learning Representations*.
+Madry, A., Makelov, A., Schmidt, L., Tsipras, D., & Vladu, A. (2018). Towards deep learning models resistant to adversarial attacks. _International Conference on Learning Representations_.
 
-Mayfield, E., & Black, A. W. (2020). Should you fine-tune BERT for automated essay scoring? *Proceedings of the Fifteenth Workshop on Innovative Use of NLP for Building Educational Applications*, 151-162.
+Mayfield, E., & Black, A. W. (2020). Should you fine-tune BERT for automated essay scoring? _Proceedings of the Fifteenth Workshop on Innovative Use of NLP for Building Educational Applications_, 151-162.
 
-Mizumoto, A., & Eguchi, M. (2023). Exploring the potential of using an AI language model for automated essay scoring. *Research Methods in Applied Linguistics, 2*(2), 100050.
+Mizumoto, A., & Eguchi, M. (2023). Exploring the potential of using an AI language model for automated essay scoring. _Research Methods in Applied Linguistics, 2_(2), 100050.
 
-Page, E. B. (1966). The imminence of grading essays by computer. *Phi Delta Kappan, 47*(5), 238-243.
+Page, E. B. (1966). The imminence of grading essays by computer. _Phi Delta Kappan, 47_(5), 238-243.
 
-Taghipour, K., & Ng, H. T. (2016). A neural approach to automated essay scoring. *Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing*, 1882-1891.
+Taghipour, K., & Ng, H. T. (2016). A neural approach to automated essay scoring. _Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing_, 1882-1891.
 
-Vajjala, S., & Loo, K. (2014). Automatic CEFR level prediction for Estonian learner text. *Proceedings of the third workshop on NLP for computer-assisted language learning*, 113-127.
+Vajjala, S., & Loo, K. (2014). Automatic CEFR level prediction for Estonian learner text. _Proceedings of the third workshop on NLP for computer-assisted language learning_, 113-127.
 
-Webson, A., & Pavlick, E. (2022). Do prompt-based models really understand the meaning of their prompts? *Proceedings of NAACL 2022*, 2300-2344.
+Webson, A., & Pavlick, E. (2022). Do prompt-based models really understand the meaning of their prompts? _Proceedings of NAACL 2022_, 2300-2344.
 
-Wegner, D. M. (1994). Ironic processes of mental control. *Psychological Review, 101*(1), 34-52.
+Wegner, D. M. (1994). Ironic processes of mental control. _Psychological Review, 101_(1), 34-52.
 
-Yeung, D. Y., & Yeung, K. H. (2024). Automated essay scoring using GPT language models: A comparative study. *Journal of Educational Computing Research*, advance online publication.
+Yeung, D. Y., & Yeung, K. H. (2024). Automated essay scoring using GPT language models: A comparative study. _Journal of Educational Computing Research_, advance online publication.
 
-Zhao, T. Z., Wallace, E., Feng, S., Klein, D., & Singh, S. (2021). Calibrate before use: Improving few-shot performance of language models. *Proceedings of ICML 2021*, 12697-12706.
+Zhao, T. Z., Wallace, E., Feng, S., Klein, D., & Singh, S. (2021). Calibrate before use: Improving few-shot performance of language models. _Proceedings of ICML 2021_, 12697-12706.
 
-Zhou, D., Schärli, N., Hou, L., Wei, J., Scales, N., Wang, X., ... & Chi, E. H. (2023). Least-to-most prompting enables complex reasoning in large language models. *Proceedings of ICLR 2023*.
+Zhou, D., Schärli, N., Hou, L., Wei, J., Scales, N., Wang, X., ... & Chi, E. H. (2023). Least-to-most prompting enables complex reasoning in large language models. _Proceedings of ICLR 2023_.
 
 ---
 
@@ -1246,7 +1327,7 @@ Return only the CEFR level: A2, B1, B2, C1, or C2
 **B.2 Phase 2 CoT Strategy (Example: v4)**
 
 ```
-Classify this essay's CEFR level through structured analysis. 
+Classify this essay's CEFR level through structured analysis.
 IMPORTANT: Essay length is NOT a proficiency indicator.
 
 REASONING PROTOCOL:
@@ -1286,6 +1367,7 @@ After reasoning, output ONLY the final level: A2, B1, B2, C1, or C2
 ### Appendix C: Detailed Confusion Matrices
 
 **Table C1: Phase 1 GPT-4o-mini (Raw Counts)**
+
 ```
           A2   B1   B2   C1   C2
 A2        42   18    0    0    0
@@ -1296,6 +1378,7 @@ C2         0   10   73    8    0
 ```
 
 **Table C2: Phase 2 GPT-4o-mini (Raw Counts)**
+
 ```
           A2   B1   B2   C1   C2
 A2        49   11    0    0    0
@@ -1308,10 +1391,12 @@ C2         0    8   67   16    0
 ### Appendix D: Cost Calculation Details
 
 **GPT-4o-mini Pricing (as of January 2025):**
+
 - Input tokens: $0.150 per 1M tokens
 - Output tokens: $0.600 per 1M tokens
 
 **Average Token Counts:**
+
 - Prompt (minimal): ~50 tokens
 - Prompt (rubric): ~200 tokens
 - Prompt (cot): ~250 tokens
@@ -1319,6 +1404,7 @@ C2         0    8   67   16    0
 - Output: ~5 tokens (single CEFR level)
 
 **Phase 1 Total Cost Calculation:**
+
 ```
 9 prompts × 100 essays = 900 predictions
 Average: (50+200+250)/3 + 180 = 313 input tokens/prediction
