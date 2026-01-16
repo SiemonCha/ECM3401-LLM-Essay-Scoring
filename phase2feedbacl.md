@@ -633,3 +633,11 @@ This frames the failures as **contributions**, not limitations.
 - ✅ You want time for literature expansion (Marker 1's feedback)
 
 **You're in the "keep it" category.** Start writing your thesis with the story: "We discovered prompt engineering is powerful but brittle - here's what we learned."
+
+If You Need to Defend This Work
+Question: "Why did rubric v5 fail?"
+Answer: "We conducted diagnostic analysis identifying three root causes: formal CEFR terminology, specific length anchor, and ambiguous output instruction. This failure provides insights into prompt brittleness—single-word changes can cause 5× degradation—which is itself a valuable finding for the field."
+Question: "Why not fix it and re-run?"
+Answer: "The failures ARE the findings. Phase 2 successfully validated hypothesis-driven improvements (CoT: 76% gain) while revealing systematic prompt fragility. Re-running would eliminate this brittleness discovery, which has important implications for production deployment reliability."
+Question: "Only 33% accuracy seems low?"
+Answer: "Accuracy aggregates mask level-specific performance: 70-85% on A2/B1 but 0% on C1/C2. This reveals deployment boundaries—the system works for intermediate placement but not advanced assessment. This nuanced finding is more valuable than a single accuracy number."
