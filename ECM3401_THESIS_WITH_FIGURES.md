@@ -388,6 +388,12 @@ Phase 1 generated 1,800 predictions across 2 models, 3 strategies, and 3 paraphr
 | GPT-4o-mini | 0.192 | 33.0 | 69.6 | $0.0004 |
 | Phi-3-mini | 0.513 | 24.4 | 64.6 | $0 |
 
+**Figure 1: Phase 1 Model Comparison**
+
+![Phase 1 Model Comparison](figures/phase1_models.png)
+
+*Figure 1: Robustness and accuracy comparison between GPT-4o-mini and Phi-3-mini. Left panel shows robustness (SD) where lower is better. Right panel shows accuracy percentage. GPT-4o-mini demonstrates deployment-ready robustness (SD=0.192 <0.5 threshold) with superior accuracy (33.0% vs 24.4%).*
+
 **Key Finding:** GPT-4o-mini demonstrates deployment-ready robustness (SD=0.192 <0.5 threshold) at negligible cost. The 33% exact accuracy masks significant level-specific variation (detailed in Section 4.1.3).
 
 #### 4.1.2 Robustness by Strategy (RQ2)
@@ -403,6 +409,18 @@ Table 2 decomposes robustness across prompt strategies:
 | Phi-3-mini | Minimal | 0.433 | 24.0 | 12.0pp |
 | Phi-3-mini | Rubric | 0.335 | 23.3 | 8.0pp |
 | Phi-3-mini | CoT | 0.751 | 26.0 | 18.0pp |
+
+**Figure 2: Phase 1 Robustness by Strategy**
+
+![Phase 1 Robustness by Strategy](figures/phase1_robustness.png)
+
+*Figure 2: Mean standard deviation (robustness) across three prompt strategies. Green dashed line indicates 'very robust' threshold (SD <0.5), orange dashed line indicates 'acceptable' threshold (SD <1.0). All three strategies for GPT-4o-mini meet deployment-ready threshold, while CoT for Phi-3-mini exceeds acceptable variance.*
+
+**Figure 3: Phase 1 Accuracy vs Robustness Tradeoff**
+
+![Phase 1 Accuracy vs Robustness Tradeoff](figures/phase1_tradeoff.png)
+
+*Figure 3: Accuracy-robustness tradeoff for all six configurations (2 models × 3 strategies). Ideal position is upper-left (high accuracy, low SD). GPT-4o-mini strategies cluster in deployment-ready zone while Phi-3-mini variants show high variance, particularly for CoT strategy.*
 
 **Answer to RQ2:** Contrary to hypothesis, prompt complexity does NOT consistently improve robustness. CoT shows marginally worse robustness for GPT-4o-mini (SD=0.208 vs 0.185 for minimal) and substantially worse for Phi-3-mini (SD=0.751). However, variant range analysis reveals CoT has tightest consistency for GPT (3.0pp range vs 5.0pp for minimal/rubric).
 
@@ -422,6 +440,12 @@ C1                  0%   61%   39%    0%    0%  ← CRITICAL
 C2                  0%   11%   81%    8%    0%  ← CRITICAL
 ```
 
+**Figure 4: Phase 1 Confusion Matrix Heatmaps**
+
+![Phase 1 Confusion Matrices](figures/phase1_analysis_confusion_matrix.png)
+
+*Figure 4: Confusion matrices for GPT-4o-mini (left) and Phi-3-mini (right) showing severe B1 bias. Diagonal represents correct classifications (dark blue). Both models show strong B1 diagonal (85% and 62%) but near-zero C1/C2 classification (light blue), with 90% of B2 essays misclassified as B1 in GPT-4o-mini.*
+
 **Key Findings:**
 1. **B1 dominance:** 85% accuracy on B1 but model defaults to B1 when uncertain
 2. **B2 collapse:** Only 10% of B2 essays correctly classified, 90% → B1
@@ -436,6 +460,12 @@ B2: 10% accuracy  ✗
 C1:  0% accuracy  ✗✗
 C2:  0% accuracy  ✗✗
 ```
+
+**Figure 5: Phase 1 CEFR Level Difficulty**
+
+![Phase 1 CEFR Level Difficulty](figures/phase1_analysis_cefr_difficulty.png)
+
+*Figure 5: Accuracy and robustness by CEFR level. Left panel shows accuracy dropping from 70% at A2 to 0% at C1/C2 for GPT-4o-mini. Right panel shows robustness (SD) varying by level, with higher levels showing increased variance for Phi-3-mini. Pattern demonstrates systematic bias toward beginner/intermediate classification.*
 
 **Interpretation:** The model successfully classifies beginner/intermediate learners but systematically fails on advanced proficiency. This B1 bias limits deployment to introductory language courses only.
 
@@ -453,6 +483,12 @@ Correlation analysis reveals significant length effect:
 **Correlation Statistics:**
 - Length vs Accuracy: r = -0.424 (p <0.001) - Strong negative
 - Length vs Robustness: r = -0.124 (p = 0.21) - Weak, non-significant
+
+**Figure 6: Phase 1 Essay Length Effect**
+
+![Phase 1 Length Effect](figures/phase1_analysis_length_effect.png)
+
+*Figure 6: Essay length effect on performance. Left panel shows robustness by length category (Phi-3-mini increases with length, GPT-4o-mini relatively stable). Right panel shows dramatic accuracy drop for longer essays (70% for short → 5% for long), demonstrating strong negative correlation (r=-0.424, p<0.001) suggesting model uses length as proxy for proficiency.*
 
 **Key Finding:** Essay length is a significant confound. Longer essays achieve dramatically lower accuracy (70% → 5%), suggesting the model uses length as a proxy for proficiency, systematically under-predicting advanced learners who write longer, more complex texts.
 
@@ -487,6 +523,12 @@ Educational context requires assessing error impact:
 
 **Combined Acceptable:** 69.6% (exact + adjacent)
 
+**Figure 7: Phase 1 Error Severity Distribution**
+
+![Phase 1 Error Severity](figures/phase1_analysis_error_severity.png)
+
+*Figure 7: Error severity distribution showing off-by-N classifications. Green (off-by-0) = exact match (33.0%), yellow (off-by-1) = adjacent level (36.6%, educationally acceptable), orange/red = problematic (off-by-2+). Combined exact+adjacent = 69.6% for GPT-4o-mini, demonstrating acceptable educational tolerance despite low exact accuracy. Phi-3-mini shows worse distribution with only 64.6% within tolerance.*
+
 **Interpretation:** Nearly 70% of predictions fall within acceptable educational tolerance (±1 level). However, 30% off-by-2+ errors can misplace learners substantially, particularly the B2→B1 misclassifications that place advanced learners in intermediate courses.
 
 #### 4.1.7 Cost Analysis (RQ5)
@@ -496,6 +538,12 @@ Educational context requires assessing error impact:
 |-------|------------|------------|----------|------------|----------------|
 | GPT-4o-mini | $0.04 | $0.0004 | 33.0% | 0.192 | $3.68 |
 | Phi-3-mini | $0 | $0 | 24.4% | 0.513 | $0 + infra |
+
+**Figure 8: Phase 1 Cost-Performance Analysis**
+
+![Phase 1 Cost-Performance](figures/phase1_analysis_cost_effectiveness.png)
+
+*Figure 8: Cost-performance tradeoff analysis (RQ5). Left panel plots cost vs robustness (GPT-4o-mini at negligible $0.04 total for 900 predictions), right panel plots cost vs accuracy. Green dashed line = excellent robustness threshold (SD <0.3), orange = acceptable (SD <0.5). GPT-4o-mini achieves deployment-ready robustness at ~$0.0004/essay while Phi-3-mini's zero marginal cost cannot justify 2.7× worse robustness (SD=0.513) and 8.6pp accuracy penalty.*
 
 **Answer to RQ5:** GPT-4o-mini offers exceptional cost-performance ratio. At $0.0004/essay, annual cost for 10,000 assessments is $3.68—negligible compared to human rating (~$2-5/essay). Phi-3-mini's zero marginal cost cannot justify 2.7× worse robustness and 8.6pp accuracy penalty.
 
@@ -522,6 +570,18 @@ Educational context requires assessing error impact:
 | Rubric | 0.260 | 0.536 | +0.276 (↑107%) ✗ | 34.7% | 20.3% | -14.4pp ✗ |
 | CoT | 0.489 | 0.117 | -0.373 (↓76%) ✓✓ | 30.7% | 33.7% | +3.0pp ✓ |
 
+**Figure 9: Phase 1 vs Phase 2 Strategy Comparison**
+
+![Phase Comparison](figures/phase_comparison.png)
+
+*Figure 9: Strategy-specific phase comparison for GPT-4o-mini. Left panel shows robustness changes (CoT improved 76%, minimal improved 24%, rubric degraded 107%). Right panel shows accuracy changes (minimal stable, CoT improved 3pp, rubric collapsed 14pp). Mixed results demonstrate both potential and brittleness of hypothesis-driven prompts—same interventions that improved CoT catastrophically broke rubric strategy.*
+
+**Figure 10: Phase 1 vs Phase 2 Robustness Heatmap**
+
+![Robustness Heatmap](figures/phase_heatmap.png)
+
+*Figure 10: Heatmap comparing robustness (SD) across strategies and phases. Green = robust (low SD), red = not robust (high SD). Dramatic color shift for CoT (red→green) shows 76% improvement achieving SD=0.117. Conversely, rubric (green→red) shows catastrophic degradation to SD=0.536. Minimal strategy shows modest green improvement. Visual confirms targeted interventions can dramatically improve or destroy robustness.*
+
 **Answer to RQ3:** Hypothesis-driven prompts CAN dramatically improve robustness, but with critical caveats:
 
 **Success: CoT Strategy**
@@ -539,6 +599,18 @@ Educational context requires assessing error impact:
 - 14.4pp accuracy loss
 - Specific variant (v5) collapsed to 6% accuracy
 
+**Figure 16: Phase 2 Robustness by Strategy**
+
+![Phase 2 Robustness](figures/phase2_robustness.png)
+
+*Figure 16: Phase 2 robustness by strategy showing dramatic divergence. CoT achieved exceptional robustness (SD=0.117, well below 0.5 green threshold), minimal showed modest improvement (SD=0.236), while rubric catastrophically failed (SD=0.536, exceeding threshold). Comparison to Phase 1 robustness (Figure 2) shows CoT transformed from worst (SD=0.489) to best strategy, validating hypothesis-driven anti-B1-bias interventions when properly designed.*
+
+**Figure 17: Phase 2 Accuracy vs Robustness Tradeoff**
+
+![Phase 2 Tradeoff](figures/phase2_tradeoff.png)
+
+*Figure 17: Phase 2 accuracy-robustness tradeoff showing final positioning. GPT-4o-mini CoT achieves near-ideal position (upper-left: 33.7% accuracy, SD=0.117), while Phi-3-mini variants cluster in lower-right (poor on both metrics with accuracies below 11%). Minimal strategy maintains mid-range performance. Demonstrates that model capacity constraints prevent smaller models from benefiting from complex hypothesis-driven prompts that improve larger models.*
+
 #### 4.2.3 B1 Bias Improvement
 
 **Table 9: CEFR-Level Accuracy Comparison**
@@ -550,6 +622,12 @@ Educational context requires assessing error impact:
 | C1 | 0% | 0% | 0pp (unchanged) |
 | C2 | 0% | 0% | 0pp (unchanged) |
 
+**Figure 12: Phase 2 CEFR Level Difficulty**
+
+![Phase 2 CEFR Level Difficulty](figures/phase2_analysis_cefr_difficulty.png)
+
+*Figure 12: Phase 2 accuracy and robustness by CEFR level. Left panel shows improved accuracy for A2 (+12pp to 82%) and B2 (+14pp to 24%) but C1/C2 remain at 0% despite hypothesis-driven interventions. Right panel shows robustness patterns with increased variance for higher levels (B2/C1/C2) due to length sensitivity worsening. Comparison to Figure 5 demonstrates partial success at lower levels but persistent architectural ceiling for advanced proficiency.*
+
 **Phase 2 Confusion Matrix (GPT-4o-mini):**
 ```
 True → Predicted:  A2    B1    B2    C1    C2
@@ -559,6 +637,12 @@ B2                  1%   75%   24%    0%    0%
 C1                  0%   39%   61%    0%    0%
 C2                  0%    8%   74%   18%    0%
 ```
+
+**Figure 11: Phase 2 Confusion Matrix Heatmaps**
+
+![Phase 2 Confusion Matrices](figures/phase2_analysis_confusion_matrix.png)
+
+*Figure 11: Phase 2 confusion matrices showing partial B1 bias reduction. Compared to Phase 1, B2→B1 misclassification reduced from 90% to 75% (-15pp improvement), and B2 diagonal improved from 10% to 24% (+14pp). A2 accuracy increased from 70% to 82% (+12pp). However, C1/C2 classification remains unsolved with 0% exact accuracy maintained for both models, indicating architectural limitation beyond prompt engineering.*
 
 **Key Findings:**
 1. **B1 bias reduced:** B2→B1 misclassification dropped from 90% to 75% (-15pp)
@@ -598,6 +682,12 @@ Root causes:
 
 **Model Comparison:** GPT-4o-mini handled v6 successfully, demonstrating larger models' robustness to complex instructions.
 
+**Figure 13: Phase 2 Model Comparison**
+
+![Phase 2 Model Comparison](figures/phase2_models.png)
+
+*Figure 13: Phase 2 model comparison showing catastrophic Phi-3-mini failure. Robustness (left) shows GPT-4o-mini improved to SD=0.174 while Phi-3-mini worsened to SD=0.419. Accuracy (right) shows Phi-3-mini collapsed to 7.4% (vs 29.3% for GPT-4o-mini), demonstrating model capacity limits for complex hypothesis-driven prompts. Phase 2 amplified architecture gap from 1.4× to 4.0× accuracy ratio.*
+
 #### 4.2.5 Counterintuitive Finding: Length Sensitivity Worsened
 
 **Table 10: Phase 2 Length Effect**
@@ -610,6 +700,18 @@ Root causes:
 **Correlation Change:**
 - Phase 1: r = -0.424 (length → accuracy)
 - Phase 2: r = +0.960 (length → robustness!)
+
+**Figure 14: Phase 2 Essay Length Effect (Counterintuitive Paradox)**
+
+![Phase 2 Length Effect](figures/phase2_analysis_length_effect.png)
+
+*Figure 14: Phase 2 length sensitivity paradox. Despite explicit anti-length-bias instructions, robustness (left panel) increased dramatically with essay length—SD worsened 4× for long essays (0.253→1.094). Accuracy (right panel) remained suppressed for long essays but recovered slightly. Correlation changed from r=-0.424 (Phase 1, length→accuracy) to r=+0.960 (Phase 2, length→robustness), demonstrating counterintuitive effect where instructing "don't use length" paradoxically activated length attention.*
+
+**Figure 15: Phase 2 Error Severity Distribution**
+
+![Phase 2 Error Severity](figures/phase2_analysis_error_severity.png)
+
+*Figure 15: Phase 2 error severity showing slightly degraded distribution compared to Phase 1. Off-by-0+1 combined = 64.3% (vs 69.6% Phase 1), with increased off-by-2 errors (19.5% vs 28.3%) from prompt brittleness particularly in rubric v5 failure. GPT-4o-mini maintains better distribution (29.3% exact) than Phi-3-mini (7.4% exact) despite both models showing worse overall performance than Phase 1.*
 
 **Critical Discovery:** Despite explicit anti-length-bias instructions, Phase 2 prompts became HIGHLY sensitive to essay length. Robustness collapsed for long essays (SD: 0.253→1.094, 4× worse).
 
@@ -627,6 +729,12 @@ Root causes:
 | Phase 1 Accuracy | 33.0% | 24.4% | 1.4× |
 | Phase 2 Accuracy | 29.3% | 7.4% | 4.0× |
 | Parameters | ~8B | 3.8B | 2.1× |
+
+**Figure 18: Phase 2 Cost-Performance Analysis**
+
+![Phase 2 Cost-Performance](figures/phase2_analysis_cost_effectiveness.png)
+
+*Figure 18: Phase 2 cost-performance maintained from Phase 1. Left panel shows cost vs robustness: GPT-4o-mini continues to achieve deployment-ready robustness (SD=0.174 <0.5 green threshold) at negligible cost (~$0.04 for 900 predictions, $0.0004/essay), while Phi-3-mini's zero marginal cost cannot justify 2.4× worse robustness (SD=0.419). Right panel shows cost vs accuracy: GPT-4o-mini maintains 29.3% accuracy versus Phi-3-mini's catastrophic 7.4% collapse. Confirms RQ5: commercial APIs provide superior cost-reliability tradeoff.*
 
 **Answer to RQ4:** Yes, model architecture significantly affects robustness. Larger commercial models (GPT-4o-mini) consistently demonstrate 2-3× better robustness and higher accuracy than smaller open-source models (Phi-3-mini).
 
