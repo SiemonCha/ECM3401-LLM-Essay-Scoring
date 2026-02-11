@@ -1,10 +1,10 @@
-# 🎯 COMPLETE ECM3401 WORKFLOW
+# COMPLETE ECM3401 WORKFLOW
 
 **Simple, organized, thesis-ready workflow**
 
 ---
 
-## 📋 PROJECT STRUCTURE
+## PROJECT STRUCTURE
 
 ```
 ECM3401-LLM-Essay-Scoring/
@@ -39,7 +39,7 @@ ECM3401-LLM-Essay-Scoring/
 
 ---
 
-## 🚀 COMPLETE WORKFLOW
+## COMPLETE WORKFLOW
 
 ### **PHASE 1: Baseline Measurement**
 
@@ -103,7 +103,7 @@ python analyze.py --phase 1
 
 ---
 
-#### **Step 4: Comprehensive Analysis** (3-4 min) ⭐ NEW!
+#### **Step 4: Comprehensive Analysis** (3-4 min)
 
 ```bash
 python comprehensive_analysis.py
@@ -204,7 +204,7 @@ python compare_phases.py
 
 ---
 
-## ⏱️ TIME BREAKDOWN
+## TIME BREAKDOWN
 
 ### **One-Time Setup:**
 
@@ -215,7 +215,7 @@ python compare_phases.py
 
 - Run experiment: 3-5 hours (unattended)
 - Basic analysis: 2 min
-- Comprehensive analysis: 3-4 min ⭐
+- Comprehensive analysis: 3-4 min
 
 ### **Phase 2:**
 
@@ -228,11 +228,11 @@ python compare_phases.py
 
 - Computation: 6-10 hours (mostly unattended)
 - Manual work: 2-4 hours (prompts)
-- **Total: 8-14 hours** 🎯
+- **Total: 8-14 hours**
 
 ---
 
-## 📊 WHAT YOU GET
+## YOU GET
 
 ### **After Phase 1:**
 
@@ -251,83 +251,9 @@ python compare_phases.py
 - ✅ Statistical comparisons
 - ✅ Deployment recommendations
 
-### **For Your Thesis:**
 
-- ✅ Novel contribution (first robustness study)
-- ✅ Rigorous methodology
-- ✅ Publication-ready visualizations
-- ✅ Deep analysis demonstrating understanding
-- ✅ Hypothesis-driven improvements
-- ✅ Practical deployment insights
-- ✅ Complete cost analysis (RQ5)
 
-**Everything needed for 80-85% thesis!** 🎓
-
----
-
-## 🎯 CURRENT STATUS CHECKLIST
-
-- [x] Phase 1 experiment complete
-- [x] Basic analysis complete
-- [ ] Comprehensive analysis ← **DO THIS NEXT!**
-- [ ] Create Phase 2 prompts
-- [ ] Phase 2 experiment
-- [ ] Phase 2 analysis
-- [ ] Phase comparison
-
----
-
-## 🔍 KEY ANALYSES EXPLAINED
-
-### **Basic Analysis** (analyze.py):
-
-**Purpose:** Quick overview of results  
-**Answers:** "What happened?"  
-**Time:** 2 minutes  
-**Output:** 3 plots, 1 report, 1 CSV
-
-### **Comprehensive Analysis** (comprehensive_analysis.py) ⭐:
-
-**Purpose:** Deep understanding of patterns  
-**Answers:** "WHY did it happen? WHERE do errors occur? HOW severe?"  
-**Time:** 3-4 minutes  
-**Output:** 5 plots, 7 CSVs, 1 detailed report
-
-**This is what differentiates a 70% thesis from an 85% thesis!**
-
----
-
-## 💡 THESIS WRITING GUIDE
-
-### **Methods Section:**
-
-Use: Phase 1 experiment details (2 models, 3 strategies, 3 paraphrases)
-
-### **Results Section:**
-
-Use:
-
-- Basic analysis plots (overall performance)
-- Comprehensive analysis (detailed patterns)
-
-### **Discussion Section:**
-
-Use:
-
-- Variant comparison (answers RQ1 directly)
-- Confusion matrix (explains error patterns)
-- Error severity (educational context)
-- Length effect (acknowledges confounds)
-- CEFR difficulty (contextualizes 33% accuracy)
-- Cost analysis (answers RQ5)
-
-### **Conclusion:**
-
-Use: Phase comparison results (Phase 1 vs Phase 2 improvements)
-
----
-
-## 🚨 TROUBLESHOOTING
+## TROUBLESHOOTING
 
 ### **"Module not found" error:**
 
@@ -345,47 +271,3 @@ Check that Phase 1 experiment completed:
 ls data/results/phase1_results.csv
 ls tables/phase1_metrics.csv
 ```
-
-### **Plots don't look right:**
-
-All scripts use same plotting style. If one looks good, all should look good!
-
----
-
-## 📈 NEXT IMMEDIATE STEP
-
-**Run comprehensive analysis NOW:**
-
-```bash
-python comprehensive_analysis.py
-```
-
-**This will give you:**
-
-- Evidence for RQ1 (variant comparison)
-- Understanding of error patterns (confusion matrix)
-- Educational context (severity)
-- Methodological rigor (confound checks)
-- Cost analysis (RQ5)
-- Complete report for thesis discussion
-
-**Time:** 3-4 minutes  
-**Value:** Massive! Transforms basic results into deep insights!
-
----
-
-## ✅ WORKFLOW CONFIDENCE
-
-**This workflow is:**
-
-- ✅ **Complete** - Answers all 5 RQs
-- ✅ **Simple** - 6 scripts total, clear order
-- ✅ **Organized** - All outputs in right places
-- ✅ **Thesis-ready** - Publication-quality results
-- ✅ **Tested** - Phase 1 works perfectly!
-
-**You're on track for 80-85% thesis!** 🎯
-
----
-
-**Questions? Check the scripts - they have detailed comments and progress indicators!**
