@@ -65,6 +65,10 @@ tiktoken==0.7.0        # OpenAI's token counter (BPE tokenization)
 # ============================================================================
 nltk==3.8.1            # Natural Language Toolkit
 textstat==0.7.3        # Readability metrics (Flesch-Kincaid, etc.)
+spacy==3.7.4           # NLP pipeline for TTR + lexical density analysis
+                       # After install: pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+stanza==1.9.2          # Stanford NLP - constituency parsing for parse tree depth
+                       # After install: python -c "import stanza; stanza.download('en')"
 
 # ============================================================================
 # Visualization
@@ -100,40 +104,18 @@ pydantic==2.9.2        # Data validation using Python type annotations
 # INSTALLATION NOTES
 # ============================================================================
 # Tested Environment:
-#   - macOS 14+ (Sonoma) on Apple Silicon (M1/M2/M3)
-#   - Python 3.10.13 (also works with 3.11.x)
-#   - conda environment manager
-#
-# Installation Time: ~5-10 minutes
-# Total Size: ~2GB (excluding Phi-3 model which is ~8GB separately downloaded)
+#   - Ubuntu 24.x with AMD Radeon RX 7900 XT (ROCm)
+#   - Python 3.10+
 #
 # Installation Commands:
-#   conda create -n py310 python=3.10 -y
-#   conda activate py310
-#   pip install -r requirements.txt
+#   pip install -r requirements.txt --break-system-packages
+#   pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+#   python -c "import stanza; stanza.download('en')"   # ~500MB, one-time
 #
-# Environment Variable (Important for M1/M2/M3 Macs):
-#   export PYTORCH_ENABLE_MPS_FALLBACK=1
-#   # Add to ~/.zshrc for permanent: echo 'export PYTORCH_ENABLE_MPS_FALLBACK=1' >> ~/.zshrc
-#
-# Verification Commands:
-#   python -c "import torch; print(f'PyTorch: {torch.__version__}, MPS available: {torch.backends.mps.is_available()}')"
-#   python -c "import openai; print(f'OpenAI: {openai.__version__}')"
-#   python -c "import transformers; print(f'Transformers: {transformers.__version__}')"
-#   python -c "import pandas; print(f'Pandas: {pandas.__version__}')"
+# For ROCm (AMD GPU) PyTorch, replace torch lines above with:
+#   pip install torch --index-url https://download.pytorch.org/whl/rocm6.0
 #
 # API Keys Required:
 #   Create .env file in project root with:
 #     OPENAI_API_KEY=sk-proj-your-key-here
 #     HUGGINGFACE_TOKEN=hf_your-token-here  # Optional for Phi-3 download
-#
-# Common Issues:
-#   - If MPS errors occur: export PYTORCH_ENABLE_MPS_FALLBACK=1
-#   - If imports fail: pip install --upgrade pip setuptools wheel
-#   - If OpenAI fails: verify API key in .env file
-#   - If transformers slow: ensure MPS is available (not just built)
-#
-# Cost Estimate:
-#   - OpenAI GPT-4o-mini: ~$0.12 for 2,430 predictions (Phase 1)
-#   - Phi-3-Mini: $0 (runs locally, but slower ~2min per essay)
-#   - Total for both phases: ~$0.24

@@ -69,10 +69,10 @@ RQ1: Are LLM predictions robust to paraphrasing?
 🔬 THE KEY QUESTION: What Analysis Actually Helps?
 You're right - we have two types of variables:
 Type 1: EXPERIMENTAL FACTORS (You manipulate)
-✅ Prompt strategy ✅ Prompt paraphrases ✅ Model choice ⚠️ Specific prompt wording (Phase 2)
+✅ Prompt strategy✅ Prompt paraphrases✅ Model choice⚠️ Specific prompt wording (Phase 2)
 Goal: Find which CONTROLLED changes improve robustness/accuracy
 Type 2: OBSERVATIONAL FACTORS (Essay characteristics)
-📊 Essay length 📊 CEFR level 📊 Individual essay difficulty 📊 L1 language
+📊 Essay length📊 CEFR level📊 Individual essay difficulty📊 L1 language
 Goal: Understand what MATERIAL characteristics affect difficulty
 
 💡 STRATEGIC DECISION: What Should We Analyze?
@@ -122,12 +122,12 @@ HIGH VALUE (Do these - they answer your RQs):
 🎯 MY RECOMMENDATION: Strategic 3-Analysis Approach
 Instead of running 7 analyses, do just 3 essential ones:
 Analysis 1: Confusion Matrix
-Time: 30 seconds to compute Why: Shows WHERE the model fails For thesis: "B1↔B2 confusion accounts for 38% of errors"
+Time: 30 seconds to computeWhy: Shows WHERE the model failsFor thesis: "B1↔B2 confusion accounts for 38% of errors"
 Analysis 2: Error Severity
-Time: 30 seconds to compute Why: Shows HOW BAD the failures are For thesis: "70% of errors are adjacent-level (acceptable for learning)"
+Time: 30 seconds to computeWhy: Shows HOW BAD the failures areFor thesis: "70% of errors are adjacent-level (acceptable for learning)"
 Analysis 3: Essay Length as Confound Check
-Time: 1 minute to compute Why: Ensures length isn't driving your results For thesis: "Essay length was not significantly associated with robustness (r = 0.12, p = 0.43)"
-Total time: 2 minutes Total value: HIGH - answers reviewer questions about your methodology
+Time: 1 minute to computeWhy: Ensures length isn't driving your resultsFor thesis: "Essay length was not significantly associated with robustness (r = 0.12, p = 0.43)"
+Total time: 2 minutesTotal value: HIGH - answers reviewer questions about your methodology
 
 📊 THE REAL INSIGHT: Levels of Analysis
 You identified this perfectly:
@@ -196,10 +196,10 @@ Run only 3 essential analyses:
 
 ❓ MY QUESTION TO YOU:
 What's your PRIMARY goal for Phase 2?
-Option A: Improve overall accuracy (33% → 40%+) Option B: Improve robustness (SD 0.192 → <0.15) Option C: Reduce severe errors (off-by-2 from 8% → <5%) Option D: Beat GPT with Phi-3 (make Phi-3 competitive)
+Option A: Improve overall accuracy (33% → 40%+)Option B: Improve robustness (SD 0.192 → <0.15)Option C: Reduce severe errors (off-by-2 from 8% → <5%)Option D: Beat GPT with Phi-3 (make Phi-3 competitive)
 Your answer determines which analyses matter and what Phase 2 prompts should test!
 What do you think? Should we run focused 3-analysis or full 7-analysis? 🤔
-  ================================================================   EXCELLENT question! Let me map the complete research arc to show you what each piece does and if there are any gaps:
+================================================================EXCELLENT question! Let me map the complete research arc to show you what each piece does and if there are any gaps:
 
 📋 COMPLETE RESEARCH DESIGN MAP
 ┌─────────────────────────────────────────────────────────┐
@@ -409,7 +409,7 @@ Recommendations: Deploy Strategy X with Model Y
 
 ✅ IS THIS "COMPLETE PERFECT"?
 What you have:
-✅ Baseline measurement (Phase 1) ✅ Deep understanding (5 analyses) ✅ Improvement testing (Phase 2) ✅ All 5 RQs answered ✅ Novel contribution (first robustness study) ✅ Practical impact (deployment recommendations)
+✅ Baseline measurement (Phase 1)✅ Deep understanding (5 analyses)✅ Improvement testing (Phase 2)✅ All 5 RQs answered✅ Novel contribution (first robustness study)✅ Practical impact (deployment recommendations)
 What might be missing:
 ⚠️ Qualitative analysis (optional but impressive):
 
@@ -434,8 +434,7 @@ Phase 1 (Baseline) → Measures robustness/accuracy
 
 - Deep Analysis → Explains patterns/confounds
 - Phase 2 (Improvement) → Tests hypothesis-driven fixes
-- Comparison → Shows what works
-  =
+- # Comparison → Shows what works
   STRONG 80-85% THESIS
   To make it "perfect" (85-90%):
   Add just 2 things:
@@ -463,7 +462,7 @@ Phase 2 Improvement 5h RQ3, RQ5 Contribution ⏳ TODO
 Phase Comparison 5min All RQs Conclusions ⏳ TODO
 Cost Analysis 1h RQ5 Practical ⚪ OPTIONAL
 Qualitative 2h RQ1 Depth ⚪ OPTIONAL
-Total core time: ~11 hours (5h + 5min + 5h + 5min) Total with optional: ~14 hours
+Total core time: ~11 hours (5h + 5min + 5h + 5min)Total with optional: ~14 hours
 
 🎯 FINAL ANSWER TO YOUR QUESTION
 "Are Phase 1 + 5 Analyses + Phase 2 complete perfect?"
