@@ -1,273 +1,220 @@
-# COMPLETE ECM3401 WORKFLOW
+# Measuring Semantic Robustness in LLM-Based Essay Scoring
 
-**Simple, organized, thesis-ready workflow**
+**A Paraphrase Sensitivity Analysis of CEFR Classification Across Prompt Variations**
+
+ECM3401 Individual Project · University of Exeter · 2025/26  
+Sansiri Charoenpong · Supervisor: Dr Rodrigo Souza Wilkens
+
+> **Research Gap:** While many studies report LLM accuracy for essay scoring, very few — if any — measure whether predictions stay consistent when the scoring prompt is reworded. This study addresses that gap.
+
+📄 **Full dissertation will be available here after assessment (July 2026)**
 
 ---
 
-## PROJECT STRUCTURE
+## Novel Contributions
+
+1. **Robustness measurement framework for LLM-based AES** — proposes SD < 0.5 across paraphrased prompts as a deployment-readiness threshold, with Krippendorff's α for inter-variant reliability. To our knowledge, this is among the first studies to quantify this property for essay scoring.
+2. **Systematic B1 bias discovery** — 85% accuracy on B1 essays vs 0% on C1/C2; 90% of B2 essays misclassified as B1, exposing a fundamental limitation for advanced learner assessment
+3. **Prompt brittleness as a deployment risk** — single-word changes cause 5× accuracy degradation; special characters collapse smaller models entirely
+4. **Cost-robustness framework** — GPT-4o-mini achieves SD = 0.192 at $0.0004/essay, economically superior to open-source alternatives until 2.5M+ essays/year
+
+---
+
+## Overview
+
+This repository contains the code, prompts, and analysis scripts for a study measuring whether LLM-based CEFR essay classifiers produce consistent predictions when scoring prompts are paraphrased. The study generated 3,600 predictions across two models (GPT-4o-mini, Phi-3-mini), three prompting strategies (Minimal, Rubric, Chain-of-Thought), and six prompt variants applied to 100 stratified essays from the Write & Improve corpus.
+
+### Key Findings
+
+- **GPT-4o-mini** achieves deployment-ready robustness (SD = 0.192, Krippendorff's α = 0.54–0.86)
+- **Phi-3-mini** fails all robustness thresholds (SD = 0.513, α as low as −0.59)
+- **Systematic B1 bias**: 85% accuracy on B1 essays, 0% on C1/C2, 90% of B2 essays misclassified as B1
+- **Prompt brittleness**: single-word changes caused 5× accuracy degradation; special characters collapsed Phi-3-mini entirely
+- **Phase 2 interventions** partially reduced B1 bias (B2 accuracy: 10% → 24%) but introduced catastrophic rubric failures
+
+---
+
+## Repository Structure
 
 ```
 ECM3401-LLM-Essay-Scoring/
 │
-├── simple_config.py              # Configuration
-├── setup.py                      # [1] One-time setup
-├── run_experiment.py             # [2] Run experiments
-├── analyze.py                    # [3] Basic analysis
-├── comprehensive_analysis.py     # [4] Deep analysis ← NEW!
-├── compare_phases.py             # [6] Phase comparison
+├── README.md
+├── simple_config.py                # Configuration (API keys, paths, model settings)
+├── setup.py                        # Dataset download and stratified sampling
+├── run_experiment.py               # Inference pipeline (both phases)
+├── analyze.py                      # Basic analysis (accuracy, SD, cost)
+├── comprehensive_analysis.py       # Deep analysis (confusion, severity, confounds)
+├── compare_phases.py               # Phase 1 vs Phase 2 comparison
 │
-├── prompts/                      # Your 18 prompt files
-│   ├── Phase 1: minimal_v1-v3, rubric_v1-v3, cot_v1-v3
-│   └── Phase 2: minimal_v4-v6, rubric_v4-v6, cot_v4-v6
+├── prompts/                        # All 18 prompt templates
+│   ├── minimal_v1.txt ... minimal_v6.txt
+│   ├── rubric_v1.txt  ... rubric_v6.txt
+│   └── cot_v1.txt     ... cot_v6.txt
 │
 ├── data/
 │   ├── processed/
-│   │   └── sample_100.csv
+│   │   └── sample_100.csv          # Stratified sample (100 essays, 20 per level)
 │   └── results/
-│       ├── phase1_results.csv
-│       └── phase2_results.csv
+│       ├── phase1_results.csv      # 1,800 Phase 1 predictions
+│       └── phase2_results.csv      # 1,800 Phase 2 predictions
 │
-├── tables/                       # All CSV outputs
+├── tables/                         # Analysis outputs (CSV + reports)
 │   ├── phase1_metrics.csv
-│   ├── analysis_*.csv (7 files)
+│   ├── phase2_metrics.csv
+│   ├── phase_comparison.csv
 │   └── comprehensive_analysis_report.md
 │
-└── figures/                      # All plots
-    ├── phase1_*.png (3 files)
-    └── analysis_*.png (5 files)
+└── figures/                        # All generated plots
+    ├── phase1_*.png
+    ├── phase2_*.png
+    └── analysis_*.png
 ```
 
 ---
 
-## COMPLETE WORKFLOW
+## Experimental Design
 
-### **PHASE 1: Baseline Measurement**
+|  | Phase 1: Baseline | Phase 2: Intervention |
+|---|---|---|
+| **Models** | GPT-4o-mini & Phi-3-mini | Same |
+| **Strategies** | Minimal · Rubric · CoT | Same |
+| **Variants** | v1–v3 (true paraphrases) | v4–v6 (targeted modifications) |
+| **Essays** | 100 (20 per CEFR level) | Same |
+| **Predictions** | 1,800 | 1,800 (total: 3,600) |
 
-#### **Step 1: Setup** (ONE TIME - 30 min)
+**Critical configuration:** Temperature = 0 (deterministic), max tokens = 50, fixed seed = 42.
+
+### Prompting Strategies
+
+- **Minimal**: Single instruction sentence — establishes lower-bound baseline
+- **Rubric-based**: CEFR descriptor summaries per level with explicit feature lists
+- **Chain-of-Thought**: Multi-step reasoning (morphosyntax → lexis → discourse → diagnostics → decision)
+
+### Phase 2 Interventions
+
+- **v4**: B1 bias correction — explicit B2/C1/C2 diagnostic markers
+- **v5**: Length bias control — instruction that length ≠ proficiency
+- **v6**: Decision rule — prefer higher level when features indicate
+
+---
+
+## Reproduction
+
+### Prerequisites
+
+- Python 3.11+
+- OpenAI API key (for GPT-4o-mini)
+- Hugging Face Transformers (for Phi-3-mini local inference)
+
+### Setup
 
 ```bash
+git clone https://github.com/SiemonCha/ECM3401-LLM-Essay-Scoring.git
+cd ECM3401-LLM-Essay-Scoring
+pip install -r requirements.txt
 python setup.py
 ```
 
-**What it does:**
-
-- ✓ Validates environment
-- ✓ Creates sample (100 essays, stratified)
-- ✓ Downloads Phi-3-Mini (~8GB)
-- ✓ Verifies prompts exist
-
-**Run once, never again!**
-
----
-
-#### **Step 2: Run Phase 1 Experiment** (3-5 hours, unattended)
+### Run Experiments
 
 ```bash
+# Phase 1: Baseline (v1–v3)
 python run_experiment.py --phase 1
-```
 
-**What it does:**
-
-- ✓ Tests 2 models × 9 prompts = 18 configurations
-- ✓ Generates 1,800 predictions (100 essays × 9 prompts × 2 models)
-- ✓ Saves incrementally (progress bar shows status)
-- ✓ Measures robustness (SD across v1/v2/v3)
-
-**Output:** `data/results/phase1_results.csv`
-
-**Let it run overnight!**
-
----
-
-#### **Step 3: Basic Analysis** (2 min)
-
-```bash
-python analyze.py --phase 1
-```
-
-**What it does:**
-
-- ✓ Calculates overall metrics (robustness, accuracy)
-- ✓ Creates 3 publication-quality plots
-- ✓ Generates summary report
-
-**Outputs:**
-
-- `tables/phase1_metrics.csv` - Strategy-level metrics
-- `figures/phase1_robustness.png` - Robustness by strategy
-- `figures/phase1_models.png` - Model comparison
-- `figures/phase1_tradeoff.png` - Accuracy vs robustness
-- `tables/phase1_report.md` - Summary findings
-
-**Quick overview of results!**
-
----
-
-#### **Step 4: Comprehensive Analysis** (3-4 min)
-
-```bash
-python comprehensive_analysis.py
-```
-
-**What it does:**
-
-- ✓ **Analysis 1:** Variant comparison (v1 vs v2 vs v3 accuracy)
-- ✓ **Analysis 2:** Confusion matrix (which levels get confused)
-- ✓ **Analysis 3:** Error severity (off-by-N distribution)
-- ✓ **Analysis 4:** Essay length effect (confound check)
-- ✓ **Analysis 5:** CEFR level difficulty (context)
-- ✓ **Analysis 6:** Cost analysis (RQ5)
-
-**Outputs:**
-
-- **7 CSV tables** in `tables/analysis_*.csv`
-- **5 publication plots** in `figures/analysis_*.png`
-- **1 comprehensive report** in `tables/comprehensive_analysis_report.md`
-
-**Deep understanding of your baseline!**
-
----
-
-### **PHASE 2: Hypothesis-Driven Improvement**
-
-#### **Step 5: Create Phase 2 Prompts** (Manual - 1-2 hours)
-
-Based on Phase 1 insights, create 9 new prompts:
-
-**Example insights → prompts:**
-
-```
-Finding: "B1↔B2 confusion is 42% of B1 errors"
-   ↓
-Phase 2 Prompt: Add explicit B1/B2 discriminators
-
-Finding: "Short essays have SD = 0.25"
-   ↓
-Phase 2 Prompt: Add length-aware instructions
-
-Finding: "22% off-by-2 errors"
-   ↓
-Phase 2 Prompt: Add ordinal constraints
-```
-
-**Create in `prompts/`:**
-
-- minimal_v4.txt, minimal_v5.txt, minimal_v6.txt
-- rubric_v4.txt, rubric_v5.txt, rubric_v6.txt
-- cot_v4.txt, cot_v5.txt, cot_v6.txt
-
----
-
-#### **Step 6: Run Phase 2 Experiment** (3-5 hours, unattended)
-
-```bash
+# Phase 2: Interventions (v4–v6)
 python run_experiment.py --phase 2
 ```
 
-**Same as Step 2, but with Phase 2 prompts**
-
-**Output:** `data/results/phase2_results.csv`
-
----
-
-#### **Step 7: Analyze Phase 2** (2 min)
+### Analysis
 
 ```bash
+python analyze.py --phase 1
 python analyze.py --phase 2
-```
-
-**Same analyses as Step 3, but for Phase 2**
-
----
-
-#### **Step 8: Compare Phases** (2 min)
-
-```bash
+python comprehensive_analysis.py
 python compare_phases.py
 ```
 
-**What it does:**
+---
 
-- ✓ Compares Phase 1 vs Phase 2 metrics
-- ✓ Statistical tests (t-tests)
-- ✓ Identifies improvements
-- ✓ Generates final recommendations
+## Evaluation Metrics
 
-**Outputs:**
-
-- `tables/phase_comparison.csv`
-- `figures/phase_comparison.png`
-- `figures/phase_heatmap.png`
-- `tables/comparison_report.md`
-
-**Final thesis results!**
+| Metric | Measures | Interpretation |
+|---|---|---|
+| **SD** (Standard Deviation) | Prediction variance across prompt variants | Lower = more stable; SD < 0.5 = deployment-ready |
+| **Krippendorff's α** | Inter-variant agreement (ordinal) | α ≥ 0.67 tentative; α ≥ 0.80 definitive |
+| **Accuracy** | Exact CEFR level match | Higher = better classification |
+| **Cost** | API cost per essay (USD) | GPT-4o-mini: ~$0.0004/essay; Phi-3-mini: $0 |
 
 ---
 
-## TIME BREAKDOWN
+## Results Summary
 
-### **One-Time Setup:**
+### Phase 1: Baseline Performance
 
-- Download model: 10-30 min (one time)
-- Create prompts: 1-2 hours (manual)
+| Model / Strategy | Accuracy | SD | Status |
+|---|---|---|---|
+| GPT-4o-mini · Minimal | 33.7% | 0.185 | ✓ Pass |
+| GPT-4o-mini · Rubric | 34.7% | 0.185 | ✓ Pass |
+| GPT-4o-mini · CoT | 30.7% | 0.208 | ✓ Pass |
+| Phi-3-mini · Minimal | 24.0% | 0.433 | ✗ Fail |
+| Phi-3-mini · Rubric | 23.3% | 0.335 | ✗ Fail |
+| Phi-3-mini · CoT | 26.0% | 0.771 | ✗ Fail |
 
-### **Phase 1:**
+### Systematic B1 Bias (GPT-4o-mini)
 
-- Run experiment: 3-5 hours (unattended)
-- Basic analysis: 2 min
-- Comprehensive analysis: 3-4 min
+| CEFR Level | Phase 1 Accuracy | Phase 2 Accuracy |
+|---|---|---|
+| A2 | 70.0% | 82.2% |
+| B1 | 85.0% | 63.2% |
+| B2 | 10.0% | 23.6% |
+| C1 | 0.0% | 0.0% |
+| C2 | 0.0% | 0.0% |
 
-### **Phase 2:**
+### Prompt Brittleness
 
-- Create Phase 2 prompts: 1-2 hours (manual)
-- Run experiment: 3-5 hours (unattended)
-- Analyze: 2 min
-- Compare: 2 min
-
-### **Total Project Time:**
-
-- Computation: 6-10 hours (mostly unattended)
-- Manual work: 2-4 hours (prompts)
-- **Total: 8-14 hours**
+- Formal CEFR terminology (v5): accuracy 30% → 6% (5× degradation)
+- Special character `≠` (v6): Phi-3-mini accuracy → 0% (complete failure)
+- Verb phrasing ("score" vs "classify"): systematic upward grading bias
 
 ---
 
-## YOU GET
+## Dataset
 
-### **After Phase 1:**
+**Write & Improve Corpus** (Bryant et al., 2023)  
+Cambridge English Write & Improve platform · 23,216 learner essays · CEFR-annotated
 
-- ✅ 1,800 predictions
-- ✅ Baseline robustness metrics
-- ✅ 8 publication-quality plots
-- ✅ 2 comprehensive reports
-- ✅ 8 detailed CSV tables
+Stratified sample: 100 essays (20 per level: A2, B1, B2, C1, C2), fixed seed = 42.
 
-### **After Phase 2:**
+The Write & Improve corpus is publicly available for research purposes from the Cambridge English Write & Improve project.
 
-- ✅ 3,600 total predictions
-- ✅ Improvement evidence
-- ✅ 12 publication-quality plots
-- ✅ 4 comprehensive reports
-- ✅ Statistical comparisons
-- ✅ Deployment recommendations
+---
 
+## Dissertation
 
+The full dissertation will be uploaded to this repository after assessment and moderation are complete (expected July 2026). It contains the complete literature review, methodology, results with all figures, discussion, and 18 prompt templates in the appendix.
 
-## TROUBLESHOOTING
+---
 
-### **"Module not found" error:**
+## Citation
 
-```bash
-# Make sure you're in project root
-cd "/Users/siemoncha/Desktop/Exeter/Y3/Individual Project/ECM3401-LLM-Essay-Scoring"
-python comprehensive_analysis.py
+If you use this work or build on it, please cite:
+
+```bibtex
+@thesis{charoenpong2026,
+  title   = {Measuring Semantic Robustness in LLM-Based Essay Scoring: 
+             A Paraphrase Sensitivity Analysis of CEFR Classification 
+             Across Prompt Variations},
+  author  = {Charoenpong, Sansiri},
+  year    = {2026},
+  school  = {University of Exeter},
+  type    = {BSc Dissertation},
+  department = {Computer Science}
+}
 ```
 
-### **"File not found" error:**
+---
 
-Check that Phase 1 experiment completed:
+## License
 
-```bash
-ls data/results/phase1_results.csv
-ls tables/phase1_metrics.csv
-```
+This project is submitted as part of ECM3401 Individual Project at the University of Exeter. Code and analysis scripts are available for academic and research purposes. The Write & Improve corpus is subject to its own license from Cambridge English.
