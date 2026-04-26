@@ -1,0 +1,3027 @@
+phase,essay_id,true_label,word_count,length_category,model,prompt_name,strategy,variant,prediction,timestamp
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:03:07.885661
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:03:28.394424
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:03:29.619799
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:03:31.441191
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:03:32.525384
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,minimal_v6,minimal,v6,**Solution,2026-01-14T19:03:34.551159
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:03:35.082284
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:03:37.377900
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:03:38.254833
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,rubric_v5,rubric,v5,Essay Eval,2026-01-14T19:03:40.883029
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:03:41.552191
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:03:43.912760
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:03:44.496595
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:03:47.072897
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:03:48.132435
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,cot_v5,cot,v5,".
+
+ANSWER:",2026-01-14T19:03:50.847587
+2,essay_464518922f58cd70,A2,89,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:03:52.211494
+2,essay_464518922f58cd70,A2,89,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T19:03:54.771996
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:03:55.885359
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,minimal_v4,minimal,v4,. No expla,2026-01-14T19:03:59.037102
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:03:59.474152
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+#### So",2026-01-14T19:04:01.444617
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:04:02.028604
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:04:03.071656
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:04:03.663844
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:04:06.543441
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:04:07.269806
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:04:10.265554
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:04:11.149307
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:04:13.852448
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:04:15.245668
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:04:18.267413
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:04:18.705203
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:04:21.040350
+2,essay_be645125371cce84,A2,75,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:04:21.689214
+2,essay_be645125371cce84,A2,75,short,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:04:24.118626
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:04:24.743311
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,minimal_v4,minimal,v4,. No expla,2026-01-14T19:04:27.558794
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:04:28.144147
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:04:29.989324
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:04:30.719492
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:04:31.910863
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:04:32.392316
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:04:35.235502
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:04:35.800628
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:04:38.403157
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:04:38.852043
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:04:42.024941
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:04:42.580535
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:04:45.416505
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:04:46.037152
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:04:48.823351
+2,essay_8a6367b6ac1dca98,A2,53,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:04:49.494267
+2,essay_8a6367b6ac1dca98,A2,53,short,phi-3-mini,cot_v6,cot,v6,### Soluti,2026-01-14T19:04:51.640215
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:04:52.845636
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:04:55.718843
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:04:56.301783
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+Solutio",2026-01-14T19:04:58.507529
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:04:58.904427
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:04:59.932015
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:05:00.435981
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+
+### So",2026-01-14T19:05:03.053917
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:05:03.765299
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:05:05.274219
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:05:06.119198
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:05:09.555507
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:05:10.032905
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,cot_v4,cot,v4,".
+
+#### So",2026-01-14T19:05:11.622028
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:05:12.286201
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+
+ANSWE",2026-01-14T19:05:15.615095
+2,essay_7317ee210bee1728,A2,36,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:05:16.441102
+2,essay_7317ee210bee1728,A2,36,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### Re",2026-01-14T19:05:18.812738
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:05:19.299117
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:05:20.873452
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:05:21.348797
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:05:23.667469
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:05:24.281509
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:05:25.743320
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:05:26.225504
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:05:28.496101
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:05:29.483232
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,rubric_v5,rubric,v5,Essay Eval,2026-01-14T19:05:31.489292
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:05:32.219128
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:05:34.899036
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:05:35.368792
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:05:37.204499
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:05:37.647208
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+
+### S",2026-01-14T19:05:40.605566
+2,essay_6a498258871ef0ad,A2,73,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:05:41.344631
+2,essay_6a498258871ef0ad,A2,73,short,phi-3-mini,cot_v6,cot,v6,### Respon,2026-01-14T19:05:43.179483
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:05:43.706376
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:05:46.774945
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:05:47.299110
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+#### So",2026-01-14T19:05:49.050401
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:05:49.655550
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:05:51.149230
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:05:51.915686
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:05:53.952292
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:05:54.591726
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:05:57.072620
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:05:57.714108
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:06:01.101248
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:06:01.663089
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:06:03.807462
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:06:04.408067
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T19:06:07.173793
+2,essay_a0175bbb457ac6b9,A2,36,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:06:07.799190
+2,essay_a0175bbb457ac6b9,A2,36,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### Re",2026-01-14T19:06:09.788238
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:06:10.479704
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:06:11.830738
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:06:12.524456
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:06:13.939377
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:06:14.479657
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:06:15.812591
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:06:16.377399
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:06:18.481572
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:06:19.254335
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:06:21.540388
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:06:22.187452
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:06:24.356548
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:06:24.834515
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:06:26.876087
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:06:27.359506
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:06:29.292388
+2,essay_2236ddfebff0f8f1,A2,35,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:06:29.927506
+2,essay_2236ddfebff0f8f1,A2,35,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### Re",2026-01-14T19:06:31.815747
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:06:32.376280
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,minimal_v4,minimal,v4,. No expla,2026-01-14T19:06:34.360207
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:06:34.915703
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:06:36.321130
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:06:36.971047
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:06:38.029603
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:06:38.498140
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:06:40.578216
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,rubric_v5,rubric,v5,A2,2026-01-14T19:06:41.380450
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,rubric_v5,rubric,v5,Essay eval,2026-01-14T19:06:42.881373
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:06:43.517843
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:06:46.071035
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:06:46.655151
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:06:49.427509
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:06:49.874305
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:06:52.136408
+2,essay_4a141d5245b6f03d,A2,59,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:06:52.790669
+2,essay_4a141d5245b6f03d,A2,59,short,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:06:54.381129
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:06:54.979568
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:06:55.970281
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:06:56.484396
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:06:58.269661
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:06:58.809018
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:07:00.352949
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:07:00.884129
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,rubric_v4,rubric,v4,. No expla,2026-01-14T19:07:03.104108
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:07:03.696341
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:07:05.699266
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:07:06.454231
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:07:08.469590
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:07:08.992628
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,cot_v4,cot,v4,".
+
+REASONI",2026-01-14T19:07:11.489947
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:07:12.089082
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T19:07:15.029451
+2,essay_c11c2e7481655f98,A2,48,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:07:15.579668
+2,essay_c11c2e7481655f98,A2,48,short,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:07:17.786053
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:07:18.227473
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,minimal_v4,minimal,v4,".
+
+Solutio",2026-01-14T19:07:19.992159
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:07:20.652206
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:07:23.030761
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:07:23.556493
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:07:26.291997
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:07:26.839575
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:07:29.822722
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:07:30.661550
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T19:07:32.210259
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:07:32.832553
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:07:34.919557
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:07:35.341165
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:07:37.949368
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:07:39.644712
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+#### S",2026-01-14T19:07:42.668263
+2,essay_e07038ad54696bc4,A2,94,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:07:43.218547
+2,essay_e07038ad54696bc4,A2,94,short,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:07:45.530568
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:07:46.086068
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,minimal_v4,minimal,v4,".
+
+**Solut",2026-01-14T19:07:48.030051
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:07:48.745854
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:07:51.296517
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:07:52.187337
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+
+#### S",2026-01-14T19:07:53.335058
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:07:53.824509
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:07:55.622736
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:07:56.274686
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,rubric_v5,rubric,v5,### Soluti,2026-01-14T19:07:58.509153
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:07:58.983504
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:08:00.980389
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:08:01.466884
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay's",2026-01-14T19:08:04.160613
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:08:04.599266
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T19:08:06.946100
+2,essay_1a0c060d20fe5dab,A2,52,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:08:07.615432
+2,essay_1a0c060d20fe5dab,A2,52,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+CRITIC",2026-01-14T19:08:09.925246
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:08:11.896101
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,minimal_v4,minimal,v4,. No expla,2026-01-14T19:08:15.349089
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:08:15.884410
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:08:17.011570
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:08:17.425667
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:08:19.227034
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:08:20.070941
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:08:21.950209
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:08:22.655162
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,rubric_v5,rubric,v5,"Essay:
+Hi,",2026-01-14T19:08:24.812246
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:08:25.580526
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:08:27.656620
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:08:28.275606
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:08:30.874229
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:08:31.510021
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,cot_v5,cot,v5,".
+
+**Solut",2026-01-14T19:08:33.900609
+2,essay_bc8feabc6e020d43,A2,76,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:08:34.340794
+2,essay_bc8feabc6e020d43,A2,76,short,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T19:08:36.587737
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:08:37.124075
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:08:38.173134
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:08:38.730911
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:08:39.756100
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:08:40.356355
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,minimal_v6,minimal,v6,**Solution,2026-01-14T19:08:41.388666
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:08:41.928776
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:08:43.651904
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,rubric_v5,rubric,v5,A2,2026-01-14T19:08:44.285331
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,rubric_v5,rubric,v5,"Essay:
+
+Hi",2026-01-14T19:08:45.740818
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:08:46.443037
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:08:48.254444
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:08:48.716588
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:08:50.347707
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:08:50.803737
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:08:52.417647
+2,essay_26c1df8c729a2ad6,A2,53,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:08:52.950130
+2,essay_26c1df8c729a2ad6,A2,53,short,phi-3-mini,cot_v6,cot,v6,**Solution,2026-01-14T19:08:54.536269
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:08:55.212632
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:08:57.816440
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:08:58.379918
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+#### So",2026-01-14T19:08:59.387733
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:08:59.946714
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:09:01.780583
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:09:02.184423
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:09:05.131739
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:09:06.505440
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:09:11.849357
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:09:12.736009
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Evaluat",2026-01-14T19:09:14.867968
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:09:15.351596
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:09:17.010015
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:09:17.495219
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+
+ANSWE",2026-01-14T19:09:19.794027
+2,essay_c44aed40ab1d35e7,A2,55,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:09:20.298601
+2,essay_c44aed40ab1d35e7,A2,55,short,phi-3-mini,cot_v6,cot,v6,### Respon,2026-01-14T19:09:22.466560
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:09:25.413017
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,minimal_v4,minimal,v4,".
+
+**Solut",2026-01-14T19:09:27.044054
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:09:27.506162
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:09:28.595749
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:09:29.186272
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:09:30.807696
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:09:31.339020
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:09:33.073553
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:09:33.995109
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:09:36.130435
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:09:36.818250
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:09:38.841020
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:09:39.406256
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:09:42.175555
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:09:42.711023
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+
+ANALY",2026-01-14T19:09:44.433615
+2,essay_b10cdebdce0a3584,A2,57,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:09:44.896771
+2,essay_b10cdebdce0a3584,A2,57,short,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:09:47.298573
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:09:48.069028
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:09:49.217748
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:09:49.705827
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:09:50.711189
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:09:51.274836
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:09:52.336196
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:09:52.915530
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:09:54.628310
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,rubric_v5,rubric,v5,A2,2026-01-14T19:09:55.324520
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:09:56.758217
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:09:57.369355
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:09:58.839668
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:09:59.663790
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:10:01.247049
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:10:01.720008
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:10:03.337203
+2,essay_ba6f62beb17567b1,A2,41,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:10:03.976984
+2,essay_ba6f62beb17567b1,A2,41,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T19:10:05.526270
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:10:06.005922
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:10:10.772984
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:10:11.320205
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:10:15.650366
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:10:16.469308
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:10:21.130065
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:10:21.534388
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:10:28.654462
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:10:29.821745
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:10:32.903722
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:10:33.447062
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:10:35.878516
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:10:36.333852
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:10:41.601839
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:10:42.318876
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:10:48.662562
+2,essay_21474895d933d385,A2,155,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:10:52.481420
+2,essay_21474895d933d385,A2,155,medium,phi-3-mini,cot_v6,cot,v6,"?
+
+CRITICA",2026-01-14T19:10:59.354376
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:11:00.160228
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:11:03.345693
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:11:03.897165
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:11:05.589066
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:11:06.178088
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:11:07.203608
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:11:07.662243
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:11:10.718426
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,rubric_v5,rubric,v5,A2,2026-01-14T19:11:12.208543
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:11:13.750745
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:11:14.324610
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:11:16.740456
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:11:17.240256
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,cot_v4,cot,v4,".
+
+Solutio",2026-01-14T19:11:18.816531
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:11:19.262406
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:11:22.022436
+2,essay_0bfefe1d988da891,A2,32,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:11:22.721823
+2,essay_0bfefe1d988da891,A2,32,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T19:11:26.029372
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:11:26.657689
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:11:28.581001
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:11:29.367520
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+#### So",2026-01-14T19:11:30.406531
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:11:30.864038
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:11:32.848984
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:11:36.388374
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:11:39.088289
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,rubric_v5,rubric,v5,A2,2026-01-14T19:11:39.559737
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:11:42.112403
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:11:43.158926
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:11:44.595484
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:11:45.084150
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:11:46.815120
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:11:47.438172
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T19:11:50.256770
+2,essay_f1bba7af7b8bbbf9,A2,67,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:11:50.700374
+2,essay_f1bba7af7b8bbbf9,A2,67,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T19:11:53.920605
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:11:54.506860
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:11:55.512814
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:11:56.056452
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+#### So",2026-01-14T19:11:57.120099
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:11:57.581044
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:11:58.604203
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:11:59.031783
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:12:00.891709
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,rubric_v5,rubric,v5,A2,2026-01-14T19:12:01.553543
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:12:04.808789
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:12:05.563435
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay A",2026-01-14T19:12:08.628995
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:12:10.090691
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,cot_v4,cot,v4,".
+
+#### So",2026-01-14T19:12:11.793992
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:12:12.291821
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T19:12:15.380342
+2,essay_83602341bebd95b6,A2,52,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:12:15.989139
+2,essay_83602341bebd95b6,A2,52,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### Re",2026-01-14T19:12:19.302093
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:12:19.948229
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,minimal_v4,minimal,v4,".
+
+Solutio",2026-01-14T19:12:24.354312
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:12:25.343394
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:12:28.104182
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:12:28.667299
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:12:32.781668
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:12:33.172954
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:12:38.487233
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:12:39.254958
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:12:41.181608
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:12:41.714570
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:12:44.443037
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:12:45.336859
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,cot_v4,cot,v4,B2,2026-01-14T19:12:54.728319
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:12:55.515298
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:13:00.437095
+2,essay_0ed44a9c7b588727,B1,162,medium,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T19:13:02.915211
+2,essay_0ed44a9c7b588727,B1,162,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:13:08.660976
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:13:09.267564
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:13:14.336097
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,minimal_v5,minimal,v5,The essay ,2026-01-14T19:13:15.170954
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:13:21.384476
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:13:22.024118
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:13:26.997290
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:13:27.465213
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,rubric_v4,rubric,v4,Classify t,2026-01-14T19:13:33.399922
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:13:34.260548
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,rubric_v5,rubric,v5,Essay text,2026-01-14T19:13:37.780224
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:13:38.349738
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:13:42.323017
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:13:42.848865
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:13:50.454358
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:13:51.177603
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:13:57.134290
+2,essay_4d799ec67c6fab37,B1,143,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:13:57.810458
+2,essay_4d799ec67c6fab37,B1,143,medium,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T19:14:06.356998
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:14:07.302185
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,minimal_v4,minimal,v4,. No expla,2026-01-14T19:14:09.177243
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:14:10.059957
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+Solutio",2026-01-14T19:14:15.654888
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:14:16.344065
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:14:21.115852
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:14:21.767356
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,rubric_v4,rubric,v4,. No expla,2026-01-14T19:14:26.376665
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:14:27.186678
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:14:31.749280
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:14:32.695436
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T19:14:35.543832
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:14:38.146245
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:14:44.054239
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:14:44.781985
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:14:53.837753
+2,essay_66b73a1580e1904b,B1,166,medium,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:14:54.583070
+2,essay_66b73a1580e1904b,B1,166,medium,phi-3-mini,cot_v6,cot,v6,"?
+
+## Your",2026-01-14T19:15:01.832398
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:15:02.591230
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:15:05.917314
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:15:06.873450
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:15:10.390806
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:15:11.016801
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:15:13.790692
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:15:14.347911
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:15:25.897543
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:15:26.548304
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:15:31.281365
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:15:32.085583
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:15:36.621467
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:15:37.179229
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:15:47.914957
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:15:48.525779
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:16:02.342518
+2,essay_3d32e6c47539151c,B1,199,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:16:03.057817
+2,essay_3d32e6c47539151c,B1,199,medium,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:16:15.811170
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:16:16.500384
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:16:24.847893
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:16:25.489224
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:16:30.341532
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:16:31.283870
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:16:33.972608
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:16:34.470112
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:16:43.845335
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:16:44.692581
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Solutio",2026-01-14T19:16:49.303826
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:16:49.892532
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:16:54.135791
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:16:54.812698
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:16:57.038441
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:16:57.605166
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:16:59.653447
+2,essay_895efe69d0409d80,B1,151,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:17:00.212612
+2,essay_895efe69d0409d80,B1,151,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:17:06.145620
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:17:06.716535
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,minimal_v4,minimal,v4,. No expla,2026-01-14T19:17:10.267679
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:17:10.982012
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:17:14.972592
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:17:15.409639
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:17:20.139056
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:17:20.561115
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:17:22.252698
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:17:23.097607
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:17:24.856013
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:17:25.377473
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:17:27.081312
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:17:27.984513
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay's",2026-01-14T19:17:33.651302
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:17:34.214729
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:17:37.462070
+2,essay_c74581f6608cf12a,B1,74,short,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:17:38.006542
+2,essay_c74581f6608cf12a,B1,74,short,phi-3-mini,cot_v6,cot,v6,Solution 1,2026-01-14T19:17:39.771491
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:17:40.315832
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:17:43.872260
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:17:44.491495
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:17:45.937367
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:17:47.138549
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:17:53.726172
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:17:54.472821
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:18:05.541008
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:18:06.433955
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay e",2026-01-14T19:18:09.426053
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:18:10.023823
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T19:18:11.901471
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:18:12.344563
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:18:16.003792
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:18:16.839867
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:18:21.979857
+2,essay_3a12d568630f269c,B1,143,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:18:22.757143
+2,essay_3a12d568630f269c,B1,143,medium,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:18:27.902542
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:18:28.499544
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:18:31.240280
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:18:31.810410
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:18:35.149762
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:18:36.473778
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:18:40.394033
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:18:41.134030
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+
+### So",2026-01-14T19:18:48.593778
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:18:49.335701
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:18:54.175989
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:18:55.215880
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Evaluat",2026-01-14T19:19:00.397147
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:19:01.674405
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:19:03.468269
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:19:04.076435
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T19:19:08.723919
+2,essay_b87e77da33ff7714,B1,65,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:19:09.306512
+2,essay_b87e77da33ff7714,B1,65,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### Re",2026-01-14T19:19:13.992796
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:19:14.625148
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:19:19.716582
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:19:20.367269
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:19:25.254301
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:19:25.929021
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:19:28.890858
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:19:31.391641
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:19:40.560999
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:19:41.455611
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:19:45.055587
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:19:45.636896
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:19:50.142879
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:19:50.638915
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:19:52.867727
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:19:53.451125
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:19:57.543866
+2,essay_b8231a9954f64faa,B1,145,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:19:58.250165
+2,essay_b8231a9954f64faa,B1,145,medium,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:20:05.854029
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:20:06.646467
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,minimal_v4,minimal,v4,".
+
+**Solut",2026-01-14T19:20:09.406348
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:20:09.941391
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:20:13.866807
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:20:14.555844
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:20:21.437182
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:20:22.119171
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,rubric_v4,rubric,v4,Classify t,2026-01-14T19:20:26.590708
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:20:27.228677
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,rubric_v5,rubric,v5,"Essay:
+
+Hi",2026-01-14T19:20:31.783175
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:20:32.268510
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Evaluat",2026-01-14T19:20:33.959589
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:20:34.398968
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:20:36.315776
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:20:36.840747
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T19:20:42.041484
+2,essay_fe483933c89eca58,B1,88,short,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:20:42.839739
+2,essay_fe483933c89eca58,B1,88,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### Re",2026-01-14T19:20:44.747950
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:20:45.310175
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:20:46.457428
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:20:47.019488
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:20:51.639907
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:20:52.176882
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:20:53.385951
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:20:53.833484
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:21:02.643689
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,rubric_v5,rubric,v5,A2,2026-01-14T19:21:03.385555
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:21:05.105381
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:21:05.526504
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:21:08.776073
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:21:09.302047
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:21:11.136424
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:21:11.574997
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:21:13.352896
+2,essay_00f6b9779fed264b,B1,41,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:21:13.924936
+2,essay_00f6b9779fed264b,B1,41,short,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T19:21:20.694092
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:21:21.498184
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T19:21:31.658579
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:21:32.457647
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:21:41.187723
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:21:41.985174
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:21:47.616731
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:21:51.239458
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:22:02.034066
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:22:02.975341
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,rubric_v5,rubric,v5,Essay eval,2026-01-14T19:22:07.807307
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:22:08.348405
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T19:22:13.884744
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:22:14.558749
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:22:27.754187
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:22:28.598297
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,cot_v5,cot,v5,".
+
+Profici",2026-01-14T19:22:36.410601
+2,essay_64780ce22d33e3a5,B1,212,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:22:37.006409
+2,essay_64780ce22d33e3a5,B1,212,long,phi-3-mini,cot_v6,cot,v6,"?
+
+### Sol",2026-01-14T19:22:49.497739
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:22:50.181173
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,minimal_v4,minimal,v4,. No expla,2026-01-14T19:22:51.402375
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:22:51.917967
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,minimal_v5,minimal,v5,".
+
+#### So",2026-01-14T19:22:53.112349
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,minimal_v6,minimal,v6,A2,2026-01-14T19:22:53.655936
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,minimal_v6,minimal,v6,**Solution,2026-01-14T19:22:54.887385
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:22:55.400678
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:22:57.506909
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:22:58.169029
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,rubric_v5,rubric,v5,B1,2026-01-14T19:22:59.813635
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,rubric_v6,rubric,v6,A2,2026-01-14T19:23:00.308967
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:23:02.007236
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:23:02.624998
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:23:04.716087
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:23:05.181482
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:23:07.039550
+2,essay_22c3e104f79e815e,B1,67,short,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:23:07.526825
+2,essay_22c3e104f79e815e,B1,67,short,phi-3-mini,cot_v6,cot,v6,### Soluti,2026-01-14T19:23:09.284107
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:23:09.943502
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:23:16.246015
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:23:17.215319
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:23:23.718882
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:23:24.441167
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:23:30.072068
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:23:30.670626
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:23:37.919066
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:23:38.547179
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:23:46.521581
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:23:47.524525
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:23:49.759773
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:23:50.244919
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:23:59.275694
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:23:59.973822
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:24:06.632685
+2,essay_56c6fbaf03fa9726,B1,159,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:24:07.149624
+2,essay_56c6fbaf03fa9726,B1,159,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:24:13.101906
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:24:13.830246
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:24:20.217507
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:24:20.836699
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:24:22.465335
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:24:23.021490
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:24:36.440736
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:24:36.980437
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:24:49.940127
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:24:50.690792
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T19:24:53.016384
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:24:53.732570
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:24:55.660891
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:24:56.141244
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:25:05.774857
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:25:06.396573
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:25:12.911016
+2,essay_f7192ad298cfde67,B1,155,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:25:13.464397
+2,essay_f7192ad298cfde67,B1,155,medium,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T19:25:20.288725
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:25:20.896341
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:25:22.447246
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:25:23.058549
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:25:31.033043
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:25:31.730930
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:25:40.152736
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:25:40.683859
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:25:45.994025
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:25:46.810106
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,rubric_v5,rubric,v5,Essay Eval,2026-01-14T19:25:52.520253
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:25:53.229378
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T19:25:58.964194
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:25:59.753088
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:26:05.037354
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:26:05.702635
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:26:14.939704
+2,essay_5d44f22502f5c977,B1,104,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:26:15.546669
+2,essay_5d44f22502f5c977,B1,104,medium,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:26:17.566786
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:26:18.191040
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:26:28.599982
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:26:29.412826
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:26:40.634441
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:26:41.455833
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:26:46.251697
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:26:46.736209
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:26:48.661707
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:26:50.213615
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay e",2026-01-14T19:26:53.474325
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:26:54.359025
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:27:00.222255
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:27:00.838492
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:27:11.541642
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:27:12.126391
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:27:14.424377
+2,essay_d22e8fffec4b904a,B1,111,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:27:15.191625
+2,essay_d22e8fffec4b904a,B1,111,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:27:23.529112
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:27:24.416673
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:27:30.371393
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:27:31.063942
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+Solutio",2026-01-14T19:27:38.456937
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:27:39.357277
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,minimal_v6,minimal,v6,**Solution,2026-01-14T19:27:41.136730
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:27:41.616915
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:27:43.514273
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:27:46.077386
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,rubric_v5,rubric,v5,Essay text,2026-01-14T19:27:49.414811
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:27:50.093336
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:27:51.930489
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:27:52.456056
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:27:55.223363
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:27:55.944733
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:27:58.275548
+2,essay_b4fd6f0cf95147d3,B1,141,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:28:00.025618
+2,essay_b4fd6f0cf95147d3,B1,141,medium,phi-3-mini,cot_v6,cot,v6,### Soluti,2026-01-14T19:28:03.174407
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:28:03.827260
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:28:05.515849
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,minimal_v5,minimal,v5,The essay ,2026-01-14T19:28:06.169773
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:28:07.843024
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:28:08.346802
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:28:10.135013
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:28:11.002355
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:28:20.392832
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:28:21.265326
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:28:31.024864
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:28:32.089088
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:28:40.461002
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:28:41.122176
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T19:28:57.656548
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:28:58.315231
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:29:17.995040
+2,essay_c8a88e67a121a327,B1,225,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:29:21.455588
+2,essay_c8a88e67a121a327,B1,225,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:29:56.455103
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,minimal_v4,minimal,v4,A2,2026-01-14T19:29:57.185532
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:29:58.880139
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T19:29:59.345955
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:30:00.869860
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:30:01.452640
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:30:03.033918
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,rubric_v4,rubric,v4,A2,2026-01-14T19:30:03.694986
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:30:06.566069
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:30:07.361323
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T19:30:09.829792
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:30:10.497199
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T19:30:12.404173
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T19:30:12.918858
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:30:15.144288
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,cot_v5,cot,v5,A2,2026-01-14T19:30:15.613193
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:30:17.779894
+2,essay_7301d0454b51b7b9,B1,161,medium,gpt-4o-mini,cot_v6,cot,v6,A2,2026-01-14T19:30:18.330947
+2,essay_7301d0454b51b7b9,B1,161,medium,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T19:30:20.504803
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:30:21.044718
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:30:47.085996
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:30:47.693242
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:30:54.670579
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:30:55.260405
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:30:57.121106
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:30:57.576851
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:31:05.869789
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:31:06.710971
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T19:31:26.743131
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:31:27.675852
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:31:29.746185
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:31:30.270185
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:31:32.583026
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:31:33.672039
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:31:36.002233
+2,essay_10999cd87300974d,B2,193,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:31:36.437969
+2,essay_10999cd87300974d,B2,193,medium,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T19:31:46.820616
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:31:47.833833
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:31:54.104111
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:31:54.847791
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:31:58.316840
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:31:58.845374
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:32:00.497405
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:32:00.943388
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:32:11.352484
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:32:12.153477
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:32:14.412328
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:32:14.985125
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Evaluat",2026-01-14T19:32:26.683323
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:32:27.486622
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:32:30.117214
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:32:30.594354
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:32:41.790139
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:32:42.681192
+2,essay_aaa9e90b48f4fdd9,B2,183,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:32:56.286484
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:32:57.046364
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:33:02.996531
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:33:03.656205
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:33:08.624762
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:33:09.245127
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:33:10.709821
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:33:11.232584
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:33:19.899748
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:33:21.068837
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:33:24.634089
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:33:25.192247
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:33:27.264657
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:33:27.741717
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:33:39.855078
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T19:33:40.629603
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:33:48.344377
+2,essay_294dedfa5f9db2aa,B2,149,medium,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T19:33:48.866936
+2,essay_294dedfa5f9db2aa,B2,149,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:33:58.767598
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:33:59.657089
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:34:05.902193
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:34:07.044124
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:34:08.456515
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:34:08.924566
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:34:10.345100
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:34:10.780795
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:34:17.811232
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:34:18.796286
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T19:34:20.822458
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:34:21.531263
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:34:23.464534
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:34:23.912797
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:34:26.077795
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:34:26.676071
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:34:28.752433
+2,essay_595c68f02914be6c,B2,142,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:34:29.368530
+2,essay_595c68f02914be6c,B2,142,medium,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:34:37.317948
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:34:38.219327
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,minimal_v4,minimal,v4,C1,2026-01-14T19:34:44.409324
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:34:47.999682
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+Essay t",2026-01-14T19:34:54.001073
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:34:54.679142
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Essay:
+",2026-01-14T19:34:59.487466
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:34:59.992882
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:35:43.330236
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:35:44.285720
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:36:15.842583
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:36:16.820545
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:36:31.711916
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:36:32.459770
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:37:06.926274
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:37:07.800814
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,cot_v5,cot,v5,".
+
+## Your",2026-01-14T19:37:38.362233
+2,essay_d04ed51bb61b7d17,B2,289,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:37:39.123764
+2,essay_d04ed51bb61b7d17,B2,289,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:38:06.160219
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:38:07.181854
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Documen",2026-01-14T19:38:27.017805
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,minimal_v5,minimal,v5,The essay ,2026-01-14T19:38:27.696188
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:38:42.147016
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:38:43.050342
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+## Your",2026-01-14T19:38:45.837394
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:38:46.647911
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T19:39:06.823347
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:39:07.709444
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:39:35.603903
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:39:36.775469
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:40:01.049699
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:40:01.978703
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,cot_v4,cot,v4,B2,2026-01-14T19:40:59.647698
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:41:00.590980
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,cot_v5,cot,v5,".
+
+Profici",2026-01-14T19:42:29.340795
+2,essay_60b23724db699684,B2,430,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:42:30.663961
+2,essay_60b23724db699684,B2,430,long,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T19:43:36.619534
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:43:37.833606
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:43:46.070603
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:43:46.633217
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:43:53.253745
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:43:53.871189
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:43:55.654871
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:43:56.360252
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T19:44:01.867865
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:44:02.585327
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T19:44:05.060510
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:44:05.975854
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:44:25.414619
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:44:26.161255
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:44:56.732052
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:44:57.493998
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:45:54.315962
+2,essay_0234f913dc6e5c20,B2,222,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:45:55.040794
+2,essay_0234f913dc6e5c20,B2,222,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:46:10.641746
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:46:11.373671
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T19:46:13.302773
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:46:13.939710
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T19:46:31.575447
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:46:32.236146
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:46:50.485119
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:46:51.270132
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T19:49:23.122513
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:49:24.031738
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T19:49:44.785456
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:49:45.784445
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T19:50:05.686087
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:50:06.346519
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T19:51:08.249059
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:51:09.136019
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:51:49.281451
+2,essay_3ff4aff01af96ca1,B2,310,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:51:49.963350
+2,essay_3ff4aff01af96ca1,B2,310,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:54:40.310167
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:54:41.509526
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:54:43.797021
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:54:44.671411
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+Solutio",2026-01-14T19:54:46.367136
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T19:54:46.974962
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:54:48.734212
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:54:49.298821
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:55:05.922060
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:55:06.805224
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,rubric_v5,rubric,v5,B2,2026-01-14T19:55:20.303597
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:55:21.242693
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T19:55:24.068745
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:55:24.850329
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T19:55:27.457878
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:55:28.177373
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T19:55:43.385989
+2,essay_18bc5eb7152fd9b9,B2,215,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:55:44.207979
+2,essay_18bc5eb7152fd9b9,B2,215,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T19:55:58.244453
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:55:59.308073
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:56:05.920946
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:56:06.653756
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+Solutio",2026-01-14T19:56:11.442195
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:56:12.012459
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,minimal_v6,minimal,v6,C1,2026-01-14T19:56:17.000397
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:56:17.549684
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T19:56:24.619803
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:56:25.319933
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,rubric_v5,rubric,v5,Essay text,2026-01-14T19:56:27.393783
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T19:56:27.971046
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T19:56:29.851849
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:56:30.450286
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:56:42.839488
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:56:43.432590
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T19:56:45.588518
+2,essay_dadc9575e6dcaaf9,B2,110,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:56:46.142367
+2,essay_dadc9575e6dcaaf9,B2,110,medium,phi-3-mini,cot_v6,cot,v6,CRITICAL R,2026-01-14T19:57:00.257381
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T19:57:01.174467
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:57:14.352746
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T19:57:15.101800
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:57:17.235803
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:57:18.073960
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:57:26.775678
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:57:27.439219
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T19:57:33.728192
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:57:34.406119
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T19:57:36.556208
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T19:57:37.101775
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T19:57:39.036982
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T19:57:39.631481
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T19:57:57.258513
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T19:57:57.884681
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,cot_v5,cot,v5,".
+
+Solutio",2026-01-14T19:58:19.053905
+2,essay_daa58b281da3c191,B2,179,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T19:58:19.771885
+2,essay_daa58b281da3c191,B2,179,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T19:58:39.361920
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:58:40.100569
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T19:58:41.963465
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T19:58:42.413268
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T19:58:56.179483
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T19:58:56.989654
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T19:59:10.762667
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T19:59:11.341814
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,rubric_v4,rubric,v4,. No expla,2026-01-14T19:59:38.580273
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T19:59:39.588000
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,rubric_v5,rubric,v5,Essay Eval,2026-01-14T20:00:00.978577
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:00:01.870134
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T20:00:04.349331
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:00:04.864173
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T20:00:27.695803
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:00:28.430087
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T20:00:31.066203
+2,essay_3754b35602110fc9,B2,150,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:00:31.692692
+2,essay_3754b35602110fc9,B2,150,medium,phi-3-mini,cot_v6,cot,v6,### Soluti,2026-01-14T20:00:34.016364
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:00:34.579152
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:00:43.402792
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T20:00:43.964929
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+Solutio",2026-01-14T20:00:51.552188
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:00:52.205313
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:01:02.038689
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:01:02.997712
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:01:10.470055
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:01:11.220986
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:01:13.556193
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:01:14.252049
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:01:16.572615
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:01:17.046853
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:01:46.931860
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:01:47.782410
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:02:12.988153
+2,essay_44c23d75cd38a105,B2,200,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:02:13.700716
+2,essay_44c23d75cd38a105,B2,200,long,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T20:02:33.722431
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T20:02:35.158020
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:02:36.937636
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T20:02:37.531005
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:02:45.479572
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T20:02:46.047560
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,minimal_v6,minimal,v6,C1,2026-01-14T20:02:51.965666
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:02:52.540296
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,rubric_v4,rubric,v4,C1,2026-01-14T20:03:09.247196
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:03:10.082675
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:03:29.945819
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:03:30.805091
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:03:33.739575
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:03:34.324196
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:04:04.764430
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:04:06.751818
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:04:34.570963
+2,essay_d39e03646ecb43d7,B2,223,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:04:35.222373
+2,essay_d39e03646ecb43d7,B2,223,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:04:37.641993
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:04:38.387050
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:04:40.133491
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:04:40.833434
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:04:42.434329
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:04:42.982794
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:04:44.650414
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:04:45.388639
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:04:48.189102
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:04:48.776280
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:04:51.118100
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:04:52.009097
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,rubric_v6,rubric,v6,C1,2026-01-14T20:04:54.238388
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T20:04:55.676632
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,cot_v4,cot,v4,B2,2026-01-14T20:04:57.960692
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:04:58.544674
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:05:01.239597
+2,essay_ee4e1d3df2feee78,B2,202,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:05:01.836116
+2,essay_ee4e1d3df2feee78,B2,202,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:05:04.221777
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:05:04.801770
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:05:06.990726
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:05:07.711650
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:05:09.295127
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:05:10.224744
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:05:25.999209
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:05:26.812999
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:05:58.170027
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:05:58.979073
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:06:02.008226
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:06:02.629265
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T20:06:04.811521
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:06:05.285019
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,cot_v4,cot,v4,B2,2026-01-14T20:06:21.835896
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:06:22.525489
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T20:06:46.072627
+2,essay_9656ef0ef41eabdf,B2,156,medium,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:06:47.004667
+2,essay_9656ef0ef41eabdf,B2,156,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:06:49.419322
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T20:06:50.132461
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T20:06:51.970584
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T20:06:52.686989
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:07:10.582118
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T20:07:11.373765
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:07:18.305723
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:07:18.826227
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+### Sol",2026-01-14T20:07:35.132450
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:07:36.099644
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:07:38.478032
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:07:39.074744
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T20:08:05.854261
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:08:06.764686
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:08:10.697167
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:08:11.301027
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T20:08:13.582421
+2,essay_11d8d791d0a31fcc,B2,173,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:08:14.092934
+2,essay_11d8d791d0a31fcc,B2,173,medium,phi-3-mini,cot_v6,cot,v6,Evaluation,2026-01-14T20:08:16.282740
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T20:08:16.675929
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:08:30.307618
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,minimal_v5,minimal,v5,A2,2026-01-14T20:08:31.190630
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+Solutio",2026-01-14T20:08:48.201196
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T20:08:48.954404
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:09:01.283750
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:09:02.105214
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:09:11.209926
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:09:14.742916
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,rubric_v5,rubric,v5,Essay Eval,2026-01-14T20:09:17.012048
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:09:17.731509
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T20:09:20.137125
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,cot_v4,cot,v4,A2,2026-01-14T20:09:20.691978
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:09:23.045186
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:09:23.633582
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,cot_v5,cot,v5,".
+
+
+### So",2026-01-14T20:09:25.845876
+2,essay_27caa3314a206871,B2,107,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:09:26.532188
+2,essay_27caa3314a206871,B2,107,medium,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T20:09:28.693573
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:09:29.195893
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:09:44.699391
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:09:45.475885
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:09:52.193527
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:09:52.752931
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:09:54.464053
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:09:54.995524
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:10:13.542427
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:10:14.364173
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:10:17.014071
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:10:17.736814
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:10:19.801768
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:10:20.362125
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:10:22.799546
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:10:23.293675
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:10:44.313143
+2,essay_76b10a50c9c3d113,B2,183,medium,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:10:44.986782
+2,essay_76b10a50c9c3d113,B2,183,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:11:12.053009
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T20:11:12.843678
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:11:25.347134
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,minimal_v5,minimal,v5,The essay ,2026-01-14T20:11:26.242187
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:11:37.381899
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T20:11:38.058904
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,minimal_v6,minimal,v6,**Solution,2026-01-14T20:11:46.750952
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:11:47.324340
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:11:56.796547
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:11:58.235332
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T20:12:01.702787
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:12:02.747722
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T20:12:05.179355
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:12:05.968434
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:12:08.553493
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:12:12.122782
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:12:46.990505
+2,essay_02e3cd208c52eda7,B2,200,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:12:47.860102
+2,essay_02e3cd208c52eda7,B2,200,long,phi-3-mini,cot_v6,cot,v6,### Soluti,2026-01-14T20:13:20.094141
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:13:20.831506
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T20:13:23.441072
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T20:13:24.178548
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:13:44.745037
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:13:47.669887
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:13:55.184421
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:13:55.743527
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:14:04.299750
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:14:04.993231
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Solutio",2026-01-14T20:14:29.743452
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:14:30.656756
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:14:51.204577
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:14:52.001942
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T20:14:54.728130
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:14:55.442779
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T20:14:58.250749
+2,essay_2755f8782eacdcb3,C1,174,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:14:58.750560
+2,essay_2755f8782eacdcb3,C1,174,medium,phi-3-mini,cot_v6,cot,v6,Evaluation,2026-01-14T20:15:01.186520
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:15:01.725445
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:15:18.873764
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:15:19.686096
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:15:26.816048
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:15:27.434788
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:15:29.101661
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:15:30.450505
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:15:39.624668
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:15:40.498521
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:15:42.820398
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:15:43.378945
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:15:45.676660
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:15:46.526022
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:16:14.191662
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:16:14.974440
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:16:17.717375
+2,essay_baf709494c79ae14,C1,218,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:16:18.196512
+2,essay_baf709494c79ae14,C1,218,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:16:37.846961
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:16:38.561861
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:16:40.631260
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:16:41.322869
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T20:16:57.818602
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:16:59.113174
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:17:05.788089
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:17:06.312547
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:17:14.281254
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:17:15.071450
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:17:40.287083
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:17:41.131536
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T20:17:45.024010
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:17:45.566484
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:18:09.625227
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:18:10.317965
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T20:18:30.534019
+2,essay_c4d41d331f039adc,C1,174,medium,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:18:31.213992
+2,essay_c4d41d331f039adc,C1,174,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:18:34.204840
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:18:34.768770
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:18:48.941979
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:18:49.559273
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:18:51.149477
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:18:51.911668
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:18:53.623710
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:18:54.054782
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:19:13.444975
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:19:14.311188
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:19:36.225965
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:19:37.116262
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T20:19:39.536933
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T20:19:40.037399
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:19:42.532234
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:19:42.954053
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T20:19:45.497854
+2,essay_7d77f24171744c02,C1,191,medium,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:19:46.115923
+2,essay_7d77f24171744c02,C1,191,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:19:48.723958
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:19:49.489421
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:20:09.283398
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,minimal_v5,minimal,v5,B1,2026-01-14T20:20:10.079519
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:20:11.693952
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:20:12.200238
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:20:13.910208
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:20:14.338878
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:20:22.723294
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:20:23.499713
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:20:26.227062
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:20:26.896855
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:20:29.056533
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:20:29.681506
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:20:59.013815
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:20:59.889939
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:21:31.222528
+2,essay_ac38cfabef411421,C1,200,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:21:32.051000
+2,essay_ac38cfabef411421,C1,200,long,phi-3-mini,cot_v6,cot,v6,### Soluti,2026-01-14T20:21:34.778944
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:21:35.369035
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:21:37.289011
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:21:37.874116
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:21:41.107761
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:21:41.793324
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+
+#### S",2026-01-14T20:21:46.039465
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:21:46.564136
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+
+### So",2026-01-14T20:21:50.475247
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:21:51.244426
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T20:22:38.314734
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:22:39.524784
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T20:22:44.073122
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T20:22:44.641020
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T20:23:12.395129
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:23:13.220183
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:23:31.882785
+2,essay_b4a7dc65be054023,C1,240,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:23:32.633163
+2,essay_b4a7dc65be054023,C1,240,long,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T20:23:50.644793
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:23:51.428146
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:23:53.279949
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:23:54.200772
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:23:55.922174
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:23:56.583807
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:23:58.362937
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:23:58.887600
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:24:01.730422
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:24:02.715628
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:24:05.318286
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:24:05.945122
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:24:08.196166
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:24:08.721027
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:24:11.296113
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:24:11.886911
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T20:24:14.493576
+2,essay_d7b1c33fd1e828f4,C1,228,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:24:15.196484
+2,essay_d7b1c33fd1e828f4,C1,228,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:24:17.397564
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:24:18.035497
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T20:24:19.604190
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:24:20.176933
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:24:21.755803
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:24:22.356011
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,minimal_v6,minimal,v6,A2,2026-01-14T20:24:24.138161
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:24:24.605326
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,rubric_v4,rubric,v4,## Your ta,2026-01-14T20:24:27.005400
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:24:27.755668
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,rubric_v5,rubric,v5,"Essay:
+
+Wr",2026-01-14T20:25:14.873072
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:25:16.401957
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T20:25:20.726973
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:25:21.684720
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:25:24.793439
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:25:25.407801
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:25:28.017182
+2,essay_cb2fb327f9799eac,C1,221,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:25:28.668257
+2,essay_cb2fb327f9799eac,C1,221,long,phi-3-mini,cot_v6,cot,v6,"?
+
+## Your",2026-01-14T20:25:31.681351
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,minimal_v4,minimal,v4,B1,2026-01-14T20:25:32.266424
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:25:34.091450
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:25:34.740690
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:25:36.460593
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,minimal_v6,minimal,v6,B1,2026-01-14T20:25:37.048500
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:25:39.148764
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:25:39.585589
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T20:25:42.242132
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:25:43.095451
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:25:45.949220
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:25:46.639225
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T20:25:49.253749
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:25:49.762988
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T20:25:52.195892
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:25:52.775537
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:25:55.480616
+2,essay_16a96bbb281cd095,C1,235,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:25:56.157110
+2,essay_16a96bbb281cd095,C1,235,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T20:25:58.755252
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:25:59.387506
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:26:01.650056
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:26:02.317626
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:26:04.668585
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:26:05.648460
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Essay:
+",2026-01-14T20:26:08.566343
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:26:09.385880
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T20:26:44.465570
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:26:45.469320
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:27:28.817886
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,rubric_v6,rubric,v6,B2,2026-01-14T20:27:29.535222
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,rubric_v6,rubric,v6,C2,2026-01-14T20:29:56.420856
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T20:29:57.403442
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T20:32:41.321760
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:32:42.372950
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:35:40.209002
+2,essay_00b6a8ca98ac69d2,C1,325,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:35:41.276962
+2,essay_00b6a8ca98ac69d2,C1,325,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T20:38:57.715198
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:38:58.605006
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:39:34.607813
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:39:35.252824
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:39:37.608189
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:39:38.164434
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:39:40.559294
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:39:41.081373
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T20:40:23.081711
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:40:24.036666
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T20:40:26.965001
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:40:27.682072
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay:
+",2026-01-14T20:40:55.225910
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:40:56.257181
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T20:44:11.875793
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:44:12.903058
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,cot_v5,cot,v5,".
+
+Profici",2026-01-14T20:49:26.597167
+2,essay_6e6e096111a2fdf9,C1,338,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:49:27.912626
+2,essay_6e6e096111a2fdf9,C1,338,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:51:37.627594
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:51:38.737271
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T20:51:48.401963
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:51:49.062297
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,minimal_v5,minimal,v5,C1,2026-01-14T20:51:51.196343
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:51:52.027567
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Write a",2026-01-14T20:51:54.194877
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:51:54.625379
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T20:51:57.397312
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:51:58.160502
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:52:00.645554
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:52:01.182068
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T20:52:03.722111
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:52:04.256222
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,cot_v4,cot,v4,B2,2026-01-14T20:52:53.103550
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:52:54.004328
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,cot_v5,cot,v5,B2,2026-01-14T20:53:13.555738
+2,essay_376cc602e8133865,C1,249,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:53:14.356088
+2,essay_376cc602e8133865,C1,249,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:53:30.847295
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:53:31.661405
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:53:33.944428
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:53:34.503000
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T20:53:44.427096
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:53:45.282314
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:53:52.958209
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:53:53.612472
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T20:54:09.901056
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:54:10.882626
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,rubric_v5,rubric,v5,Essay Eval,2026-01-14T20:54:14.711616
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:54:15.176172
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T20:54:17.563771
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:54:18.056548
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:54:20.473613
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:54:21.090078
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:54:50.976564
+2,essay_91e9e70c363b58c9,C1,211,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T20:54:52.155897
+2,essay_91e9e70c363b58c9,C1,211,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:55:10.760081
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:55:11.504463
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:55:13.960637
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:55:14.457956
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:55:16.490632
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:55:17.227174
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:55:19.529030
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:55:20.346946
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,rubric_v4,rubric,v4,. No expla,2026-01-14T20:56:09.165703
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:56:10.183543
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:57:17.795907
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T20:57:18.801965
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T20:57:21.780768
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T20:57:22.274103
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T20:57:30.958985
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T20:57:31.685100
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:58:10.361540
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:58:11.016625
+2,essay_cfdbcdbdf6fe0fd5,C1,314,long,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T20:58:36.388333
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:58:37.234201
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:58:51.270976
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:58:52.169183
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:58:53.918584
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:58:54.440834
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T20:58:56.387840
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:58:57.079050
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T20:59:00.534546
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:59:01.323397
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T20:59:04.026975
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T20:59:04.496358
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T20:59:06.865423
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T20:59:07.526805
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T20:59:10.338104
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T20:59:11.007830
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T20:59:27.463639
+2,essay_298332cd1019af59,C1,224,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T20:59:28.151262
+2,essay_298332cd1019af59,C1,224,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T20:59:30.568651
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:59:31.006475
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T20:59:33.499205
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T20:59:34.047485
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T20:59:36.462559
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T20:59:36.969652
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Essay:
+",2026-01-14T20:59:39.568422
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T20:59:40.090613
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T20:59:47.803294
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T20:59:48.614806
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T21:00:10.649557
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:00:11.399778
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,rubric_v6,rubric,v6,C2,2026-01-14T21:00:14.165921
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T21:00:14.680254
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:00:54.955184
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T21:00:55.659468
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:01:30.462306
+2,essay_1419aff46474efc8,C1,331,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:01:31.308074
+2,essay_1419aff46474efc8,C1,331,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:02:48.882899
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:02:49.850486
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:03:01.340274
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:03:02.035290
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:03:03.941259
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:03:04.395591
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:03:22.149825
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T21:03:22.929558
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:03:40.646823
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:03:41.460338
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:03:56.187690
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:03:57.054229
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:04:13.190159
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T21:04:13.913256
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:04:34.181056
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T21:04:34.920785
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:04:37.658735
+2,essay_49b36603ad86adc7,C1,253,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T21:04:38.224433
+2,essay_49b36603ad86adc7,C1,253,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:04:58.437501
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:04:59.181868
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:05:14.880213
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:05:15.767661
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T21:05:24.329859
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:05:25.182578
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:05:26.997995
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T21:05:27.534184
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T21:05:35.946546
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:05:36.763362
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:06:03.382648
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:06:04.624060
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T21:06:25.793082
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T21:06:26.571791
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:06:48.498847
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:06:49.363094
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:06:52.647623
+2,essay_aa77f00dc1561e31,C1,185,medium,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:06:53.223387
+2,essay_aa77f00dc1561e31,C1,185,medium,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:06:55.591639
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:06:56.175008
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T21:06:58.451497
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:06:59.173341
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:07:01.434893
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:07:02.500546
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:07:04.854309
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:07:05.337432
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:07:27.458717
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:07:28.238750
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:07:46.703412
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:07:47.476084
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:08:05.559927
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:08:06.370822
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay:
+",2026-01-14T21:08:28.414145
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:08:30.115355
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:09:08.885621
+2,essay_fbd90fcc45375f1c,C1,308,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:09:10.673476
+2,essay_fbd90fcc45375f1c,C1,308,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:09:35.365545
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:09:36.274815
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:09:38.472470
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:09:38.953655
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:09:41.136932
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:09:41.906122
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Essay:
+",2026-01-14T21:09:44.212769
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T21:09:44.768757
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T21:10:10.050676
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:10:10.992768
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T21:10:30.319181
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:10:31.061065
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,rubric_v6,rubric,v6,C2,2026-01-14T21:10:33.616317
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T21:10:34.198286
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:10:58.342593
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T21:10:59.338452
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:11:32.994901
+2,essay_53c49469aa8fa82f,C1,302,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:11:33.735164
+2,essay_53c49469aa8fa82f,C1,302,long,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T21:12:00.560615
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:12:01.298149
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:12:03.542801
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:12:04.072478
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:12:06.192598
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:12:06.792280
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Essay:
+",2026-01-14T21:12:08.915940
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:12:09.425083
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:12:40.111540
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:12:41.021478
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:13:00.902094
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,rubric_v6,rubric,v6,B2,2026-01-14T21:13:01.799237
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,rubric_v6,rubric,v6,C1,2026-01-14T21:13:04.480152
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:13:05.176216
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:13:29.121249
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:13:30.057180
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,cot_v5,cot,v5,B2,2026-01-14T21:13:53.573932
+2,essay_0c6bcf1760d3ad1d,C2,288,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:13:55.762412
+2,essay_0c6bcf1760d3ad1d,C2,288,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:13:58.734080
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:13:59.274347
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:14:01.038361
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:14:01.637035
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+**Solut",2026-01-14T21:14:03.378857
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:14:04.252693
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:14:06.100843
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T21:14:06.657872
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T21:14:09.702819
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:14:10.399525
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay e",2026-01-14T21:14:12.848593
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:14:13.537431
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:14:16.267102
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T21:14:16.952661
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:14:19.499461
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T21:14:20.129808
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:14:22.567349
+2,essay_1cd7b5e5ac737223,C2,211,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T21:14:23.221773
+2,essay_1cd7b5e5ac737223,C2,211,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:14:25.594404
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:14:26.170326
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:14:48.344756
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:14:49.119249
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:14:51.435785
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:14:51.994195
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:14:54.498936
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:14:54.941243
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T21:15:24.934517
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:15:25.753436
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:15:46.953413
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:15:47.792880
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T21:16:10.097298
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:16:11.037855
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:16:48.247174
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,cot_v5,cot,v5,C1,2026-01-14T21:16:49.065458
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:17:24.786847
+2,essay_7ba90c85c65076ee,C2,300,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:17:25.488353
+2,essay_7ba90c85c65076ee,C2,300,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:18:10.074899
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:18:10.840523
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:18:13.729404
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:18:14.318754
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:18:16.559015
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:18:17.085505
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Essay:
+",2026-01-14T21:18:19.455842
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:18:19.963898
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T21:18:43.258878
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:18:44.028237
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:19:01.713555
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:19:02.762168
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:19:22.205847
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:19:23.214580
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T21:19:33.619101
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:19:34.205754
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,cot_v5,cot,v5,".
+
+Profici",2026-01-14T21:20:11.860044
+2,essay_136b4178d0d01d6d,C2,308,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:20:12.567684
+2,essay_136b4178d0d01d6d,C2,308,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:20:15.684259
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:20:16.185636
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:20:18.386781
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:20:18.884462
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:20:20.982050
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:20:21.540552
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:20:23.976681
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:20:24.411467
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T21:20:27.063840
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:20:27.849151
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T21:20:52.655759
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:20:53.862448
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T21:20:56.568334
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:20:57.138714
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:21:20.581687
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:21:21.267231
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:21:24.068003
+2,essay_e40b84e2a7511b25,C2,321,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:21:28.467508
+2,essay_e40b84e2a7511b25,C2,321,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:21:58.169542
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:21:58.959735
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:22:01.392142
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:22:02.005590
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:22:04.122508
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:22:04.691538
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:22:06.897106
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:22:07.561602
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:22:29.964783
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,rubric_v5,rubric,v5,C1,2026-01-14T21:22:30.943058
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:22:51.697763
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,rubric_v6,rubric,v6,B2,2026-01-14T21:22:52.499587
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,rubric_v6,rubric,v6,C1,2026-01-14T21:22:55.266966
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:22:56.131746
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:23:20.508799
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:23:21.422586
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,cot_v5,cot,v5,B2,2026-01-14T21:23:24.319235
+2,essay_094e880b9cd848d3,C2,256,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:23:24.799382
+2,essay_094e880b9cd848d3,C2,256,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:23:47.889050
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:23:48.766516
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:24:07.275510
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:24:07.921267
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:24:09.829401
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:24:10.470238
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,minimal_v6,minimal,v6,C1,2026-01-14T21:24:16.656565
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:24:17.201342
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T21:24:20.029340
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:24:20.755431
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:24:23.213719
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:24:23.839511
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,rubric_v6,rubric,v6,C1,2026-01-14T21:24:27.024938
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:24:27.771026
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:25:12.755531
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:25:13.769234
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T21:25:41.269882
+2,essay_745f4470a99eba48,C2,262,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:25:41.924777
+2,essay_745f4470a99eba48,C2,262,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:25:44.913549
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:25:45.529864
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:25:47.417195
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:25:48.093017
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:26:09.204509
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:26:10.085499
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:26:22.279455
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:26:22.977695
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:26:30.458726
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:26:31.607045
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T21:26:35.261387
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:26:35.919019
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T21:26:38.366927
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:26:38.828090
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:26:41.374464
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:26:41.921358
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T21:27:11.709211
+2,essay_13163eaf9dff3c53,C2,237,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:27:12.344092
+2,essay_13163eaf9dff3c53,C2,237,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:27:15.234832
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:27:15.890146
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:27:18.077010
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:27:18.763048
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:27:21.078143
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:27:21.534041
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:27:23.753316
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:27:24.651247
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+## Your",2026-01-14T21:27:27.632491
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:27:28.255716
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:27:30.895587
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:27:31.588365
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,rubric_v6,rubric,v6,C2,2026-01-14T21:27:34.356083
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:27:34.908264
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:27:45.079081
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,cot_v5,cot,v5,B1,2026-01-14T21:27:45.611909
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:27:49.265778
+2,essay_eda0812373319284,C2,331,long,gpt-4o-mini,cot_v6,cot,v6,B1,2026-01-14T21:27:49.766345
+2,essay_eda0812373319284,C2,331,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:27:53.069045
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:27:53.642963
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:27:55.786982
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:27:56.524323
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:27:58.560432
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,minimal_v6,minimal,v6,C1,2026-01-14T21:27:58.956690
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:28:01.761445
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:28:02.592550
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:28:04.896621
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,rubric_v5,rubric,v5,C1,2026-01-14T21:28:05.644280
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay:
+",2026-01-14T21:28:38.711838
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:28:39.477761
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:28:42.166491
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:28:42.653735
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay:
+",2026-01-14T21:28:45.282066
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:28:47.425354
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:28:50.110566
+2,essay_9ee9092c0b0c372a,C2,235,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:28:50.547644
+2,essay_9ee9092c0b0c372a,C2,235,long,phi-3-mini,cot_v6,cot,v6,".
+
+
+### So",2026-01-14T21:28:52.967992
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:28:53.561158
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T21:29:13.407264
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:29:14.347082
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:29:16.074867
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:29:16.728284
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:29:18.519126
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:29:18.991176
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T21:29:25.652524
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:29:26.477620
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:29:29.094924
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,rubric_v6,rubric,v6,B2,2026-01-14T21:29:29.573050
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:29:58.386796
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:29:59.264171
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:30:23.194377
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:30:23.862361
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T21:30:44.750939
+2,essay_98365e4048fbd228,C2,212,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:30:45.731114
+2,essay_98365e4048fbd228,C2,212,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:30:48.200027
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:30:48.904260
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:30:50.881781
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:30:51.753653
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:30:54.310337
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,minimal_v6,minimal,v6,C1,2026-01-14T21:30:54.965167
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:30:57.096830
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:30:57.591091
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:31:32.529657
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:31:33.457136
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:31:57.438830
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:31:58.336917
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:32:22.212116
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:32:23.061995
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:32:49.998432
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,cot_v5,cot,v5,C1,2026-01-14T21:32:50.839479
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T21:33:16.810289
+2,essay_c789c2c861f70c34,C2,313,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:33:17.526335
+2,essay_c789c2c861f70c34,C2,313,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:33:51.293486
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:33:52.141415
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:33:54.183263
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:33:54.627814
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:33:56.431683
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:33:56.926900
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:33:58.706936
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:33:59.175099
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:34:01.778769
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:34:02.484972
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:34:05.157556
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,rubric_v6,rubric,v6,B2,2026-01-14T21:34:05.725151
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T21:34:08.055178
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:34:08.536191
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay A",2026-01-14T21:34:11.082098
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:34:11.667983
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:34:14.424335
+2,essay_4a6ab10a30413ba4,C2,239,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:34:15.067535
+2,essay_4a6ab10a30413ba4,C2,239,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:34:17.426809
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,minimal_v4,minimal,v4,C1,2026-01-14T21:34:18.043722
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:34:20.194178
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:34:20.986315
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:34:23.037846
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,minimal_v6,minimal,v6,C1,2026-01-14T21:34:23.527164
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:34:25.737284
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:34:26.820954
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:34:30.276932
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:34:31.202862
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,rubric_v5,rubric,v5,Essay CEFR,2026-01-14T21:34:33.634485
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,rubric_v6,rubric,v6,C1,2026-01-14T21:34:34.367394
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:34:36.988738
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,cot_v4,cot,v4,C1,2026-01-14T21:34:37.525271
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:34:40.357145
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,cot_v5,cot,v5,C1,2026-01-14T21:34:40.795527
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:35:14.517232
+2,essay_15bad0a74b8710b3,C2,258,long,gpt-4o-mini,cot_v6,cot,v6,C1,2026-01-14T21:35:15.270040
+2,essay_15bad0a74b8710b3,C2,258,long,phi-3-mini,cot_v6,cot,v6,## Your ta,2026-01-14T21:35:17.942697
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,minimal_v4,minimal,v4,C1,2026-01-14T21:35:18.594144
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,minimal_v4,minimal,v4,".
+
+Essay:
+",2026-01-14T21:35:21.018855
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,minimal_v5,minimal,v5,C1,2026-01-14T21:35:21.867125
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:35:24.617806
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,minimal_v6,minimal,v6,C1,2026-01-14T21:35:25.093078
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+Essay:
+",2026-01-14T21:35:27.761831
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,rubric_v4,rubric,v4,C1,2026-01-14T21:35:28.284637
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:36:16.317546
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,rubric_v5,rubric,v5,C1,2026-01-14T21:36:17.221839
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:37:02.743759
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:37:03.954375
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T21:37:32.940751
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:37:33.725601
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,cot_v4,cot,v4,B2,2026-01-14T21:38:51.935876
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,cot_v5,cot,v5,C1,2026-01-14T21:38:53.041643
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,cot_v5,cot,v5,".
+
+## Your",2026-01-14T21:41:21.043735
+2,essay_99249c30fed4636a,C2,336,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:41:22.066056
+2,essay_99249c30fed4636a,C2,336,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:42:20.237534
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:42:21.023707
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:42:23.098311
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:42:23.757730
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:42:25.536705
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:42:26.170200
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:42:27.973693
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,rubric_v4,rubric,v4,B1,2026-01-14T21:42:28.584447
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T21:42:31.456301
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:42:32.066858
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,rubric_v5,rubric,v5,C1,2026-01-14T21:42:34.426593
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:42:35.014480
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:42:37.385392
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,cot_v4,cot,v4,B1,2026-01-14T21:42:37.872547
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:42:40.269509
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:42:40.717005
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:42:43.479031
+2,essay_38a918110965e2da,C2,225,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:42:44.172945
+2,essay_38a918110965e2da,C2,225,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:42:46.890103
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:42:47.495936
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:42:49.099863
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:42:49.794961
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:42:51.324690
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:42:51.807343
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:42:53.549381
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:42:54.106707
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T21:42:56.834327
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:42:57.503183
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay:
+",2026-01-14T21:42:59.588230
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,rubric_v6,rubric,v6,B1,2026-01-14T21:43:00.063116
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+**Solut",2026-01-14T21:43:02.188948
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:43:02.759315
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,cot_v4,cot,v4,B1,2026-01-14T21:43:05.024136
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:43:05.606448
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:43:08.129564
+2,essay_40f60efd1507c707,C2,207,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:43:08.684196
+2,essay_40f60efd1507c707,C2,207,long,phi-3-mini,cot_v6,cot,v6,"?
+
+## Your",2026-01-14T21:43:10.826946
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:43:11.420290
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:43:12.980152
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:43:13.372120
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:43:14.871370
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:43:15.411214
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:43:17.050009
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:43:17.490111
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:43:19.989165
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:43:20.558429
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,rubric_v5,rubric,v5,B2,2026-01-14T21:43:22.929151
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:43:24.722066
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Essay E",2026-01-14T21:43:27.135301
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:43:27.920454
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:43:30.443041
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:43:30.970005
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,cot_v5,cot,v5,".
+
+SOLUTIO",2026-01-14T21:43:33.155961
+2,essay_e6d96e8b0d6894c9,C2,222,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:43:33.645116
+2,essay_e6d96e8b0d6894c9,C2,222,long,phi-3-mini,cot_v6,cot,v6,### Soluti,2026-01-14T21:43:35.811452
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:43:36.478157
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:43:38.751563
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:43:39.632270
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:43:42.344823
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:43:43.062448
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,minimal_v6,minimal,v6,C1,2026-01-14T21:43:45.551940
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:43:46.025602
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Essay:
+",2026-01-14T21:44:18.237725
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:44:19.220690
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay C",2026-01-14T21:44:21.500235
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:44:22.112693
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,rubric_v6,rubric,v6,C1,2026-01-14T21:44:24.551649
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:44:25.048974
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,cot_v4,cot,v4,".
+
+Essay C",2026-01-14T21:44:27.895824
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:44:28.361220
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,cot_v5,cot,v5,B1,2026-01-14T21:44:53.510555
+2,essay_9c1f62421d8e1d3a,C2,248,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:44:54.671152
+2,essay_9c1f62421d8e1d3a,C2,248,long,phi-3-mini,cot_v6,cot,v6,".
+
+### Sol",2026-01-14T21:44:57.344238
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:44:57.923117
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,minimal_v4,minimal,v4,B2,2026-01-14T21:44:59.985079
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,minimal_v5,minimal,v5,B2,2026-01-14T21:45:00.504156
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,minimal_v5,minimal,v5,".
+
+
+### So",2026-01-14T21:45:15.670959
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,minimal_v6,minimal,v6,B2,2026-01-14T21:45:16.392811
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,minimal_v6,minimal,v6,".
+
+**Solut",2026-01-14T21:45:18.317967
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,rubric_v4,rubric,v4,B2,2026-01-14T21:45:18.810907
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,rubric_v4,rubric,v4,".
+
+Solutio",2026-01-14T21:45:24.545554
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,rubric_v5,rubric,v5,Based on t,2026-01-14T21:45:25.371858
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,rubric_v5,rubric,v5,".
+
+Essay t",2026-01-14T21:45:27.748996
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,rubric_v6,rubric,v6,Based on t,2026-01-14T21:45:28.328888
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,rubric_v6,rubric,v6,".
+
+Solutio",2026-01-14T21:45:51.208904
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,cot_v4,cot,v4,B2,2026-01-14T21:45:52.184883
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,cot_v4,cot,v4,B2,2026-01-14T21:45:54.866538
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,cot_v5,cot,v5,B2,2026-01-14T21:45:55.484411
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,cot_v5,cot,v5,".
+
+### Sol",2026-01-14T21:45:58.128886
+2,essay_82a7da2464a0b84a,C2,244,long,gpt-4o-mini,cot_v6,cot,v6,B2,2026-01-14T21:45:58.575119
+2,essay_82a7da2464a0b84a,C2,244,long,phi-3-mini,cot_v6,cot,v6,".
+
+## Your",2026-01-14T21:46:20.731073
